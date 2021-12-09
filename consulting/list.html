@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+        <meta name="keywords" content="<%=site_name%>" />
+        <meta name="description" content="<%=site_name%>" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="author" content="커리어" />
+        <meta name="Copyright" content="희망을 전하는 취업 포털 커리어" />
+        <title>2021 광주권 온라인 채용박람회</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="2021 광주권 온라인 채용박람회" />
+        <meta property="og:description" content="2021 광주권 온라인 채용박람회, 취업지원, 채용정보, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보">
+        <meta property="og:image" content="http://gjmoel.career.co.kr/images/property_img.jpg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="210" />
+        <meta property="og:url" content="https://mgjmoel.career.co.kr/" />
+        <meta property="og:site_name" content="2021 광주권 온라인 채용박람회" />
+
+        <!-- publishUpdateDt 변수 선언 파일 위치 → /common/constant.asp -->
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/slick.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css?<%=publishUpdateDt%>1" />
+        <link rel="stylesheet" type="text/css" href="../css/main.css?<%=publishUpdateDt%>3" />
+        <link rel="stylesheet" type="text/css" href="../css/tools.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/sub.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/popup.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/swiper.min.css?<%=publishUpdateDt%>" />
+
+        <link rel="stylesheet" type="text/css" href="../css/mm_resume.css" />
+
+        <script type="text/javascript" src="../js/jquery-1.12.4.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/jquery-ui.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/placeholders.jquery.min.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/ui.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/ui.plugin.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/customTags.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/slick.min.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/swiper.min.js?<%=publishUpdateDt%>"></script>
+
+        <script type="text/javascript" src="../js/comm_2009.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/validateCommon.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/function_2020.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/code.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/common2.js?<%=publishUpdateDt%>"></script>
+
+        <script type="text/javascript" src="../js/mm_resume.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(this).customTags();
+            });
+
+        </script>
+
+
+        <script>
+            window.digFunArry = [];
+            window.SERVER_TODAY = serverToday();
+            $(document).ready(function() {
+                var $this = $(this);
+                $this.find('.fnDayPopWrap').each(function(idx) {
+                    var params = $(this).data('fnStyle');
+                    digFunArry.push(new MainDigCusFun(this, idx, params).init());
+                });
+            });
+
+        </script>
+
+    </head>
+
+<body>
+
+    <!-- 상단 -->
+
+    <!-- Skipnavi -->
+    <div id="skipnavi">
+        <a href="#header-id">상단 바로가기</a>
+        <a href="#contents-id">본문 바로가기</a>
+        <a href="#footer-id">하단 바로가기</a>
+    </div>
+    <!-- // Skipnavi -->
+
+
+    <!-- header -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="logo">
+                <h1><a href="../default.html"><img src="../images/logo.png" alt="로고"></a></h1>
+            </div>
+            <div class="header_menu">
+                <ul>
+                    <li class="sch">
+                        <a href="/jobs/list_search.asp">검색</a>
+                    </li>
+
+                    <!--
+				<li class="login m_menu">
+					<a href="#none" <% If wk_user_photo <> "" Then %>class="isLogin" style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>>로그인</a>
+				</li>
+				-->
+                    <li class="login m_menu">
+                        <a href="#none">로그인</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- mobile menu -->
+        <div id="menu-overlay"></div>
+
+        <div id="m-nav">
+            <div class="topline">
+                <div class="login_box">
+                    <div class="img">
+                        <!--<span <% If wk_user_photo <> "" Then %> style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>></span>-->
+                        <span></span>
+                    </div>
+
+                    <div class="login_info">
+
+                        <div class="txts">
+                            <p class="name"><span>박정완</span>님</p>
+                        </div>
+
+                        <div class="l_btnsWrap auto">
+                            <!--<span class="txt">개인회원으로 로그인 해주세요</span>-->
+                        </div>
+
+                    </div>
+                </div>
+
+                <button type="button" class="btn logout" onclick="location.href='/logout.asp'">로그아웃</button>
+
+                <button type="button" class="btn login" onclick="location.href='/my/login.asp';">로그인</button>
+
+
+                <button type="button" id="close-toggle" class="btn close">닫기</button>
+            </div>
+            <div id="m-gnb">
+                <ul>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/consulting_list.asp" class="menu">
+                                <span>구직자 컨설팅</span>
+                                <div class="tsm">구직자 컨설팅 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/lecture_list.asp" class="menu">
+                                <span>구직자 특강</span>
+                                <div class="tsm">구직자 특강 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_area">
+                <ul>
+                    <li><a href="../board/notice_list.html">공지사항</a></li>
+                    <li><a href="../board/qna.html">자주묻는 질문</a></li>
+                </ul>
+            </div>
+            <!--mobile_nave end-->
+
+            <script type="text/javascript">
+                // menu icon states, opening main nav
+                $('.m_menu').click(function() {
+                    $(this).toggleClass('open');
+                    $('#m-nav,#menu-toggle,#page-content,#menu-overlay').toggleClass('open');
+                    $('#m-nav ul li,.submenu-toggle').removeClass('open');
+                });
+
+                // clicking on overlay closes menu
+                $('#menu-overlay,#close-toggle').mousedown(function() {
+                    $('*').removeClass('open');
+                });
+                // GNB
+                var menu, menuLi, menuLink;
+                menu = $("#m-gnb");
+                menuLi = $("#m-gnb > ul > li");
+                menuLink = $("#m-gnb > ul > li > .depth1 > a.menu");
+                menuLink.on("click", function() {
+                    if ($(this).parents("li").hasClass("on")) {
+                        $(this).parents("li:has(ul)").children("ul").slideUp(250);
+                        $(this).parents("li:has(ul)").removeClass("on");
+                    } else {
+                        menuLi.not($(this).parents("li")).children("ul").slideUp(250);
+                        menuLi.not($(this).parents("li")).removeClass("on");
+                        $(this).parents("li:has(ul)").children("ul").slideDown(250);
+                        $(this).parents("li:has(ul)").addClass("on");
+                    }
+                    return false;
+                });
+
+            </script>
+        </div>
+        <!-- mobile menu -->
+
+        <div class="gnb">
+            <div class="inner fnNotSlickSliderStatic" data-scroll-spacing="3rem">
+
+                <div class='tp tp1 <% If InStr(Request.ServerVariables("url"), "/board/info.asp") > 0 Then %>'>
+                    <a href="../board/info.html"><span>박람회 안내</span></a>
+                </div>
+
+                <div class='tp tp3 <% If InStr(Request.ServerVariables("url"), "/jobs") > 0 Then %>  <% End If %>'>
+                    <a href="../jobs/list.html"><span>채용공고</span></a>
+                </div>
+                <div class='tp tp4 <%If InStr(Request.ServerVariables("url"), "/lecture/") or InStr(Request.ServerVariables("url"), "/consulting") > 0 or InStr(Request.ServerVariables("url"), "/educe") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>컨설팅ㆍ특강</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class='tp'><a href="../consulting/schedule.html">전체 일정표</a></li>
+                                <li class='tp'><a href="../consulting/list.html">구직자 컨설팅</a></li>
+                                <li><a href="../lecture/list.html">구직자 특강</a></li>
+                                <li class='tp'><a href="../educe/guid.html">AI역량검사</a></li>
+                                <li><a href="../consulting/list_biz.html">기업 컨설팅</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='tp tp5 <%If  InStr(Request.ServerVariables("url"), "/salary") or InStr(Request.ServerVariables("url"), "/tools") or InStr(Request.ServerVariables("url"), "/board/list.asp") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>취업자료실</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="../tools/salary_calculator.html">스마트 계산기</a></li>
+                                <li><a href="../board/list2.html">카드뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='tp tp6 <%If InStr(Request.ServerVariables("url"), "/board/notice_list") or InStr(Request.ServerVariables("url"), "/board/jobclass_list") Then %> <% End If %>'>
+                    <a href="#"><span>공지사항</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="../board/notice_list.html">공지사항</a></li>
+                                <li class="tp"><a href="../board/qna.html">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                $(document).ready(function() {
+                    $('#header .gnb>.inner>.tp>a').click(function() {
+                        var $this = $(this);
+                        var menu = $this.closest('.tp').find('.depth_gnb .menu');
+                        $('#header .gnb .tp').removeClass('active');
+                        if (menu.length) {
+                            $('.gnb').addClass('open');
+                            $this.closest('.tp').addClass('active');
+                        } else {
+                            //$('.gnb').removeClass('open');
+                        }
+                    });
+                });
+
+            </script>
+        </div>
+
+
+    </div>
+    <!-- //header -->
+
+    <!-- //상단 -->
+
+<script type="text/javascript" src="https://job3.career.co.kr/js/cat_jc.js"></script>
+<script type="text/javascript" src="./js/consulting.js?<%=publishUpdateDt%>"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		var cons_div = "<%=consultant_id%>";
+		fn_sel_consultant(cons_div);
+
+	});
+
+	function fn_consDiv(v){
+		if(v!=""){
+			location.href = "list.asp?set_consultant_id="+v;
+		}
+	}
+
+	// 컨설팅일 선택
+	function fn_sch(obj) {
+		if ("<%=user_id%>" == ""){
+			alert('개인회원 로그인 후 컨설팅 신청 가능합니다.');
+			goLogin();
+		}else{
+			if ($(obj).val() != "") {
+				if ($(obj).val() <= getDateToString(new Date())) {
+					alert("오늘을 포함한 이전 날짜는 선택이 불가능합니다.");
+					fn_interview_time_reset();
+					fn_interview_time_disable();
+					return false;
+				}else {
+					$("#set_consultant_day").val($(obj).val());
+
+					$.ajax({
+						url: "./ajax_get_schedule_time.asp",
+						type: "POST",
+						dataType: "text",
+						data: ({
+							"consultant_id": $("#set_consultant_id").val(),
+							"consultant_day": $(obj).val(),
+						}),
+						success: function (data) {
+
+							if (data == null || data == ""){
+								$("#comp_cmmt").show();
+							}else{
+								$("#comp_cmmt").hide();
+							}
+
+							$("#set_consultant_time").val(data);
+
+							fn_interview_time_reset();
+							fn_interview_time_disable();
+							fn_interview_time_disable_reset(data);
+							fn_chk_user_interview_time();
+						},
+						error: function (req, status, err) {
+							alert("처리 도중 오류가 발생하였습니다.\n" + err);
+						}
+					});
+				}
+			}else{
+				$('#set_consultant_day').val("");
+
+				//날짜 및 시간 초기화
+				fn_interview_time_reset();
+				fn_interview_time_disable();
+				fn_interview_time_disable_reset(data);
+				fn_chk_user_interview_time();
+
+				return;
+			}
+		}
+	}
+
+	// 컨설팅 신청자 정보 입력 영역 노출 제어
+	function openLayer_consReq() {
+		var consultant_id	= $('#set_consultant_id').val();
+		var consultant_day	= $('#set_consultant_day').val();
+		var consultant_time = "";
+
+		$("#pop_request_consulting").hide();
+
+		$('input[name="set_interview_time"]').each(function() {
+			if (this.checked == true) {
+				consultant_time = this.value;
+			}
+		});
+
+		if (consultant_id == "") {
+			alert("신청하실 컨설팅 항목을 선택해 주세요.");
+			return;
+		}else if (consultant_day == "") {
+			alert("일자를 선택해 주세요.");
+			fn_move("#step_area_1");
+			return;
+		}else if (consultant_time == "") {
+			alert("시간을 선택해 주세요.");
+			fn_move("#step_area_2");
+			return;
+		}else {
+			$("#pop_request_consulting").show();
+			fn_move("#pop_request_consulting");
+			fn_submit();
+		}
+	}
+
+	// 컨설팅 신청
+	function fn_submit() {
+		var consultant_id		= $('#set_consultant_id').val();
+		var consultant_day		= $('#set_consultant_day').val();
+		var sel_final_scholar	= $('#sel_final_scholar').val();    // 최종학력
+		var sel_birth_year		= $('#sel_birth_year').val();		// 생년월일 - 연도
+		var sel_birth_month		= $('#sel_birth_month').val();		// 생년월일 - 월
+		var sel_birth_day		= $('#sel_birth_day').val();		// 생년월일 - 일
+		var sel_jc1				= $('#sel_jc1').val();				// 희망직무 1차
+		var sel_jc2				= $('#sel_jc2').val();				// 희망직무 2차
+
+		var consultant_time = "";
+
+		$('input[name="set_interview_time"]').each(function() {
+			if (this.checked == true) {
+				consultant_time = this.value;
+			}
+		});
+
+		if (consultant_id == "") {
+			alert("신청하실 컨설팅 항목을 선택해 주세요.");
+			return;
+		}
+
+		if (consultant_day == "") {
+			alert("일자를 선택해 주세요.");
+			fn_move("#step_area_1");
+			$("#sel_consDay").focus();
+			return;
+		}
+
+		if (consultant_time == "") {
+			alert("시간을 선택해 주세요.");
+			fn_move("#step_area_2");
+			return;
+		}
+
+<%If chkJoinInfo=0 Then%>
+		/*
+		if (sel_final_scholar == "") {
+			alert("최종학력을 선택해 주세요.");
+			fn_move("#pop_request_consulting");
+			$("#sel_final_scholar").focus();
+			return;
+		}
+
+		if (sel_birth_year == "") {
+			alert("출생연도를 선택해 주세요.");
+			fn_move("#pop_request_consulting");
+			$("#sel_birth_year").focus();
+			return;
+		}
+
+		if (sel_birth_month == "") {
+			alert("출생월을 선택해 주세요.");
+			fn_move("#pop_request_consulting");
+			$("#sel_birth_month").focus();
+			return;
+		}
+
+		if (sel_birth_day == "") {
+			alert("출생일을 선택해 주세요.");
+			fn_move("#pop_request_consulting");
+			$("#sel_birth_day").focus();
+			return;
+		}else{
+
+			dtYear	= sel_birth_year;
+			dtMonth = sel_birth_month;
+			dtDay	= sel_birth_day;
+
+			if (dtMonth == 2) {
+				var isleap = (dtYear % 4 == 0 && (dtYear % 100 != 0 || dtYear % 400 == 0));
+				if (dtDay > 29 || (dtDay == 29 && !isleap)){
+					var strFebDay;
+					if (isleap == true){
+						strFebDay = "29";
+					}else{
+						strFebDay = "28";
+					}
+
+					alert(dtYear+"년 2월의 마지막 날짜는 "+strFebDay+"일 입니다.");
+					return false;
+				}
+			}
+		}
+		*/
+		if (sel_jc1 == "") {
+			alert("희망직무 1차 분류를 선택해 주세요.");
+			fn_move("#pop_request_consulting");
+			$("#sel_jc1").focus();
+			return;
+		}
+
+		if (sel_jc2 == "") {
+			alert("희망직무 2차 분류를 선택해 주세요.");
+			fn_move("#pop_request_consulting");
+			$("#sel_jc2").focus();
+			return;
+		}
+<%End If%>
+
+		var txtCons;
+		switch (consultant_id){
+			case "7" :
+				txtCons = "구직자 컨설팅";
+				break;
+			default :
+				txtCons = "";
+		}
+
+
+		var val_joinInfo = $('#hid_chkJoinInfo').val();
+		var strMsg;
+		switch (val_joinInfo){
+			case "0" :
+				strMsg = "\n입력하신 희망직무와 사전질문 토대로 취업전문 컨설턴트와\n1:1 취업지원 컨설팅이 진행됩니다.";
+				break;
+			default :
+				strMsg = "";
+		}
+
+		var obj=document.frm_cons;
+		if (confirm(consultant_day+" "+getInterviewTime(consultant_time)+"로\n"+txtCons+" 일정을 선택하셨습니다."+strMsg+"\n신청 이후에는 날짜 및 시간대 변경이 불가능 합니다.\n신청하시겠습니까?")) {
+			obj.method = "post";
+			obj.action = "proc_consult_save.asp";
+			obj.submit();
+		}
+
+	}
+
+	// 컨설팅 종료 알람
+	function fn_submit_end() {
+		alert('4월 2일자(17:30 기준)로 취업 컨설팅이 종료되었습니다.');
+	}
+
+	// 1차 직무 선택 값에 따라 연관 2차 직무 항목 제어
+	function fn_change_jc1(picked) {
+		fn_clear_jc2();
+
+		if(picked == ""){
+			return;
+		}
+
+		k=1;
+		for(j=0; j<cat_fld2.length; j++){
+			if(cat_fld2[j][1] == picked){
+				document.frm_cons.sel_jc2.options[k] = new Option(cat_fld2[j][2],cat_fld2[j][0]);
+				k++;
+			}
+		}
+	}
+
+	function fn_clear_jc2() {
+		$('#set_jc2_txt').text("2차 직무를 선택해 주세요.");
+
+		for(j=document.frm_cons.sel_jc2.length-1; j>0; j--)
+			document.frm_cons.sel_jc2.options[j] = null;
+			document.frm_cons.sel_jc2.options[0] = new Option("2차 직무를 선택해 주세요.","");
+			document.frm_cons.sel_jc2.options[0].selected = true;
+	}
+
+	// 특정 영역 이동
+	function fn_move(div_id){
+        var offset = $(div_id).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+</script>
+
+</head>
+<body>
+<!-- 상단 -->
+<!--#include virtual = "/include/gnb/topMenu.asp"-->
+<!-- //상단 -->
+
+<form id="frm_cons" name="frm_cons" method="post">
+	<input type="hidden" id="set_consultant_id" name="set_consultant_id" value="<%=consultant_id%>">
+	<input type="hidden" id="set_consultant_day" name="set_consultant_day" value="">
+	<input type="hidden" id="set_consultant_time" name="set_consultant_time" value="">
+	<input type="hidden" id="hid_chkJoinInfo" name="hid_chkJoinInfo" value="<%=chkJoinInfo%>">
+
+<!-- container -->
+<div id="contents" class="sub_page">
+	<div class="contents">
+
+		<div class="visual_area consulting">
+			<h2>구직자 컨설팅</h2>
+		</div><!-- visual_area consulting -->
+
+		<div class="consul_area">
+
+			<div class="tab_box">
+				<ul>
+					<li>
+						<button type="button" onclick="return false;" class="on">
+							구직자 컨설팅
+						</button>
+					</li>
+				</ul>
+			</div><!-- .tab_box -->
+
+			<div id="mentor_area_7" class="consul_moth" style="display:block;">
+				<dl class="what">
+					<dt>구직자 컨설팅이란?</dt>
+					<dd>
+						진로, 자기소개서, 면접 등 포괄적인 주제로 상담이 가능합니다.<br>
+						구직자 취업 컨설팅을 활용하여 취업 준비에 부족한 부분을 보완해 보세요.
+					</dd>
+				</dl>
+			</div><!-- //.consul_moth -->
+
+			<div class="consul_moth" style="display:block;">
+				<dl class="apply">
+					<dt>신청방법</dt>
+					<dd>
+						<span>Step1.</span>에서 컨설팅일자를 선택 후<p></p>
+						<span>Step2.</span>에서 가능시간을 선택, 일자와 시간을 다시 한번 확인 후<p></p>
+						<span>Step3.</span>컨설팅 신청하기 버튼을 클릭하면 신청이 완료됩니다.<br>
+					</dd>
+				</dl>
+
+				<div class="step_area">
+					<div class="step1" id="step_area_1">
+						<h4><img src="../images/step1_tit.png" alt="일자선택" style="width:10.2rem"></h4>
+						<span class="selectbox">
+							<span id="set_consDay_txt">컨설팅 일자 선택</span>
+							<select id="sel_consDay" name="sel_consDay" onchange="fn_sch(this);">
+								<option value="">컨설팅 일자 선택</option>
+								<option value="">2021-11-08</option>
+								<option value="">2021-11-09</option>
+								<option value="">2021-11-10</option>
+                                <option value="">2021-11-11</option>
+                                <option value="">2021-11-12</option>
+
+							</select>
+						</span>
+					</div><!-- .step1 -->
+
+					<div class="step2" id="step_area_2">
+						<h4><img src="../images/step2_tit.png" alt="시간선택" style="width:13.6rem"></h4>
+						<span id="comp_cmmt" style="display:none;"><p style="color:#005fbd;font-size:15px;font-weight:bold;padding-top:5px;padding-bottom:3px;">선택하신 일자의 컨설팅 신청 접수가 모두 마감되었습니다.</p></span>
+
+						<div class="time_box">
+							<ul class="t_ul">
+								
+								<li>
+									<label class="radiobox off" for="1">
+										<input type="radio" class="rdi" id="time1_<%=i%>" name='set_interview_time' value="1" onclick="fn_time_set(this);">
+									</label>
+
+									<span>10:00 AM</span>
+                                    
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="2">
+										<input type="radio" class="rdi" id="time1_<%=i%>" name='set_interview_time' value="2" onclick="fn_time_set(this);">
+									</label>
+
+									<span>11:00 AM</span>
+                                    
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="3">
+										<input type="radio" class="rdi" id="time1_<%=i%>" name='set_interview_time' value="2" onclick="fn_time_set(this);">
+									</label>
+
+									<span>12:00 AM</span>
+                                    
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="4">
+										<input type="radio" class="rdi" id="time1_<%=i%>" name='set_interview_time' value="2" onclick="fn_time_set(this);">
+									</label>
+
+									<span>14:00 AM</span>
+                                    
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="5">
+										<input type="radio" class="rdi" id="time1_<%=i%>" name='set_interview_time' value="2" onclick="fn_time_set(this);">
+									</label>
+
+									<span>15:00 AM</span>
+                                    
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="6">
+										<input type="radio" class="rdi" id="time1_<%=i%>" name='set_interview_time' value="2" onclick="fn_time_set(this);">
+									</label>
+
+									<span>16:00 AM</span>
+                                    
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="7">
+										<input type="radio" class="rdi" id="time1_<%=i%>" name='set_interview_time' value="2" onclick="fn_time_set(this);">
+									</label>
+
+									<span>17:00 AM</span>
+                                    
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="8">
+										<input type="radio" class="rdi" id="time1_<%=i%>" name='set_interview_time' value="2" onclick="fn_time_set(this);">
+									</label>
+
+									<span>18:00 AM</span>
+                                    
+								</li>
+							
+							</ul>
+						</div><!-- .time_box -->
+						<div class="sel_area">
+							<p>일자 및 시간을 선택해 주세요.</p>
+						</div><!-- .sel_area -->
+					</div><!-- .step2 -->
+
+
+					<!-- 컨설팅 신청정보 입력란 노출 -->
+					<div id="pop_request_consulting" style="display:none;">
+						<div class="tb_area">
+							<table class="tb">
+								<colgroup>
+									<col style="width:8.5rem;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>이름</th>
+										<td><%=user_name%></td>
+									</tr>
+
+									<tr>
+										<th>희망직무</th>
+										<td class="job">
+											<span class="selectbox" style="width:100%;">
+												<span class="">1차 직무 선택</span>
+												<select id="sel_jc1" name="sel_jc1" title="1차 직무 선택" onchange="fn_change_jc1(this.options[this.selectedIndex].value);">
+													<script language=JavaScript>
+														document.writeln("<option value='' selected>1차 직무를 선택해 주세요.</option>");
+														for(i=0; i<cat_fld1.length; i++)
+														document.writeln("<option value=" + cat_fld1[i][0] + ">" + cat_fld1[i][1] + "</option>");
+													</script>
+												</select>
+											</span>
+											<span class="selectbox" style="width:100%;">
+												<span id="set_jc2_txt" class="">2차 직무 선택</span>
+												<select id="sel_jc2" name="sel_jc2" title="2차 직무 선택">
+													<option value="">2차 직무를 선택해 주세요.</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th>사전질문</th>
+										<td>
+											<textarea name="consult_question"></textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- //컨설팅 신청정보 입력란 노출 -->
+
+
+					<div class="step3">
+						<h4><img src="../images/step3_tit.png" alt="컨설팅신청" style="width:14.7rem"></h4>
+						<div class="btn_area">
+
+							<a href="javascript:void(0);" onclick="<%If chkJoinInfo=0 Then%>openLayer_consReq()<%Else%>fn_submit();return false<%End If%>;" class="btn blue">컨설팅 신청하기</a>
+							<a href="/my/consulting_list.asp" 
+							<a href="javascript:alert('개인회원 로그인 후 컨설팅 신청 가능합니다.'); goLogin();" class="btn blue">컨설팅 신청확인 
+						</div>
+					</div><!-- .step3 -->
+
+				</div><!-- step_area -->
+			</div><!-- //.consul_moth -->
+
+			<div class="chk_point">
+				<p>Check Point!</p>
+				<ul>
+					<li>* 원활한 구직자 컨설팅을 위해 이름, 최종학력, 나이, 희망직무가 필요합니다.</li>
+					<li>* 구직자 컨설팅은 로그인 후 신청할 수 있습니다. 박람회 회원으로 가입하고 로그인 후 신청 바랍니다.</li>
+					<li>* 구직자 컨설팅은 당일 신청이 불가하고, 예약 취소는 My page &gt; 구직자 컨설팅 신청 현황 메뉴에서 취소가 가능합니다. (컨설팅 당일 취소는 불가)</li>
+					<li>* 구직자 컨설팅은 해당된 표기일에만 신청이 가능하며, 예약이 완료된 일시에는 신청이 불가합니다.</li>
+					<li>* 로그인 후 우측의 컨설팅 신청 현황 확인 버튼을 클릭하시면, 컨설팅 신청 내역을 확인할 수 있습니다.</li>
+				</ul>
+			</div><!-- //chk_point -->
+
+		</div><!-- .consul_area -->
+
+	</div><!-- .contents -->
+</div><!-- .sub_page -->
+<!-- //container -->
+
+</form>
+
+<!-- 하단 -->
+<div id="footer">
+	<div class="footer_area">
+		<div class="footer_box">
+			<img src="../images/safe_img.png" alt="공공데이터 청년인턴 온라인 채용박람회 공식 홈페이지는 [취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.Copyrightsⓒ 취업포털 커리어. All rights reserved.">
+			<p>
+				2021 광주권 온라인 채용박람회 공식 홈페이지는
+				[취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.
+				Copyrights&copy; 취업포털 커리어. All rights reserved.
+			</p>
+		</div><!-- .util-area -->
+	</div><!-- .inner-wrap -->
+</div>
+<!-- //하단 -->
+
+</body>
+</html>

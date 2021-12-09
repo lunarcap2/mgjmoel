@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+        <meta name="keywords" content="<%=site_name%>" />
+        <meta name="description" content="<%=site_name%>" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="author" content="커리어" />
+        <meta name="Copyright" content="희망을 전하는 취업 포털 커리어" />
+        <title>2021 광주권 온라인 채용박람회</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="2021 광주권 온라인 채용박람회" />
+        <meta property="og:description" content="2021 광주권 온라인 채용박람회, 취업지원, 채용정보, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보">
+        <meta property="og:image" content="http://gjmoel.career.co.kr/images/property_img.jpg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="210" />
+        <meta property="og:url" content="https://mgjmoel.career.co.kr/" />
+        <meta property="og:site_name" content="2021 광주권 온라인 채용박람회" />
+
+        <!-- publishUpdateDt 변수 선언 파일 위치 → /common/constant.asp -->
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="css/slick.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="css/common.css?<%=publishUpdateDt%>1" />
+        <link rel="stylesheet" type="text/css" href="css/main.css?<%=publishUpdateDt%>3" />
+        <link rel="stylesheet" type="text/css" href="css/tools.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="css/sub.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="css/mobile.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="css/popup.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css?<%=publishUpdateDt%>" />
+
+        <link rel="stylesheet" type="text/css" href="css/mm_resume.css" />
+
+        <script type="text/javascript" src="js/jquery-1.12.4.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/jquery-ui.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/placeholders.jquery.min.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/ui.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/ui.plugin.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/customTags.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/slick.min.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/swiper.min.js?<%=publishUpdateDt%>"></script>
+
+        <script type="text/javascript" src="js/comm_2009.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/validateCommon.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/function_2020.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/code.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="js/common2.js?<%=publishUpdateDt%>"></script>
+
+        <script type="text/javascript" src="js/mm_resume.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(this).customTags();
+            });
+
+        </script>
+
+
+        <script>
+            window.digFunArry = [];
+            window.SERVER_TODAY = serverToday();
+            $(document).ready(function() {
+                var $this = $(this);
+                $this.find('.fnDayPopWrap').each(function(idx) {
+                    var params = $(this).data('fnStyle');
+                    digFunArry.push(new MainDigCusFun(this, idx, params).init());
+                });
+            });
+
+        </script>
+
+    </head>
+
+<body>
+
+    <!-- 상단 -->
+
+    <!-- Skipnavi -->
+    <div id="skipnavi">
+        <a href="#header-id">상단 바로가기</a>
+        <a href="#contents-id">본문 바로가기</a>
+        <a href="#footer-id">하단 바로가기</a>
+    </div>
+    <!-- // Skipnavi -->
+
+
+    <!-- header -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="logo">
+                <h1><a href="default.html"><img src="images/logo.png" alt="로고"></a></h1>
+            </div>
+            <div class="header_menu">
+                <ul>
+                    <li class="sch">
+                        <a href="/jobs/list_search.asp">검색</a>
+                    </li>
+
+                    <!--
+				<li class="login m_menu">
+					<a href="#none" <% If wk_user_photo <> "" Then %>class="isLogin" style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>>로그인</a>
+				</li>
+				-->
+                    <li class="login m_menu">
+                        <a href="#none">로그인</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- mobile menu -->
+        <div id="menu-overlay"></div>
+
+        <div id="m-nav">
+            <div class="topline">
+                <div class="login_box">
+                    <div class="img">
+                        <!--<span <% If wk_user_photo <> "" Then %> style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>></span>-->
+                        <span></span>
+                    </div>
+
+                    <div class="login_info">
+
+                        <div class="txts">
+                            <p class="name"><span>박정완</span>님</p>
+                        </div>
+
+                        <div class="l_btnsWrap auto">
+                            <!--<span class="txt">개인회원으로 로그인 해주세요</span>-->
+                        </div>
+
+                    </div>
+                </div>
+
+                <button type="button" class="btn logout" onclick="location.href='/logout.asp'">로그아웃</button>
+
+                <button type="button" class="btn login" onclick="location.href='/my/login.asp';">로그인</button>
+
+                <button type="button" id="close-toggle" class="btn close">닫기</button>
+            </div>
+            <div id="m-gnb">
+                <ul>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/consulting_list.asp" class="menu">
+                                <span>구직자 컨설팅</span>
+                                <div class="tsm">구직자 컨설팅 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/lecture_list.asp" class="menu">
+                                <span>구직자 특강</span>
+                                <div class="tsm">구직자 특강 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_area">
+                <ul>
+                    <li><a href="board/notice_list.html">공지사항</a></li>
+                    <li><a href="board/qna.html">자주묻는 질문</a></li>
+                </ul>
+            </div>
+            <!--mobile_nave end-->
+
+            <script type="text/javascript">
+                // menu icon states, opening main nav
+                $('.m_menu').click(function() {
+                    $(this).toggleClass('open');
+                    $('#m-nav,#menu-toggle,#page-content,#menu-overlay').toggleClass('open');
+                    $('#m-nav ul li,.submenu-toggle').removeClass('open');
+                });
+
+                // clicking on overlay closes menu
+                $('#menu-overlay,#close-toggle').mousedown(function() {
+                    $('*').removeClass('open');
+                });
+                // GNB
+                var menu, menuLi, menuLink;
+                menu = $("#m-gnb");
+                menuLi = $("#m-gnb > ul > li");
+                menuLink = $("#m-gnb > ul > li > .depth1 > a.menu");
+                menuLink.on("click", function() {
+                    if ($(this).parents("li").hasClass("on")) {
+                        $(this).parents("li:has(ul)").children("ul").slideUp(250);
+                        $(this).parents("li:has(ul)").removeClass("on");
+                    } else {
+                        menuLi.not($(this).parents("li")).children("ul").slideUp(250);
+                        menuLi.not($(this).parents("li")).removeClass("on");
+                        $(this).parents("li:has(ul)").children("ul").slideDown(250);
+                        $(this).parents("li:has(ul)").addClass("on");
+                    }
+                    return false;
+                });
+
+            </script>
+        </div>
+        <!-- mobile menu -->
+
+        <div class="gnb">
+            <div class="inner fnNotSlickSliderStatic" data-scroll-spacing="3rem">
+
+                <div class='tp tp1 <% If InStr(Request.ServerVariables("url"), "/board/info.asp") > 0 Then %>'>
+                    <a href="board/info.html"><span>박람회 안내</span></a>
+                </div>
+
+                <div class='tp tp3 <% If InStr(Request.ServerVariables("url"), "/jobs") > 0 Then %>  <% End If %>'>
+                    <a href="jobs/list.html"><span>채용공고</span></a>
+                </div>
+                <div class='tp tp4 <%If InStr(Request.ServerVariables("url"), "/lecture/") or InStr(Request.ServerVariables("url"), "/consulting") > 0 or InStr(Request.ServerVariables("url"), "/educe") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>컨설팅ㆍ특강</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class='tp'><a href="consulting/schedule.html">전체 일정표</a></li>
+                                <li class='tp'><a href="consulting/list.html">구직자 컨설팅</a></li>
+                                <li><a href="lecture/list.html">구직자 특강</a></li>
+                                <li class='tp'><a href="educe/guid.html">AI역량검사</a></li>
+                                <li><a href="consulting/list_biz.html">기업 컨설팅</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='tp tp5 <%If  InStr(Request.ServerVariables("url"), "/salary") or InStr(Request.ServerVariables("url"), "/tools") or InStr(Request.ServerVariables("url"), "/board/list.asp") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>취업자료실</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="tools/salary_calculator.html">스마트 계산기</a></li>
+                                <li><a href="board/list2.html">카드뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='tp tp6 <%If InStr(Request.ServerVariables("url"), "/board/notice_list") or InStr(Request.ServerVariables("url"), "/board/jobclass_list") Then %> <% End If %>'>
+                    <a href="#"><span>공지사항</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="board/notice_list.html">공지사항</a></li>
+                                <li class="tp"><a href="board/qna.html">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                $(document).ready(function() {
+                    $('#header .gnb>.inner>.tp>a').click(function() {
+                        var $this = $(this);
+                        var menu = $this.closest('.tp').find('.depth_gnb .menu');
+                        $('#header .gnb .tp').removeClass('active');
+                        if (menu.length) {
+                            $('.gnb').addClass('open');
+                            $this.closest('.tp').addClass('active');
+                        } else {
+                            //$('.gnb').removeClass('open');
+                        }
+                    });
+                });
+
+            </script>
+        </div>
+
+
+    </div>
+    <!-- //header -->
+
+    <!-- //상단 -->
+
+
+    <!-- container -->
+    <div id="contents" class="main_page update">
+        <div class="contents">
+            <div class="visual_area">
+                <img src="images/visual_txt.png" alt="비주얼 이미지">
+            </div><!-- visual_area -->
+
+            <!-- 팝업1 :S -->
+            <div class="cmmDayPopWrap tp5 fnDayPopWrap" data-fn-style='{"style": {"position":"absolute","left" :"0%" , "top": "5%"}, "start": "202105201700", "end" : "302111010850"}'>
+                <div class="dimm fnDayPopCloseBtn"></div>
+                <div class="cmmDayPopIn">
+                    <div class="cmmDayCont">
+                        <div class="renwOpenIsgPop">
+                            <a href="https://mgjmoel.career.co.kr/board/notice_list.asp" target=""><img src="images/pop_img.png" alt="" style="width:400px; vertical-align:top;"> </a>
+                            <a href="https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp" target="_blank"><img src="images/ssafy_img.jpg" alt="" style="width:400px; vertical-align:top;"> </a>
+                            <a href="https://mforyouth.career.co.kr/" target="_blank"><img src="images/foryouth.jpg" alt="" style="width:400px; vertical-align:top;"> </a>
+                            <button class="btsms fnDayPopCloseBtn">창 닫기</button>
+                        </div>
+                    </div>
+                    <div class="topBws">
+                        <div class="cmmInput tp99 radiochk">
+                            <label>
+                                <input type="checkbox" value="checkbox" class="fnDayPopCheckbox" style="background:url(../images/icon/chkbox.png)no-repeat" />
+                                <span class="lb">오늘 하루 열지않기</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 팝업1 :E -->
+
+            <!-- 팝업2 :S -->
+            <!--<div class="cmmDayPopWrap tp6 fnDayPopWrap" data-fn-style='{"style": {"position":"absolute","left" :"0%" , "top": "6%"}, "start": "202105201700", "end" : "302111010850"}'>
+					<div class="dimm fnDayPopCloseBtn"></div>
+					<div class="cmmDayPopIn">
+						<div class="cmmDayCont">
+							<div class="renwOpenIsgPop">
+									<a href="https://mforyouth.career.co.kr/" target=""><img src="images/foryouth.jpg" alt="" style="width:400px;"> </a>
+								<button class="btsms fnDayPopCloseBtn">창 닫기</button>
+							</div>
+						</div>
+						<div class="topBws">
+							<div class="cmmInput tp99 radiochk">
+								<label>
+									<input type="checkbox" class="fnDayPopCheckbox iphone" value="checkbox" style="background:url(../images/icon/chkbox.png)no-repeat" />
+									<span class="lb">오늘 하루 열지않기</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>-->
+            <!-- 팝업2 :E -->
+
+            <!-- 개회사 -->
+            <!--<div class="txt" style="margin-top:20px">
+				<div class="video_area">
+					<video oncontextmenu="return false;" id="myVideo" poster="../images/Defense_Minister.jpg" width="" controls="" style="width:100%;">
+					  <source src="../images/info_videos1_1.mp4" type="video/mp4">
+					</video>
+				</div>
+				<p style="font-family: 'Noto Serif KR', serif; text-align:center; font-size:1.2rem; font-weight:bold; padding-top:0.2rem;">
+					대한민국 국방부장관 서욱 개회사<br><br />
+				</p>
+
+			</div>-->
+
+            <!--채용공고-->
+            <!--include virtual = "/inc/main_jobs_online.asp"-->
+
+            <div class="calc_area2">
+                <div class="ca_smart_grid">
+                    <div class="cmm_tit">워크넷과 함께하는<br />&nbsp;온라인 채용박람회!</div>
+                    <!--<div class="cmm_stit">고용노동부가 인증한 광주권의 우수기업을 한 자리에!<br />
+					입사지원부터 화상면접까지 모두 워크넷에서 참여해보세요! </div>-->
+                    <div style="text-align:center;">
+                        <a href="https://www.work.go.kr/empInfo/onlineEmpExhb/retrieveOnlineEmpExhbDetail.do?eventMegaRegionCd=55&writeNo=41552" target="_parent" style="display:block;width:100%;height:100%; margin-top:4rem;">
+                            <img src="images/cont1_obj.png" alt="워크넷" style="vertical-align:top;"></a>
+                    </div>
+                </div>
+                <!--ca_smart_grid -->
+            </div>
+
+            <section>
+                <div class="detail_search_top tp2 MT50">
+                    <div class="inner">
+                        <div class="colBxArea">
+                            <div class="colBxInner">
+                                <a href="/jobs/list.asp?jobs_gubun=2" class="colbx tp2">
+                                    <span class="ico"></span>
+                                    <div class="tx">채용공고</div>
+                                </a>
+                                <a href="/consulting/list.asp" class="colbx tp5">
+                                    <span class="ico tp2"></span>
+                                    <div class="tx">컨설팅·특강</div>
+                                </a>
+                                <a href="/board/list.asp?gubun=4" class="colbx tp12">
+                                    <span class="ico"></span>
+                                    <div class="tx">취업자료실</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="employ_area">
+                <div class="cmm_tit">구직자 지원 프로그램</div>
+                <div class="cmm_stit">
+                    온라인으로 진행되는<br>다양한 취업지원 프로그램에 참여해보세요!
+                </div>
+                <ul class="emp_lst">
+                    <!--취업특강-->
+                    <li class="tp tp1">
+                        <div class="inner">
+                            <div class="txts">
+                                <div class="tit">구직자 컨설팅</div>
+                                <div class="stit">
+                                    자기소개서, 면접, 진로 등<br>
+                                    전문 컨설턴트에게 컨설팅을<br />
+                                    받을 수 있습니다.
+                                </div>
+                            </div>
+                            <div class="btnsWrap">
+                                <!--<a href="/consulting/mentoring_list.asp" class="btns md blue bold">자세히 보기</a>-->
+                                <div class="tp"><a href="/consulting/list.asp" class="btns md blue bold">컨설팅 신청하기</a></div>
+                                <!--<div class="tp"><a href="#;" class="btns md blue bold">모의면접 신청</a></div>-->
+                            </div>
+                            <!-- <img src="/images/employ_img_ren01.png" alt="AI면접AI 모의 면접을 화상으로받을 수 있습니다.AI면접 신청하기"> -->
+                        </div>
+                    </li>
+
+                    <li class="tp tp4">
+                        <div class="inner">
+                            <div class="txts">
+                                <div class="tit">구직자 특강</div>
+                                <div class="stit">구직자를 위한 유익한 <br>
+                                    특강들을 놓치지 마세요!<br />
+                                </div>
+                            </div>
+                            <div class="btnsWrap">
+                                <!-- 								<a href="javascript:alert('현재 PC에서만 신청 가능합니다.');"  onClick="location.href='https://moti.career.co.kr/lecture/task_list.asp'" class="btns md blue bold">직무설명회 신청하기</a> -->
+                                <a href="/lecture/list.asp" class="btns md blue bold">특강 신청하기</a>
+                            </div>
+                            <!--<div class="btnsWrap col2">-->
+                            <!--<a href="/consulting/mentoring_list.asp" class="btns md blue bold">자세히 보기</a>-->
+                            <!--<div class="tp"><a href="/consulting/mentoring_list.asp" class="btns md blue bold">멘토링 신청하기</a></div>
+								<div class="tp"><a href="https://mmoti.career.co.kr/consulting/mentoring_list.asp?gubun=Y" class="btns md blue bold">모의면접 신청</a></div>
+							</div>-->
+                            <!-- <img src="/images/employ_img_ren01.png" alt="AI면접AI 모의 면접을 화상으로받을 수 있습니다.AI면접 신청하기"> -->
+                        </div>
+                    </li>
+
+                    <li class="tp tp2">
+                        <div class="inner">
+                            <div class="txts">
+                                <div class="tit">기업지원 컨설팅</div>
+                                <div class="stit">구인기업의 고민을 들어드립니다!<br />
+                                    공인노무사의 컨설팅을 받을 수 있습니다.
+                                </div>
+                            </div>
+                            <div class="btnsWrap">
+                                <div class="tp"><a href="/consulting/list_biz.asp" class="btns md blue bold">컨설팅 신청하기</a></div>
+                                <!--<div class="tp"><a href="#;" class="btns md blue bold">자소서 컨설팅</a></div>
+								<div class="tp"><a href="#;" class="btns md blue bold">면접 컨설팅</a></div>-->
+                            </div>
+                            <!-- <img src="/images/employ_img_ren01.png" alt="AI면접AI 모의 면접을 화상으로받을 수 있습니다.AI면접 신청하기"> -->
+                        </div>
+                    </li>
+
+
+                </ul>
+                <dl class="apply MT30">
+                    <dt></dt>
+                    <dd>
+                        <div class="cmmLst indent indent80">
+                            <div class="cmmtp FONT20" style="text-indent:0;">
+                                <!--<strong class="INDENT0 INLINE_BLOCK MINWIDTH080">Step1.</strong>-->2021 광주권 온라인 채용박람회 참가자들에게만 드리는 혜택, </div>
+                            <div class="cmmtp FONT20" style="text-indent:0;">
+                                <!--<strong class="INDENT0 INLINE_BLOCK MINWIDTH080">Step2.</strong>--> AI역량검사 무료제공 지금 바로 신청하세요.
+                                <br>
+                                <div style="font-size:14px; color:yellow; padding-top:1rem;">(※ 선착순 마감으로 쿠폰이 조기 소진될 수 있습니다.)</div>
+                            </div>
+
+                        </div>
+                    </dd>
+                    <a href="/educe/guid.asp" class="rbtn">
+                        <span class="in">
+                            AI역량검사 확인하기
+                        </span>
+                    </a>
+                </dl>
+            </div><!-- employ_area -->
+
+            <!-- 청년장병 일자리 지원 배너-->
+            <!--<div style="text-align:center;background:#ddeff1;">
+				<a href="https://mmoti.career.co.kr/board/supportjob.asp" target="_parent" style="display:block;width:100%;height:100%;">
+					<img src="../images/main_img5.jpg" alt="전역예정장병" width="320" height="43" border="0"></a>
+			</div>-->
+            <!-- 청년장병 일자리 지원 배너 end-->
+
+
+            <!-- 한국직업방송 영상:S -->
+            <!--#include virtual = "/inc/main_jobclass.asp"-->
+            <!-- 한국직업방송 영상:E -->
+
+
+            <div class="calc_area">
+
+                <!--<div class="ca_smart_calc">
+					<div class="cmm_tit">스마트 계산기</div>
+					<div class="cmm_stit underline">이력서 작성에 도움이 되는 모든 기능이 있습니다.</div>-->
+                <!--<div class="clc_gr">
+                        <div class="tp"><a href="<%=g_partner_wk%>/my/cat/cat_info.asp" class="img"><img src="/images/main_clc_grd001.png" alt="" /></a></div>
+												<div class="tp"><a href="/educe/login.asp" class="img"><img src="/images/main_clc_grd002.png" alt="" /></a></div>
+                    </div>-->
+                <!--<div class="comp_scalc_wrap">
+						<div class="comp_scalc_inner">
+							<div class="lst fnNotSlickSliderStatic">
+
+								<div class="tp tp1 active">
+									<a href="#;" class="txt">
+										<span class="ico"></span>
+										연봉 계산기
+									</a>
+								</div>
+
+								<div class="tp tp2">
+									<a href="/tools/points_converter.asp" class="txt">
+										<span class="ico"></span>
+										학점 계산기
+									</a>
+								</div>
+
+								<div class="tp tp3">
+									<a href="/tools/english_converter.asp" class="txt">
+										<span class="ico"></span>
+										어학점수 변환
+									</a>
+								</div>
+
+								<div class="tp tp4">
+									<a href="/tools/letters_counter.asp" class="txt">
+										<span class="ico"></span>
+										글자 수 세기
+									</a>
+								</div>
+
+								<div class="tp tp5">
+									<a href="/tools/career_calculator.asp" class="txt">
+										<span class="ico"></span>
+										경력 계산기
+									</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>-->
+
+
+                <!--공지사항-->
+
+
+<div class="ft_notice">
+	<div class="ft_notice_inner">
+		<div class="ftn_tp">
+			<span class="tit">공지사항</span>
+			<a href="/board/notice_list.asp" class="ftn_btn">MORE</a>
+		</div>
+		<div class="ftn_ct">
+			<ul class="lst">
+
+				
+				<li class="tp">
+					<a href="/board/notice_list.asp?seq=330" class="txt">11월 24일 채용설명회 안내<span class="dt">2021-11-11</span></a>
+				</li>
+				
+				<li class="tp">
+					<a href="/board/notice_list.asp?seq=329" class="txt">[면접지원금] 4회차 행사 참가 기업 안내 (업데이트 : 21.11.16.)<span class="dt">2021-11-11</span></a>
+				</li>
+				
+				<li class="tp">
+					<a href="/board/notice_list.asp?seq=328" class="txt">11월, 12월 랜선취업버스 일정 안내 (최종업데이트:21.11.16.)<span class="dt">2021-11-09</span></a>
+				</li>
+				
+				<li class="tp">
+					<a href="/board/notice_list.asp?seq=326" class="txt">지난 회차 박람회 참가기업 정보보기<span class="dt">2021-11-09</span></a>
+				</li>
+				
+				<li class="tp">
+					<a href="/board/notice_list.asp?seq=325" class="txt">[3회차 행사] 이벤트 당첨자 안내<span class="dt">2021-11-04</span></a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div><!-- ft_notice -->
+
+
+                <!--이벤트-->
+<div class="ft_notice">
+	<div class="ft_notice_inner">
+		<div class="ftn_tp">
+			<span class="tit">이벤트</span>
+			<a href="/board/list.asp" class="ftn_btn">MORE</a>
+		</div>
+		<div class="ftn_ct fnSlickSlider" data-params='{"dots":true}'>
+			
+			<div class="ban">
+				<a href="/board/view.asp?gubun=5&seq=<%=rs_event_idx%>" class="img">
+					
+					<img src="images/2021102921000406174.jpg" alt=""/>
+				</a>
+				<a href="/board/view.asp?gubun=5&seq=<%=rs_event_idx%>" class="txts">
+					<div class="tit">이벤트 참여안내</div>
+					<!--<div class="stit">본문</div>-->
+					<div class="date">
+						2021-11-08(월) <span>00:00</span>부터<br>
+						2021-11-18(목) <span>21:00</span>까지
+					</div>
+				</a>
+			</div>
+			
+			<div class="ban">
+				<a href="/board/view.asp?gubun=5&seq=<%=rs_event_idx%>" class="img">
+					
+					<img src="images/2021102921000406174.jpg" alt=""/>
+				</a>
+				<a href="/board/view.asp?gubun=5&seq=<%=rs_event_idx%>" class="txts">
+					<div class="tit">이벤트 참여안내</div>
+					<!--<div class="stit">본문</div>-->
+					<div class="date">
+						<span>2021-11-09</span>&nbsp;&nbsp;부터<br>
+						<span>2021-11-18</span>&nbsp;&nbsp;까지
+					</div>
+				</a>
+			</div>
+			<div cl
+			
+			<div class="NO_RESULT">게시글이 없습니다.</div>
+		</div>
+	</div>
+</div><!-- ft_notice -->
+
+
+                <!--FAQ-->
+                <!--include virtual = "/inc/main_faq.asp"-->
+
+
+            </div><!-- calc_area -->
+
+        </div>
+        <!--contents -->
+
+    </div>
+    <!-- //container -->
+
+
+    <!-- 하단 -->
+
+<div id="footer">
+	<div class="footer_area">
+		<div class="footer_box">
+			<img src="images/safe_img.png" alt="공공데이터 청년인턴 온라인 채용박람회 공식 홈페이지는 [취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.Copyrightsⓒ 취업포털 커리어. All rights reserved.">
+			<p>
+				2021 광주권 온라인 채용박람회 공식 홈페이지는
+				[취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.
+				Copyrights&copy; 취업포털 커리어. All rights reserved.
+			</p>
+		</div><!-- .util-area -->
+	</div><!-- .inner-wrap -->
+</div>
+<!-- //하단 -->
+
+<!-- 모바일용 유입자 추적 스크립트 삽입 [2021-02-05] -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-188996915-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-188996915-6');
+</script>
+
+    <!-- //하단 -->
+</body>
+
+</html>

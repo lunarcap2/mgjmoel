@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+        <meta name="keywords" content="<%=site_name%>" />
+        <meta name="description" content="<%=site_name%>" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="author" content="커리어" />
+        <meta name="Copyright" content="희망을 전하는 취업 포털 커리어" />
+        <title>2021 광주권 온라인 채용박람회</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="2021 광주권 온라인 채용박람회" />
+        <meta property="og:description" content="2021 광주권 온라인 채용박람회, 취업지원, 채용정보, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보">
+        <meta property="og:image" content="http://gjmoel.career.co.kr/images/property_img.jpg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="210" />
+        <meta property="og:url" content="https://mgjmoel.career.co.kr/" />
+        <meta property="og:site_name" content="2021 광주권 온라인 채용박람회" />
+
+        <!-- publishUpdateDt 변수 선언 파일 위치 → /common/constant.asp -->
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/slick.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css?<%=publishUpdateDt%>1" />
+        <link rel="stylesheet" type="text/css" href="../css/main.css?<%=publishUpdateDt%>3" />
+        <link rel="stylesheet" type="text/css" href="../css/tools.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/sub.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/popup.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/swiper.min.css?<%=publishUpdateDt%>" />
+
+        <link rel="stylesheet" type="text/css" href="../css/mm_resume.css" />
+
+        <script type="text/javascript" src="../js/jquery-1.12.4.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/jquery-ui.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/placeholders.jquery.min.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/ui.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/ui.plugin.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/customTags.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/slick.min.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/swiper.min.js?<%=publishUpdateDt%>"></script>
+
+        <script type="text/javascript" src="../js/comm_2009.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/validateCommon.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/function_2020.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/code.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/common2.js?<%=publishUpdateDt%>"></script>
+
+        <script type="text/javascript" src="../js/mm_resume.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(this).customTags();
+            });
+
+        </script>
+
+
+        <script>
+            window.digFunArry = [];
+            window.SERVER_TODAY = serverToday();
+            $(document).ready(function() {
+                var $this = $(this);
+                $this.find('.fnDayPopWrap').each(function(idx) {
+                    var params = $(this).data('fnStyle');
+                    digFunArry.push(new MainDigCusFun(this, idx, params).init());
+                });
+            });
+
+        </script>
+
+    </head>
+
+<body>
+
+    <!-- 상단 -->
+
+    <!-- Skipnavi -->
+    <div id="skipnavi">
+        <a href="#header-id">상단 바로가기</a>
+        <a href="#contents-id">본문 바로가기</a>
+        <a href="#footer-id">하단 바로가기</a>
+    </div>
+    <!-- // Skipnavi -->
+
+
+    <!-- header -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="logo">
+                <h1><a href="../default.html"><img src="../images/logo.png" alt="로고"></a></h1>
+            </div>
+            <div class="header_menu">
+                <ul>
+                    <li class="sch">
+                        <a href="/jobs/list_search.asp">검색</a>
+                    </li>
+
+                    <!--
+				<li class="login m_menu">
+					<a href="#none" <% If wk_user_photo <> "" Then %>class="isLogin" style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>>로그인</a>
+				</li>
+				-->
+                    <li class="login m_menu">
+                        <a href="#none">로그인</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- mobile menu -->
+        <div id="menu-overlay"></div>
+
+        <div id="m-nav">
+            <div class="topline">
+                <div class="login_box">
+                    <div class="img">
+                        <!--<span <% If wk_user_photo <> "" Then %> style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>></span>-->
+                        <span></span>
+                    </div>
+
+                    <div class="login_info">
+
+                        <div class="txts">
+                            <p class="name"><span>박정완</span>님</p>
+                        </div>
+
+                        <div class="l_btnsWrap auto">
+                            <!--<span class="txt">개인회원으로 로그인 해주세요</span>-->
+                        </div>
+
+                    </div>
+                </div>
+
+                <button type="button" class="btn logout" onclick="location.href='/logout.asp'">로그아웃</button>
+
+                <button type="button" class="btn login" onclick="location.href='/my/login.asp';">로그인</button>
+
+
+                <button type="button" id="close-toggle" class="btn close">닫기</button>
+            </div>
+            <div id="m-gnb">
+                <ul>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/consulting_list.asp" class="menu">
+                                <span>구직자 컨설팅</span>
+                                <div class="tsm">구직자 컨설팅 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/lecture_list.asp" class="menu">
+                                <span>구직자 특강</span>
+                                <div class="tsm">구직자 특강 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_area">
+                <ul>
+                    <li><a href="../board/notice_list.html">공지사항</a></li>
+                    <li><a href="../board/qna.html">자주묻는 질문</a></li>
+                </ul>
+            </div>
+            <!--mobile_nave end-->
+
+            <script type="text/javascript">
+                // menu icon states, opening main nav
+                $('.m_menu').click(function() {
+                    $(this).toggleClass('open');
+                    $('#m-nav,#menu-toggle,#page-content,#menu-overlay').toggleClass('open');
+                    $('#m-nav ul li,.submenu-toggle').removeClass('open');
+                });
+
+                // clicking on overlay closes menu
+                $('#menu-overlay,#close-toggle').mousedown(function() {
+                    $('*').removeClass('open');
+                });
+                // GNB
+                var menu, menuLi, menuLink;
+                menu = $("#m-gnb");
+                menuLi = $("#m-gnb > ul > li");
+                menuLink = $("#m-gnb > ul > li > .depth1 > a.menu");
+                menuLink.on("click", function() {
+                    if ($(this).parents("li").hasClass("on")) {
+                        $(this).parents("li:has(ul)").children("ul").slideUp(250);
+                        $(this).parents("li:has(ul)").removeClass("on");
+                    } else {
+                        menuLi.not($(this).parents("li")).children("ul").slideUp(250);
+                        menuLi.not($(this).parents("li")).removeClass("on");
+                        $(this).parents("li:has(ul)").children("ul").slideDown(250);
+                        $(this).parents("li:has(ul)").addClass("on");
+                    }
+                    return false;
+                });
+
+            </script>
+        </div>
+        <!-- mobile menu -->
+
+        <div class="gnb">
+            <div class="inner fnNotSlickSliderStatic" data-scroll-spacing="3rem">
+
+                <div class='tp tp1 <% If InStr(Request.ServerVariables("url"), "/board/info.asp") > 0 Then %>'>
+                    <a href="../board/info.html"><span>박람회 안내</span></a>
+                </div>
+
+                <div class='tp tp3 <% If InStr(Request.ServerVariables("url"), "/jobs") > 0 Then %>  <% End If %>'>
+                    <a href="../jobs/list.html"><span>채용공고</span></a>
+                </div>
+                <div class='tp tp4 <%If InStr(Request.ServerVariables("url"), "/lecture/") or InStr(Request.ServerVariables("url"), "/consulting") > 0 or InStr(Request.ServerVariables("url"), "/educe") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>컨설팅ㆍ특강</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class='tp'><a href="schedule.html">전체 일정표</a></li>
+                                <li class='tp'><a href="../consulting/list.html">구직자 컨설팅</a></li>
+                                <li><a href="../lecture/list.html">구직자 특강</a></li>
+                                <li class='tp'><a href="../educe/guid.html">AI역량검사</a></li>
+                                <li><a href="../consulting/list_biz.html">기업 컨설팅</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='tp tp5 <%If  InStr(Request.ServerVariables("url"), "/salary") or InStr(Request.ServerVariables("url"), "/tools") or InStr(Request.ServerVariables("url"), "/board/list.asp") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>취업자료실</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="../tools/salary_calculator.html">스마트 계산기</a></li>
+                                <li><a href="../board/list2.html">카드뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='tp tp6 <%If InStr(Request.ServerVariables("url"), "/board/notice_list") or InStr(Request.ServerVariables("url"), "/board/jobclass_list") Then %> <% End If %>'>
+                    <a href="#"><span>공지사항</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="../board/notice_list.html">공지사항</a></li>
+                                <li class="tp"><a href="../board/qna.html">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                $(document).ready(function() {
+                    $('#header .gnb>.inner>.tp>a').click(function() {
+                        var $this = $(this);
+                        var menu = $this.closest('.tp').find('.depth_gnb .menu');
+                        $('#header .gnb .tp').removeClass('active');
+                        if (menu.length) {
+                            $('.gnb').addClass('open');
+                            $this.closest('.tp').addClass('active');
+                        } else {
+                            //$('.gnb').removeClass('open');
+                        }
+                    });
+                });
+
+            </script>
+        </div>
+
+
+    </div>
+    <!-- //header -->
+
+    <!-- //상단 -->
+
+<style>
+    .td_tcbr{text-align: center;}
+</style>
+<!-- container -->
+<div id="contents" class="sub_page">
+	<div class="contents">
+		<div class="visual_area lecture">
+			<h2>전체 일정표</h2>
+		</div><!-- visual_area -->
+
+		<div class="consul_area">
+			<div class="consul_moth" style="display:block; margin-top: 30px;">
+				<dl class="what">
+					<dt>전체 일정표</dt>
+					<dd>
+						구직자와 기업 모두 원하는 컨설팅과 특강을 받아볼 수 있어요!<br />
+						모든 컨설팅과 특강은 온라인 화상으로 진행됩니다 :)
+					</dd>
+				</dl>
+				<dl class="what" style="border-bottom: none; margin-top: 20px;">
+					<!--<dt>취업컨설팅 운영 시간</dt>-->
+					<dd>
+						<div class="board_area">
+							<table class="tb">
+								<colgroup>
+								</colgroup>
+								<thead>
+									<tr>
+										<th style="border-bottom: 1px solid #d6d6d6; border-right: 1px solid #d6d6d6;">월</th>
+										<th style="border-bottom: 1px solid #d6d6d6; border-right: 1px solid #d6d6d6;">화</th>
+										<th style="border-bottom: 1px solid #d6d6d6; border-right: 1px solid #d6d6d6;">수</th>
+										<th style="border-bottom: 1px solid #d6d6d6; border-right: 1px solid #d6d6d6;">목</th>
+										<th style="border-bottom: 1px solid #d6d6d6;">금</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="td_tcbr td_fwb">11월 1일</td>
+										<td class="td_tcbr td_fwb">11월 2일</td>
+										<td class="td_tcbr td_fwb">11월 3일</td>
+										<td class="td_tcbr td_fwb">11월 4일</td>
+										<td style="text-align: center; font-weight:700;">11월 5일</td>
+									</tr>
+
+									<tr>
+										<td class="td_tcbr"></td>
+										<td class="td_tcbr td_fcor" style="background:#9cc6f9">기업지원<br />컨설팅<br /><button onclick="fn_consul_area('4');">바로가기</button></td>
+										<td class="td_tcbr td_fcor" style="background:#ffd686">구직자<br />특강<br /><button onclick="fn_consul_area('2');">바로가기</button></td>
+										<td class="td_tcbr td_fcor" style="background:#9cc6f9">기업지원<br />컨설팅<br /><button onclick="fn_consul_area('4');">바로가기</button></td>
+										<td></td>
+									</tr>
+
+									<tr>
+										<td class="td_tcbr td_fcor" colspan="5" style="border-bottom:3px double #33c1a9; background:#fffbd1">구직자 컨설팅 / 구직자 AI역량검사<br /><button onclick="fn_consul_area('1');">바로가기</button></td>
+									</tr>
+
+									<tr>
+										<td class="td_tcbr td_fwb">11월 8일</td>
+										<td class="td_tcbr td_fwb">11월 9일</td>
+										<td class="td_tcbr td_fwb">11월 10일</td>
+										<td class="td_tcbr td_fwb">11월 11일</td>
+										<td style="text-align: center; font-weight:700;">11월 12일</td>
+									</tr>
+
+									<tr>
+										<td class="td5"></td>
+										<td class="td5 td_fcor" colspan="3" style="background:#ffd686; text-align:center;">구직자 특강<br>- 선배와의 대화(김대중컨벤션센터, ㈜광주글로벌모터스), CEO특강(㈜옵토네스트)<br /><button onclick="fn_consul_area('2');">바로가기</button></td>
+										<td class="td5"></td>
+									</tr>
+
+									<tr>
+										<td class="td_tcbr"></td>
+										<td class="td_tcbr td_fcor" style="background:#9cc6f9">기업지원<br />컨설팅<br /><button onclick="fn_consul_area('4');">바로가기</button></td>
+										<td class="td_tcbr td_fcor"></td>
+										<td class="td_tcbr td_fcor" style="background:#9cc6f9">기업지원<br />컨설팅<br /><button onclick="fn_consul_area('4');">바로가기</button></td>
+										<td></td>
+									</tr>
+
+									<tr>
+										<td class="td_tcbr td_fcor" colspan="5" style="border-bottom:3px double #33c1a9; background:#fffbd1">구직자 컨설팅 / 구직자 AI역량검사<br /><button onclick="fn_consul_area('1');">바로가기</button></td>
+									</tr>
+
+									<tr>
+										<td class="td_tcbr td_fwb">11월 15일</td>
+										<td class="td_tcbr td_fwb">11월 16일</td>
+										<td class="td_tcbr td_fwb">11월 17일</td>
+										<td class="td_tcbr td_fwb">11월 18일</td>
+										<td style="text-align: center; font-weight:700;">11월 19일</td>
+									</tr>
+
+									<tr>
+										<td class="td_tcbr"></td>
+										<td class="td_tcbr td_fcor" style="background:#9cc6f9">기업지원<br />컨설팅<br /><button onclick="fn_consul_area('4');">바로가기</button></td>
+										<td class="td_tcbr td_fcor" style="background:#ffd686">구직자<br />특강<br>- 선배와의 대화(㈜한국전력)<br /><button onclick="fn_consul_area('2');">바로가기</button></td>
+										<td class="td_tcbr td_fcor" style="background:#9cc6f9">기업지원<br />컨설팅<br /><button onclick="fn_consul_area('4');">바로가기</button></td>
+										<td></td>
+									</tr>
+
+									<tr>
+										<td class="td_tcbr td_fcor" colspan="5" style="border-bottom:3px double #33c1a9; background:#fffbd1">구직자 컨설팅 / 구직자 AI역량검사<br /><button onclick="fn_consul_area('1');">바로가기</button></td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</dd>
+				</dl>
+			</div>
+
+			<div class="innerWrap">
+				<div class="consul_caldt MT50">
+          <!--div class="xttit"><img src="/images/onlineConsulting_allCalendal_title2.png" style="width: 12.625rem;"  alt="" /></div>-->
+            <ul class="lst MT20 bc2">
+              <!-- foreach:S -->
+              <li class="tp LETTERSPACING45" style="background:#FFF5DA;">
+                <div class="xt_inner">
+                  <div class="txtt">구직자<br /> 컨설팅</div>
+                    <div class="txts">
+                      <div class="top">
+                        <div class="FONT22 colorBlack">"취업과 진로에 고민이 많으신가요? 입사지원서를 어떻게 쓸지 고민인가요? 함께 고민해드립니다!"</div>
+                          <div class="FONT18 colorGry MT05" style="color:gray;">※ 본인의 이력사항, 경력사항 등을 상세히 이야기 해주세요.</div>
+                      </div>
+                <div class="dte">
+                  <div class="FONT20 colorBlack">
+                    ㆍ기간 : <span class="colorPri">11월 1일(월)~11월 19일(금) / 토일 제외</span>
+                  </div>
+                  <div class="FONT20 colorBlack">
+                    ㆍ컨설팅 가능 시간 : <span class="colorRed" style="color:red;">10:00~17:00</span>
+                  </div>
+                  </div>
+                    </div>
+                </div>
+              </li>
+              <li class="tp LETTERSPACING45" style="background:#F8EDED;">
+                <div class="xt_inner">
+                  <div class="txtt">구직자<br /> 특강</div>
+                    <div class="txts">
+                      <div class="top">
+                          <div class="FONT22 colorBlack">“다양한 취업특강, 선배와의 대화, CEO 특강에 참여해보세요!”</div>
+                          <div class="FONT18 colorGry MT05">* 국민취업지원제도 알아보기 <br>
+							* 선배와의 대화 : 김대중컨벤션센터, (주)광주글로벌모터스, (주)한국전력 <br>
+							* CEO와의 대화 : (주)옵토네스트
+						  </div>
+                      </div>
+                      <div class="dte">
+                        <div class="FONT20 colorBlack">
+                          ㆍ기간 : <span class="colorPri">11월 1일(월)~11월 19일(금) 중 총 5회</span>
+                        </div>
+                        <div class="FONT20 colorBlack">
+                          ㆍ컨설팅 가능 시간 : <span class="colorRed" style="color:red;">각 일자별 상이</span>
+                        </div>
+                      </div>
+                      </div>
+                </div>
+              </li>
+
+							<li class="tp LETTERSPACING45" style="background:#F8F0DF;">
+                <div class="xt_inner">
+                  <div class="txtt">구직자<br /> AI역량검사</div>
+                    <div class="txts">
+                      <div class="top">
+                          <div class="FONT22 colorBlack">“에듀스의 inFACE 솔루션을 체험하고 AI채용솔루션에 대비해보세요!"</div>
+                          <!--<div class="FONT18 colorGry MT05">※ 상담받고 싶은 내용을 남겨주세요.</div>-->
+                      </div>
+                      <div class="dte">
+                        <div class="FONT20 colorBlack">
+                          ㆍ기간 : <span class="colorPri">11월 1일(월)~11월 19일(금)</span>
+                        </div>
+                        <div class="FONT20 colorBlack">
+                          ㆍ컨설팅 가능 시간 : <span class="colorRed" style="color:red;">쿠폰 등록 후 24시간 이내, 선착순 100명</span>
+                        </div>
+                      </div>
+                      </div>
+                </div>
+              </li>
+
+							<li class="tp LETTERSPACING45" style="background:#c4e9f1;">
+                <div class="xt_inner">
+                  <div class="txtt">기업지원<br /> 컨설팅</div>
+                    <div class="txts">
+                      <div class="top">
+                          <div class="FONT22 colorBlack">“코로나19로 인하여 어려움을 겪고 있는 광주지역 기업체를 위한 공인노무사의 화상 컨설팅을 지원합니다.!"</div>
+                          <!--<div class="FONT18 colorGry MT05">※ 상담받고 싶은 내용을 남겨주세요.</div>-->
+                      </div>
+                      <div class="dte">
+                        <div class="FONT20 colorBlack">
+                          ㆍ기간 : <span class="colorPri">11월 1일(월)~11월 19일(금) 중 매주 화, 목요일</span>
+                        </div>
+                        <div class="FONT20 colorBlack">
+                          ㆍ컨설팅 가능 시간 : <span class="colorRed" style="color:red;">15:00~17:00</span>
+                        </div>
+                      </div>
+                      </div>
+
+											<div class="txts">
+	                      <div class="top">
+	                          <div class="FONT22 colorBlack">“고용노동부에서 지원받을 수 있는 제도는 없을까? ‘고용안정지원금'의 모든 것을 물어보세요!”</div>
+	                          <!--<div class="FONT18 colorGry MT05">※ 상담받고 싶은 내용을 남겨주세요.</div>-->
+	                      </div>
+	                      <div class="dte">
+	                        <div class="FONT20 colorBlack">
+	                          ㆍ기간 : <span class="colorPri">11월 4일(목) 14:00 총 1회</span>
+	                        </div>
+	                        <div class="FONT20 colorBlack">
+	                          ㆍ대상 : <span class="colorBlack">고용안정지원금에 대해서 궁금한 구인기업 담당자</span>
+	                        </div>
+	                      </div>
+	                      </div>
+                </div>
+              </li>
+                <!-- foreach:E -->
+            </ul>
+          </div>
+				</div>
+	</div><!--contents -->
+
+</div>
+<!-- //container -->
+
+<!-- 하단 -->
+<div id="footer">
+	<div class="footer_area">
+		<div class="footer_box">
+			<img src="../images/safe_img.png" alt="공공데이터 청년인턴 온라인 채용박람회 공식 홈페이지는 [취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.Copyrightsⓒ 취업포털 커리어. All rights reserved.">
+			<p>
+				2021 광주권 온라인 채용박람회 공식 홈페이지는
+				[취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.
+				Copyrights&copy; 취업포털 커리어. All rights reserved.
+			</p>
+		</div><!-- .util-area -->
+	</div><!-- .inner-wrap -->
+</div>
+<!-- //하단 -->
+
+<!-- 강사 프로필 -->
+<div id="layer_pop18" class="layer_popup">
+	<div class="popup_dim"></div>
+	<div class="popup">
+		<div class="pop_wrap">
+			<div class="pop_head">
+				<h3>강사 프로필</h3>
+				<a href="javascript:void(0)" class="close">닫기</a>
+			</div>
+			<div class="pop_con">
+				<div class="porfile_area">
+					<p class="name">강사 : 이 건 </p>
+					<dl>
+						<dt>주요이력</dt>
+						<dd>
+							현) 더빅스쿨 멘토<br>
+							현) 서울시 일자리 카페 멘토<br>
+							전) 우리은행 기업금융 담당
+						</dd>
+						<dt>주요활동</dt>
+						<dd>
+							국무총리상 (고용노동정책제안)<br>
+							법제처장상 (개인정보법안)<br>
+							제경부장관상 (공정사회정책제안)<br>
+							청년희망재단 멘토<br>
+							한국직업방송 패널
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="layer_pop16" class="layer_popup">
+	<div class="popup_dim"></div>
+	<div class="popup">
+		<div class="pop_wrap">
+			<div class="pop_head">
+				<h3>강사 프로필</h3>
+				<a href="javascript:void(0)" class="close">닫기</a>
+			</div>
+			<div class="pop_con">
+				<div class="porfile_area">
+					<p class="name">강사 : 차재원</p>
+					<dl>
+						<dt>주요이력</dt>
+						<dd>
+							현) 트러스트원컨설팅 컨설턴트 (대학교육/공공기관 주관 청년교육)<br>
+							전) CJ ENM -  오쇼핑 부문 인사담당 / 매체사업팀 (2012.01~2017.02)<br>
+							전) 현대자동차 인도법인 판매기획팀
+						</dd>
+						<dt>주요활동</dt>
+						<dd>
+							서울시립대학교 경영대학원  MBA 석사 (인사조직 전공, 졸업. 2020.02)<br>
+							한국외국어대학교 글로벌 캠퍼스 인도학과 학사<br>
+							한국직업방송 JOB정보센터, 투데이 JOBS 출연<br>
+							서울경제 TV (이슈플러스) 출연
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="layer_pop17" class="layer_popup">
+	<div class="popup_dim"></div>
+	<div class="popup">
+		<div class="pop_wrap">
+			<div class="pop_head">
+				<h3>강사 프로필</h3>
+				<a href="javascript:void(0)" class="close">닫기</a>
+			</div>
+			<div class="pop_con">
+				<div class="porfile_area">
+					<p class="name">강사 : 조준범</p>
+					<dl>
+						<dt>주요이력</dt>
+						<dd>
+							현) 주식회사 이지팜 빅데이터 사업본부 본부장<br>
+							전) 주식회사 펀진 IoT 사업팀 팀장<br>
+							전) 주식회사 수산아이엔티 사업기획팀 팀장
+
+						</dd>
+						<dt>주요활동</dt>
+						<dd>
+							LG CNS | MI시스템 구축사업,  Elasticsearch를 이용한 IR고도화<br>
+							현대 오토에버 | GAPM ASP시스템 개편 프로젝트, Elasticsearch Developer컨설팅<br>
+							현대자동차그룹 | Elasticsearch Platinum 차세대 보안 이상징후 확대 (Renewal)<br>
+							삼성전자 | Elasticsearch Platinum 검색엔진 개편 (Renewal)<br>
+							한국인터넷진흥원 | 빅데이터 기반의 인공지능 영상정보분석 솔루션
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //강사 프로필 -->
+
+</body>
+</html>

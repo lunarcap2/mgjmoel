@@ -1,0 +1,196 @@
+<%
+option Explicit
+%>
+<!--#include virtual = "/common/common.asp"-->
+<!--#include virtual = "/include/header/header.asp"-->
+<!--#include virtual = "/wwwconf/function/db/DBConnection.asp"-->
+<%
+dim cur_point : cur_point = Request.Form("cur_point")
+dim point_type : point_type = Request.Form("point_type")
+Dim i
+%>
+<script type="text/javascript" src="/wwwconf/include/tools/js/points_array.js"></script>
+<script type="text/javascript" src="/wwwconf/include/tools/js/points_converter.js"></script>
+<script type="text/javascript">
+
+	$(document.body).ready(function() {
+		fn_load();
+
+		var hCur_point = $("#hdnCur_point");
+		var hPoint_type = $("#hdnPoint_type");
+		var pCur_point = $("#cur_point");
+		var pPoint_type = $("#point_type");
+
+		if (hCur_point.val() != "") {
+			pCur_point.val(hCur_point.val());
+		}
+
+		if (hPoint_type.val() != "") {
+			pPoint_type.val(hPoint_type.val());
+		}
+		if (hCur_point.val() != "" && hPoint_type.val() != "") {
+			fn_points_convert();
+		}
+	});
+
+</script>
+</head>
+<body>
+
+<!-- 상단 -->
+<!--#include virtual = "/include/gnb/topMenu.asp"-->
+
+
+
+<div id="contents" class="sub_page">
+	<div class="visual_area tools">
+		<h2>이력서 작성 스마트 계산기</h2>
+	</div>
+	<div class="contents">
+		<div class="con_box">
+			<div class="tab_box" style="padding-top:2rem;">
+				<a href="http://moel.go.kr/miniWageMain.do">
+					<p>
+						<img src="/images/m_wave.png" alt="최저임금 보러가기" style="width:100%;">
+
+				  </p>
+			</a>
+			</div><!-- .tab_box -->
+			<!--#include file = "./left_menu.asp"-->
+			<div class="tools-area tools-unit MT60">
+				<div class="innerWrap">
+
+
+					<div class="input">
+						<div class="tit">
+							<h4>현재학점</h4>
+						</div><!-- .tit -->
+						<filedset>
+							<table class="tb tools_tbl">
+								<caption>학점 계산 테이블</caption>
+								<colgroup>
+									<col style="width:150px;" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>평균 학점</th>
+										<td>
+											<div class="row tools-unit_row">
+												<div class="col6">
+													<input class="txt value" id="cur_point" name="cur_point" type="text" default="학점을 입력해주세요." onkeyup="return fn_chk_numeric_point(this);" maxlength="4" />
+													<div class="txts">
+														<span class="txt">점</span>
+														<em class="slash">/</em>
+													</div>
+												</div>
+												<div class="col6">
+													<span class="selectbox">
+														<span>4.0</span>
+														<select id="point_type">
+															<option value="4.0" ptype="A">4.0</option>
+															<option value="4.3" ptype="B">4.3</option>
+															<option value="4.5" ptype="C" selected>4.5</option>
+															<option value="5.0" ptype="">5.0</option>
+															<option value="6.0" ptype="">6.0</option>
+															<option value="7.0" ptype="">7.0</option>
+															<option value="100" ptype="D">100</option>
+														</select>
+													</span>
+													<div class="txts">
+														<span class="txt">기준</span>
+													</div>
+												</div>
+											</div>
+
+										</td>
+									</tr>
+								<tbody>
+							</table>
+
+							<div class="btnWrap col2">
+								<div class="tp"><a class="btns blue bold" href="javascript:void(0);" onclick="fn_points_convert();"><strong>학점 변환하기</strong></a></div>
+							</div>
+						</filedset>
+					</div><!-- .input -->
+
+					<div class="convert MT80">
+						<div class="tit noline">
+							<h4>결과</h4>
+						</div><!-- .tit -->
+
+						<div>
+							<table class="tb tools_tbl">
+								<caption>학점 계산 테이블</caption>
+								<colgroup>
+									<col style="width:150px;" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>4.0만점</th>
+										<td>
+											<input class="txt" id="result_pointA" ppoint="4.0" name="result_pointA" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+									<tr>
+										<th>4.3만점</th>
+										<td>
+											<input class="txt" id="result_pointB" ppoint="4.3" name="result_pointB" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+									<tr>
+										<th>4.5만점</th>
+										<td>
+											<input class="txt" id="result_pointC" ppoint="4.5" name="result_pointC" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+									<tr>
+										<th>5.0만점</th>
+										<td>
+											<input class="txt" id="result_pointE" ppoint="5.0" name="result_pointE" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+									<tr>
+										<th>6.0만점</th>
+										<td>
+											<input class="txt" id="result_pointA" ppoint="6.0" name="result_pointG" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+									<tr>
+										<th>7.0만점</th>
+										<td>
+											<input class="txt" id="result_pointF" ppoint="7.0" name="result_pointF" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+									<tr>
+										<th>100점 만점</th>
+										<td>
+											<input class="txt" id="result_pointD" ppoint="100" name="result_pointD" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+								<tbody>
+							</table>
+						</div>
+					</div><!-- .convert -->
+				</div><!-- .inner -->
+			</div><!-- .tools-unit -->
+		</div>
+	</div><!-- .content -->
+</div><!-- #contents -->
+
+<input type="hidden" id="hdnCur_point" name="hdnCur_point" value="<%=cur_point %>" />
+<input type="hidden" id="hdnPoint_type" name="hdnPoint_type" value="<%=point_type %>" />
+
+<!-- 하단 -->
+<!--#include virtual = "/include/footer.asp"-->
+
+</body>
+</html>

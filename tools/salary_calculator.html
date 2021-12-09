@@ -1,0 +1,685 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+        <meta name="keywords" content="2021 광주권 온라인 채용박람회" />
+        <meta name="description" content="2021 광주권 온라인 채용박람회" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="author" content="커리어" />
+        <meta name="Copyright" content="희망을 전하는 취업 포털 커리어" />
+        <title>2021 광주권 온라인 채용박람회</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="2021 광주권 온라인 채용박람회" />
+        <meta property="og:description" content="2021 광주권 온라인 채용박람회, 취업지원, 채용정보, 라이브 취업특강, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보">
+        <meta property="og:image" content="http://moti.career.co.kr/images/property_img.jpg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="210" />
+        <meta property="og:url" content="https://moti.career.co.kr/" />
+        <meta property="og:site_name" content="2021 전역예정장병 온라인 취업박람회" />
+
+        <!-- publishUpdateDt 변수 선언 파일 위치 → /common/constant.asp -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css?202111041400" />
+        <link rel="stylesheet" type="text/css" href="../css/slick.css?202111041400" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css?2021110414001" />
+        <link rel="stylesheet" type="text/css" href="../css/main.css?2021110414003" />
+        <link rel="stylesheet" type="text/css" href="../css/tools.css?202111041400" />
+        <link rel="stylesheet" type="text/css" href="../css/sub.css?202111041400" />
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css?202111041400" />
+        <link rel="stylesheet" type="text/css" href="../css/popup.css?202111041400" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css?202111041400" />
+        <link rel="stylesheet" type="text/css" href="../css/swiper.min.css?202111041400" />
+
+        <link rel="stylesheet" type="text/css" href="../css/mm_resume.css" />
+
+        <script type="text/javascript" src="../js/jquery-1.12.4.js?202111041400"></script>
+        <script type="text/javascript" src="../js/jquery-ui.js?202111041400"></script>
+        <script type="text/javascript" src="../js/placeholders.jquery.min.js?202111041400"></script>
+        <script type="text/javascript" src="../js/ui.js?202111041400"></script>
+        <script type="text/javascript" src="../js/ui.plugin.js?202111041400"></script>
+        <script type="text/javascript" src="../js/customTags.js?202111041400"></script>
+        <script type="text/javascript" src="../js/slick.min.js?202111041400"></script>
+        <script type="text/javascript" src="../js/swiper.min.js?202111041400"></script>
+
+        <script type="text/javascript" src="../js/comm_2009.js?202111041400"></script>
+        <script type="text/javascript" src="../js/validateCommon.js?202111041400"></script>
+        <script type="text/javascript" src="../js/function_2020.js?202111041400"></script>
+        <script type="text/javascript" src="../js/code.js?202111041400"></script>
+        <script type="text/javascript" src="../js/common2.js?202111041400"></script>
+
+        <script type="text/javascript" src="../js/mm_resume.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(this).customTags();
+            });
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="../css/tools_2019.css" />
+        <script type="text/javascript" src="../js/tools.js"></script>
+
+
+        <script type="text/javascript" src="../js/salary_calculator.js"></script>
+        <script type="text/javascript">
+            $(document.body).ready(function() {
+                fn_load();
+                fn_toggle_input('#tax_free', false);
+                fn_chk_dependency();
+
+                $("input[name=salary_type]").bind("click", function() {
+                    if ($(this).val() == "annual") {
+                        $("#tr_retiring").show().children().show();
+                        $("#tr_retiring span").show().children().show();
+                        $("#tr_retiring2").hide().children().hide();
+                        $("#salary_type_text").text("연봉입력");
+                    } else {
+                        $("#tr_retiring").hide().children().hide();
+                        $("#tr_retiring span").hide().children().hide();
+                        $("#tr_retiring2").show().children().show();
+                        $("#salary_type_text").text("월급입력");
+                    }
+                });
+
+                var hSalary_type = $("#hdnSalary_type");
+                var hDependency = $("#hdnDependency");
+                var hUnderage_children = $("#hdnUnderage_children");
+                var hIncome_salary = $("#hdnIncome_salary");
+                //var hInDi = $("#hdnDi");
+
+                var oSalary_type = $("#salary_type");
+                var oDependency = $("#dependency");
+                var oUnderage_children = $("#underage_children");
+                var oIncome_salary = $("#income_salary");
+                //var oDi = $("#di");
+
+                if (hSalary_type.val() != "") {
+                    $("input[name=salary_type]").filter('input[value=' + hSalary_type.val() + ']').attr("checked", "checked");
+                }
+
+                if (hDependency.val() != "") {
+                    //alert(hDependency.val());
+                    if (hDependency.val() == "0") {
+                        hDependency.val("1")
+                    }
+                    oDependency.val(hDependency.val());
+                    fn_chk_dependency(document.getElementById("dependency"));
+                    fn_set_commval(document.getElementById("dependency"));
+                }
+
+                if (hUnderage_children.val() != "") {
+                    $("input[name=underage_children]").filter('input[value=' + hUnderage_children.val() + ']').attr("checked", "checked");
+                }
+
+                if (hIncome_salary.val() != "") {
+                    oIncome_salary.val(hIncome_salary.val());
+                }
+
+                if (hSalary_type.val() != "" && hIncome_salary.val() != "") {
+                    fn_calculate();
+                }
+            });
+        </script>
+    </head>
+
+<body>
+
+    <!-- 상단 -->
+
+    <!-- Skipnavi -->
+    <div id="skipnavi">
+        <a href="#header-id">상단 바로가기</a>
+        <a href="#contents-id">본문 바로가기</a>
+        <a href="#footer-id">하단 바로가기</a>
+    </div>
+    <!-- // Skipnavi -->
+
+
+    <!-- header -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="logo">
+                <h1><a href="../default.html"><img src="../images/logo.png" alt="로고"></a></h1>
+            </div>
+            <div class="header_menu">
+                <ul>
+                    <li class="sch">
+                        <a href="/jobs/list_search.asp">검색</a>
+                    </li>
+
+                    <!--
+				<li class="login m_menu">
+					<a href="#none" class="isLogin" style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/202108/lunarcap2.jpg);">로그인</a>
+				</li>
+				-->
+                    <li class="login m_menu">
+                        <a href="#none">로그인</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- mobile menu -->
+        <div id="menu-overlay"></div>
+
+        <div id="m-nav">
+            <div class="topline">
+                <div class="login_box">
+                    <div class="img">
+                        <!--<span <% If wk_user_photo <> "" Then %> style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>></span>-->
+                        <span></span>
+                    </div>
+
+                    <div class="login_info">
+
+                        <div class="txts">
+                            <p class="name"><span>박정완</span>님</p>
+                        </div>
+
+                        <div class="l_btnsWrap auto">
+                            <!--<span class="txt">개인회원으로 로그인 해주세요</span>-->
+                        </div>
+
+                    </div>
+                </div>
+
+                <button type="button" class="btn logout" onclick="location.href='/logout.asp'">로그아웃</button>
+
+                <button type="button" class="btn login" onclick="location.href='/my/login.asp';">로그인</button>
+
+
+                <button type="button" id="close-toggle" class="btn close">닫기</button>
+            </div>
+            <div id="m-gnb">
+                <ul>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/consulting_list.asp" class="menu">
+                                <span>구직자 컨설팅</span>
+                                <div class="tsm">구직자 컨설팅 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/lecture_list.asp" class="menu">
+                                <span>구직자 특강</span>
+                                <div class="tsm">구직자 특강 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_area">
+                <ul>
+                    <li><a href="../board/notice_list.html">공지사항</a></li>
+                    <li><a href="../board/qna.html">자주묻는 질문</a></li>
+                </ul>
+            </div>
+            <!--mobile_nave end-->
+
+            <script type="text/javascript">
+                // menu icon states, opening main nav
+                $('.m_menu').click(function() {
+                    $(this).toggleClass('open');
+                    $('#m-nav,#menu-toggle,#page-content,#menu-overlay').toggleClass('open');
+                    $('#m-nav ul li,.submenu-toggle').removeClass('open');
+                });
+
+                // clicking on overlay closes menu
+                $('#menu-overlay,#close-toggle').mousedown(function() {
+                    $('*').removeClass('open');
+                });
+                // GNB
+                var menu, menuLi, menuLink;
+                menu = $("#m-gnb");
+                menuLi = $("#m-gnb > ul > li");
+                menuLink = $("#m-gnb > ul > li > .depth1 > a.menu");
+                menuLink.on("click", function() {
+                    if ($(this).parents("li").hasClass("on")) {
+                        $(this).parents("li:has(ul)").children("ul").slideUp(250);
+                        $(this).parents("li:has(ul)").removeClass("on");
+                    } else {
+                        menuLi.not($(this).parents("li")).children("ul").slideUp(250);
+                        menuLi.not($(this).parents("li")).removeClass("on");
+                        $(this).parents("li:has(ul)").children("ul").slideDown(250);
+                        $(this).parents("li:has(ul)").addClass("on");
+                    }
+                    return false;
+                });
+
+            </script>
+        </div>
+        <!-- mobile menu -->
+
+        <div class="gnb">
+            <div class="inner fnNotSlickSliderStatic" data-scroll-spacing="3rem">
+
+                <div class='tp tp1 <% If InStr(Request.ServerVariables("url"), "/board/info.asp") > 0 Then %>'>
+                    <a href="../board/info.html"><span>박람회 안내</span></a>
+                </div>
+
+                <div class='tp tp3 <% If InStr(Request.ServerVariables("url"), "/jobs") > 0 Then %>  <% End If %>'>
+                    <a href="../jobs/list.html"><span>채용공고</span></a>
+                </div>
+                <div class='tp tp4 <%If InStr(Request.ServerVariables("url"), "/lecture/") or InStr(Request.ServerVariables("url"), "/consulting") > 0 or InStr(Request.ServerVariables("url"), "/educe") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>컨설팅ㆍ특강</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class='tp'><a href="../consulting/schedule.html">전체 일정표</a></li>
+                                <li class='tp'><a href="../consulting/list.html">구직자 컨설팅</a></li>
+                                <li><a href="../lecture/list.html">구직자 특강</a></li>
+                                <li class='tp'><a href="../educe/guid.html">AI역량검사</a></li>
+                                <li><a href="../consulting/list_biz.html">기업 컨설팅</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='tp tp5 <%If  InStr(Request.ServerVariables("url"), "/salary") or InStr(Request.ServerVariables("url"), "/tools") or InStr(Request.ServerVariables("url"), "/board/list.asp") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>취업자료실</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="../tools/salary_calculator.html">스마트 계산기</a></li>
+                                <li><a href="../board/list2.html">카드뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='tp tp6 <%If InStr(Request.ServerVariables("url"), "/board/notice_list") or InStr(Request.ServerVariables("url"), "/board/jobclass_list") Then %> <% End If %>'>
+                    <a href="#"><span>공지사항</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="../board/notice_list.html">공지사항</a></li>
+                                <li class="tp"><a href="../board/qna.html">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $('#header .gnb>.inner>.tp>a').click(function() {
+                        var $this = $(this);
+                        var menu = $this.closest('.tp').find('.depth_gnb .menu');
+                        $('#header .gnb .tp').removeClass('active');
+                        if (menu.length) {
+                            $('.gnb').addClass('open');
+                            $this.closest('.tp').addClass('active');
+                        } else {
+                            //$('.gnb').removeClass('open');
+                        }
+                    });
+                });
+
+            </script>
+        </div>
+
+            <script>
+                $(document).ready(function() {
+                    $('#header .gnb>.inner>.tp>a').click(function() {
+                        var $this = $(this);
+                        var menu = $this.closest('.tp').find('.depth_gnb .menu');
+                        $('#header .gnb .tp').removeClass('active');
+                        if (menu.length) {
+                            $('.gnb').addClass('open');
+                            $this.closest('.tp').addClass('active');
+                        } else {
+                            //$('.gnb').removeClass('open');
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+
+    </div>
+    <!-- //header -->
+
+
+
+
+
+    <div id="contents" class="sub_page">
+        <div class="visual_area tools">
+            <h2>이력서 작성 스마트 계산기</h2>
+        </div>
+        <div class="contents">
+            <div class="con_box">
+                <div class="tool_area">
+                    <!-- <ul class="tool_ul">
+		<li class="on">
+			<a href="./salary_calculator.asp">연봉계산기</a>
+		</li>
+		<li >
+			<a href="./points_converter.asp">학점 계산기</a>
+		</li>
+		<li >
+			<a href="./english_converter.asp">어학점수 변환</a>
+		</li>
+		<li >
+			<a href="./letters_counter.asp">글자 수 세기</a>
+		</li>
+		<li >
+			<a href="./career_calculator.asp">경력 계산기</a>
+		</li>
+	</ul> -->
+
+
+                    <div class="tab_box" style="padding-top:2rem;">
+                        <a href="http://moel.go.kr/miniWageMain.do">
+                            <p>
+                                <img src="../images/m_wave.png" alt="최저임금 보러가기" style="width:100%;">
+
+                            </p>
+                        </a>
+                    </div><!-- .tab_box -->
+
+
+
+                    <span class="selectbox tool" style="display:none;">
+                        <span class="">연봉 계산기</span>
+                        <select onchange="location.href=this.value">
+                            <option value="./salary_calculator.asp" selected="">연봉 계산기</option>
+                            <option value="./points_converter.asp">학점 계산기</option>
+                            <option value="./english_converter.asp">어학점수 변환</option>
+                            <option value="./career_calculator.asp">경력 계산기</option>
+                            <option value="./graduated_discharge.asp">졸업/전역연도 계산기</option>
+                            <option value="./severance_pay.asp">퇴직금 계산기</option>
+                            <option value="./unemployment_pay.asp">실업급여 계산기</option>
+                            <option value="./vacation_calculations.asp">연차/휴가 계산기</option>
+                            <option value="./letters_counter.asp">글자 수 세기</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div class="tools-area tools-pay MT60">
+                    <div class="innerWrap">
+                        <div class="input">
+                            <div class="tit">
+                                <h4>희망(현재) 연봉 입력</h4>
+                            </div><!-- .tit -->
+                            <fieldset>
+                                <dl class="d1">
+                                    <dt>
+                                        연봉/급여 선택
+                                    </dt>
+                                    <dd>
+                                        <label class="radiobox on"><input class="rdi" id="annual_salary" name="salary_type" value="annual" type="radio" checked="checked" onclick="$('')"><span>연봉</span></label>
+                                        <label class="radiobox off"><input class="rdi" id="monthly_salary" name="salary_type" value="monthly" type="radio"><span>급여</span></label>
+                                    </dd>
+                                </dl>
+                                <dl class="d2">
+                                    <dt>
+                                        퇴직금
+                                    </dt>
+
+                                    <dd id="tr_retiring" style="display: table-cell;">
+                                        <label class="radiobox on" style="display: inline-block;"><input class="rdi" id="rg01" name="retiring_type" type="radio" checked="checked"><span style="display: inline;">별도</span></label>
+                                        <label class="radiobox off" style="display: inline-block;"><input class="rdi" id="rg02" name="retiring_type" type="radio"><span style="display: inline;">포함</span></label>
+                                    </dd>
+
+                                </dl>
+                                <dl class="d3">
+                                    <dt>
+                                        비과세액
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    급여액 중 세금을 공제하지 않는 금액을 말합니다. 커리어 연봉 계산기는 기본으로 식대 10만원이<br>
+                                                    설정되어있으며, 비과세액을 정확히 알고 계신 경우, 직접 입력이 가능합니다.<br>
+                                                    <br>
+                                                    비과세되는 식사대, 출산.보육수당, 실비변상적인 급여, 국외근로소득, 생산직근로자 등의 야근근로수당,<br>
+                                                    외국인 근로자에 대한 과세특례, 기타 비과세 되는 소득등이 이에 해당합니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="tax_free" name="tax_free" type="text" value="100,000" onkeyup="fn_set_commval(this);return fn_chk_numeric_Salary(this);" disabled="disabled">
+                                        <strong class="txt">원</strong>
+                                        <label class="checkbox off"><input class="chk" type="checkbox" id="di" name="di" onclick="fn_toggle_input('#tax_free',this.checked);"><span>직접입력</span></label>
+                                    </dd>
+                                </dl>
+                                <dl class="d4">
+                                    <dt>
+                                        부양가족수
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    공제 대상자(본인포함)에 해당하는 부양하는 가족의 수를 1이상 입력합니다.<br>
+                                                    단, 연간 소득금액이 100만원을 초과하는 경우에는 해당되지 않습니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="dependency" name="dependency" type="text" value="1" onkeyup="fn_chk_numeric_Salary(this);fn_set_commval(this);fn_chk_dependency();">
+                                        <strong class="txt">명</strong>
+                                        <span class="txt">(본인포함)</span>
+                                    </dd>
+                                </dl>
+                                <dl class="d5">
+                                    <dt>
+                                        20세이하자녀수
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    기본공제 대상자에 해당하는 20세 이하의 자녀수를 선택하시면 됩니다.<br>
+                                                    단, 20세 이하의 자녀이더라도 연간 소득금액이 100만원을 초과하는 경우에는 해당되지 않습니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="underage_children" name="underage_children" type="text" value="0" onkeyup="fn_chk_numeric_Salary(this);">
+                                        <strong class="txt">명</strong>
+                                    </dd>
+                                </dl>
+                                <dl class="d6">
+                                    <dt id="salary_type_text">연봉입력</dt>
+                                    <dd>
+                                        <input class="txt" id="income_salary" name="income_salary" type="text" onkeyup="fn_set_commval(this);fn_disp_korean(this,'korean_num');">
+                                        <strong class="txt">원</strong>
+                                    </dd>
+                                </dl>
+                                <ul class="btnWrap col2 ">
+                                    <li class="tp first"><a href="javascript:void(0);" class="btns blue bold" onclick="fn_calculate();">계산하기</a></li>
+                                    <li class="tp last"><a href="javascript:void(0);" class="btns outline black bold" onclick="fn_reset();">재 계산하기<span class="ico reload ML05"></span></a></li>
+                                </ul><!-- .button -->
+
+                                <div class="total">
+                                    <p>
+                                        <strong class="s1">예상 실 수령액(월) 합계</strong>
+                                        <strong class="s2" id="expected_receipt">0</strong>
+                                        <strong class="s1">원 </strong>
+                                    </p>
+                                </div><!-- .total -->
+                            </fieldset>
+                        </div><!-- .input -->
+
+                        <div class="result MT95">
+                            <div class="tit">
+                                <h4>공제액</h4>
+                            </div><!-- .tit -->
+                            <fieldset>
+                                <dl class="d1">
+                                    <dt>
+                                        국민연금
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    국민연금은 사업주, 근로자 모두 4.5%를 공제합니다.<br>
+                                                    단, 비과세액이 있을 경우, 비과세액을 제외한 과세금액에서만 세액이 공제됩니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="national_pension" name="national_pension" type="text" disabled="disabled">
+                                        <strong class="txt">원</strong>
+                                    </dd>
+                                </dl>
+                                <dl class="d2">
+                                    <dt>
+                                        건강보험
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    건강보험료는 3.06% 공제합니다.<br>
+                                                    단, 비과세액이 있을 경우, 비과세액을 제외한 과세금액에서만 세액이 공제됩니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="health_insurance" name="health_insurance" type="text" disabled="disabled">
+                                        <strong class="txt">원</strong>
+                                    </dd>
+                                </dl>
+                                <dl class="d3">
+                                    <dt>
+                                        장기요양
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    장기요양보험은 건강보험 금액의 6.55%를 공제합니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="longterm_insurance" name="longterm_insurance" type="text" disabled="disabled">
+                                        <strong class="txt">원</strong>
+                                    </dd>
+                                </dl>
+                                <dl class="d4">
+                                    <dt>
+                                        고용보험
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    고용보험은 사업주 0.70%, 근로자 0.65%로 책정되어있으며, 월 급여액의 0.65%를 공제합니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="unemployment_insurance" name="unemployment_insurance" type="text" disabled="disabled">
+                                        <strong class="txt">원</strong>
+                                    </dd>
+                                </dl>
+                                <dl class="d5">
+                                    <dt>
+                                        소득세
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    부양가족수와 20세이하 자녀수에 따라,<br>
+                                                    국세청의 근로소득 간이세액표 자료를 기준으로 공제됩니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="income_tax" name="income_tax" type="text" disabled="disabled">
+                                        <strong class="txt">원</strong>
+                                    </dd>
+                                </dl>
+                                <dl class="d6">
+                                    <dt>
+                                        지방소득세
+                                        <span class="tip">
+                                            <strong class="icon">세부설명</strong>
+                                            <span class="txt">
+                                                <b>
+                                                    소득세의 10%를 공제합니다.
+                                                </b>
+                                            </span>
+                                        </span>
+                                    </dt>
+                                    <dd>
+                                        <input class="txt" id="inhabitants_tax" name="inhabitants_tax" type="text" disabled="disabled">
+                                        <strong class="txt">원</strong>
+                                    </dd>
+                                </dl>
+
+                                <div class="total">
+                                    <p>
+                                        <strong class="s1">공제액 합계</strong>
+                                        <input type="text" id="total_exemption" name="total_exemption" class="txt" placeholder="0" disabled="disabled">
+                                        <strong class="s1">원</strong>
+                                    </p>
+                                </div><!-- .total -->
+                            </fieldset>
+                            <div class="cmm_lst indent indent11 MT95">
+                                <div class="cmmtp"><span class="cmm_dots w3"></span>본 연봉계산기는 가장 범용적인 기준으로 만들었으나,연봉 지급 조건과 상황에 따라 약간의 오차가 발생할 수 있으니 참고용으로 활용하시기 바랍니다.</div>
+                                <div class="cmmtp"><span class="cmm_dots w3"></span>본 계산기는 모의계산 결과로 법적 효력이 없습니다.</div>
+                                <div class="cmmtp"><span class="cmm_dots w3"></span>실 수령액 산정 기준 : <a href="#" class="UNDERLINE colorBlue">국세청 간이세액표 보기</a></div>
+                            </div>
+                        </div><!-- .result -->
+
+
+                    </div><!-- .inner -->
+                </div><!-- .tools-pay -->
+            </div><!-- .con_box -->
+        </div> <!-- .content -->
+    </div>
+
+    <input type="hidden" id="hdnSalary_type" name="hdnSalary_type" value="" />
+    <input type="hidden" id="hdnDependency" name="hdnDependency" value="" />
+    <input type="hidden" id="hdnUnderage_children" name="hdnUnderage_children" value="" />
+    <input type="hidden" id="hdnIncome_salary" name="hdnIncome_salary" value="" />
+
+
+
+<!-- 하단 -->
+<div id="footer">
+	<div class="footer_area">
+		<div class="footer_box">
+			<img src="../images/safe_img.png" alt="공공데이터 청년인턴 온라인 채용박람회 공식 홈페이지는 [취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.Copyrightsⓒ 취업포털 커리어. All rights reserved.">
+			<p>
+				2021 광주권 온라인 채용박람회 공식 홈페이지는
+				[취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.
+				Copyrights&copy; 취업포털 커리어. All rights reserved.
+			</p>
+		</div><!-- .util-area -->
+	</div><!-- .inner-wrap -->
+</div>
+<!-- //하단 -->
+
+    <!-- 모바일용 유입자 추적 스크립트 삽입 [2021-02-05] -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X29JBY5323"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-X29JBY5323');
+    </script>
+
+
+</body></html>

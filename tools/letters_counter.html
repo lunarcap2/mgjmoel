@@ -1,0 +1,103 @@
+<%
+option Explicit
+%>
+
+<!--#include virtual = "/common/common.asp"-->
+<!--#include virtual = "/include/header/header.asp"-->
+<!--#include virtual = "/wwwconf/function/db/DBConnection.asp"-->
+
+<script type="text/javascript" src="/wwwconf/include/tools/js/letters_counter.js"></script>
+<script type="text/javascript">
+	$(document.body).ready(function() {
+		$_menu_num = "10";
+	});
+
+	//복사하기
+	function fn_con_copy() {
+		if($('#input_letters').val() == '') {
+			alert('복사할 내용이 없습니다.\n내용을 입력 후 이용해주시기 바랍니다.');
+			return;
+		}
+
+		$("#input_letters").select();
+		document.execCommand('copy');
+	}
+</script>
+</head>
+
+<body>
+
+<!-- 상단 -->
+<!--#include virtual = "/include/gnb/topMenu.asp"-->
+
+<div id="contents" class="sub_page">
+	<div class="visual_area tools">
+		<h2>이력서 작성 스마트 계산기</h2>
+	</div>
+	<div class="contents">
+		<div class="con_box">
+			<div class="tab_box" style="padding-top:2rem;">
+				<a href="http://moel.go.kr/miniWageMain.do">
+					<p>
+						<img src="/images/m_wave.png" alt="최저임금 보러가기" style="width:100%;">
+
+				  </p>
+			</a>
+			</div><!-- .tab_box -->
+			<!--#include file = "./left_menu.asp"-->
+
+			<div class="tools-area tools-calc MT60">
+				<div class="innerWrap">
+					<div class="input">
+						<div class="part">
+							<div class="tit">
+								<h4>글자수 체크</h4>
+							</div><!-- .tit -->
+							<fieldset>
+								<table class="tb tools_tbl">
+									<caption>학점 계산 테이블</caption>
+									<colgroup>
+										<col style="width:150px;" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>자기소개서</th>
+											<td>
+												<div class="text">
+													<input type="hidden" id="rid" />
+													<input type="hidden" id="seq" />
+													<textarea class="area vert" id="input_letters" onkeyup="fn_letters_count(this);" onkeypress="fn_letters_count(this);" default="텍스트 입력 부분입니다. 버튼 클릭후 아래와 같은 형식으로 바뀝니다."></textarea>
+												</div><!-- .text -->
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</fieldset>
+						</div>
+						<div class="byte">
+							<p>
+								<span class="blank_include">공백포함 : <strong class="s1">0</strong> 자 / <strong class="s1">0</strong> byte</span>
+								<!--<em>|</em>-->
+								<span class="blank_non">공백제외 : <strong class="s2">0</strong> 자 / <strong class="s2">0</strong> byte</span>
+							</p>
+						</div><!-- .byte -->
+						<div class="btnWrap col2">
+							<div class="tp"><a href="javascript:void(0);" class="btns blue" onclick="fn_con_copy();">복사하기</a></div>
+							<div class="tp"><a href="javascript:void(0);" class="btns outline black" onclick="fn_reset();">지우기</a></div>
+						</div>
+
+
+
+					</div>
+				</div><!-- .inner -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 하단 -->
+<!--#include virtual = "/include/footer.asp"-->
+
+</body>
+</html>

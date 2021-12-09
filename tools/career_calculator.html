@@ -1,0 +1,95 @@
+<%
+option Explicit
+%>
+<!--#include virtual = "/common/common.asp"-->
+<!--#include virtual = "/include/header/header.asp"-->
+<!--#include virtual = "/wwwconf/function/db/DBConnection.asp"-->
+<%
+
+%>
+<script type="text/javascript" src="/wwwconf/include/tools/js/career_calculator_renew_2016.js"></script>
+<script type="text/javascript">
+
+	$(document.body).ready(function() {
+		$_menu_num = "4";
+		fn_load();
+		fn_add_career();
+	});
+
+</script>
+</head>
+<body>
+
+<!-- 상단 -->
+<!--#include virtual = "/include/gnb/topMenu.asp"-->
+
+
+
+<div id="contents" class="sub_page">
+	<div class="visual_area tools">
+		<h2>이력서 작성 스마트 계산기</h2>
+	</div>
+	<div class="contents">
+		<div class="con_box">
+			<div class="tab_box" style="padding-top:2rem;">
+				<a href="http://moel.go.kr/miniWageMain.do">
+					<p>
+						<img src="/images/m_wave.png" alt="최저임금 보러가기" style="width:100%;">
+
+				  </p>
+			</a>
+			</div><!-- .tab_box -->
+			<!--#include file = "./left_menu.asp"-->
+			<div class="tools-area tools-calc MT60">
+				<div class="innerWrap">
+					<div class="input">
+						<div class="tit">
+							<h4>총 경력 계산</h4>
+						</div>
+						<table class="tb tools_tbl">
+							<caption>학점 계산 테이블</caption>
+							<colgroup>
+								<col style="width:100px;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>재직 기간</th>
+									<td>
+										<div class="group fnCustomUiGroupWrapping">
+										</div><!-- .group -->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="add_btn">
+							<a class="btn green" href="javascript:void(0);" onclick="fn_add_career();">경력추가</a>
+						</div>
+						<div class="btnWrap col2">
+							<div class="tp"><a href="javascript:void(0);" class="btns blue" onclick="fn_calculate();">변환하기</a></div>
+						</div>
+						<div class="total">
+							<%
+							dim username : username = user_name
+								if not g_LoginChk = 1 then
+									username = "회원"
+								end if
+							%>
+							<span>총 경력은</span>
+							<input class="txt value" id="result_year" name="result_year" type="text" disabled="disabled" value="" />
+							<span>년</span>
+							<input class="txt value" id="result_month" name="result_month" type="text" disabled="disabled" value="" />
+							<span>개월</span>
+						</div>
+					</div><!-- .total -->
+				</div><!-- .inner -->
+			</div><!-- .tools-calc -->
+		</div>
+	</div><!-- .content -->
+</div><!-- #contents -->
+
+<!-- 하단 -->
+<!--#include virtual = "/include/footer.asp"-->
+
+</body>
+</html>

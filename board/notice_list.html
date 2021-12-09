@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+        <meta name="keywords" content="<%=site_name%>" />
+        <meta name="description" content="<%=site_name%>" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="author" content="커리어" />
+        <meta name="Copyright" content="희망을 전하는 취업 포털 커리어" />
+        <title>2021 광주권 온라인 채용박람회</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="2021 광주권 온라인 채용박람회" />
+        <meta property="og:description" content="2021 광주권 온라인 채용박람회, 취업지원, 채용정보, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보">
+        <meta property="og:image" content="http://gjmoel.career.co.kr/images/property_img.jpg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="210" />
+        <meta property="og:url" content="https://mgjmoel.career.co.kr/" />
+        <meta property="og:site_name" content="2021 광주권 온라인 채용박람회" />
+
+        <!-- publishUpdateDt 변수 선언 파일 위치 → /common/constant.asp -->
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/slick.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css?<%=publishUpdateDt%>1" />
+        <link rel="stylesheet" type="text/css" href="../css/main.css?<%=publishUpdateDt%>3" />
+        <link rel="stylesheet" type="text/css" href="../css/tools.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/sub.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/mobile.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/popup.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css?<%=publishUpdateDt%>" />
+        <link rel="stylesheet" type="text/css" href="../css/swiper.min.css?<%=publishUpdateDt%>" />
+
+        <link rel="stylesheet" type="text/css" href="../css/mm_resume.css" />
+
+        <script type="text/javascript" src="../js/jquery-1.12.4.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/jquery-ui.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/placeholders.jquery.min.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/ui.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/ui.plugin.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/customTags.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/slick.min.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/swiper.min.js?<%=publishUpdateDt%>"></script>
+
+        <script type="text/javascript" src="../js/comm_2009.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/validateCommon.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/function_2020.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/code.js?<%=publishUpdateDt%>"></script>
+        <script type="text/javascript" src="../js/common2.js?<%=publishUpdateDt%>"></script>
+
+        <script type="text/javascript" src="../js/mm_resume.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(this).customTags();
+            });
+
+        </script>
+
+
+        <script>
+            window.digFunArry = [];
+            window.SERVER_TODAY = serverToday();
+            $(document).ready(function() {
+                var $this = $(this);
+                $this.find('.fnDayPopWrap').each(function(idx) {
+                    var params = $(this).data('fnStyle');
+                    digFunArry.push(new MainDigCusFun(this, idx, params).init());
+                });
+            });
+
+        </script>
+
+    </head>
+
+<body>
+
+    <!-- 상단 -->
+
+    <!-- Skipnavi -->
+    <div id="skipnavi">
+        <a href="#header-id">상단 바로가기</a>
+        <a href="#contents-id">본문 바로가기</a>
+        <a href="#footer-id">하단 바로가기</a>
+    </div>
+    <!-- // Skipnavi -->
+
+
+    <!-- header -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="logo">
+                <h1><a href="../default.html"><img src="../images/logo.png" alt="로고"></a></h1>
+            </div>
+            <div class="header_menu">
+                <ul>
+                    <li class="sch">
+                        <a href="/jobs/list_search.asp">검색</a>
+                    </li>
+
+                    <!--
+				<li class="login m_menu">
+					<a href="#none" <% If wk_user_photo <> "" Then %>class="isLogin" style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>>로그인</a>
+				</li>
+				-->
+                    <li class="login m_menu">
+                        <a href="#none">로그인</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- mobile menu -->
+        <div id="menu-overlay"></div>
+
+        <div id="m-nav">
+            <div class="topline">
+                <div class="login_box">
+                    <div class="img">
+                        <!--<span <% If wk_user_photo <> "" Then %> style="background-image: url(http://www2.career.co.kr/hdrive/fair/mypic/<%=wk_user_photo%>);"<% End If %>></span>-->
+                        <span></span>
+                    </div>
+
+                    <div class="login_info">
+
+                        <div class="txts">
+                            <p class="name"><span>박정완</span>님</p>
+                        </div>
+
+                        <div class="l_btnsWrap auto">
+                            <!--<span class="txt">개인회원으로 로그인 해주세요</span>-->
+                        </div>
+
+                    </div>
+                </div>
+
+                <button type="button" class="btn logout" onclick="location.href='/logout.asp'">로그아웃</button>
+
+                <button type="button" class="btn login" onclick="location.href='/my/login.asp';">로그인</button>
+
+
+                <button type="button" id="close-toggle" class="btn close">닫기</button>
+            </div>
+            <div id="m-gnb">
+                <ul>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/consulting_list.asp" class="menu">
+                                <span>구직자 컨설팅</span>
+                                <div class="tsm">구직자 컨설팅 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="depth1">
+                            <a href="/my/lecture_list.asp" class="menu">
+                                <span>구직자 특강</span>
+                                <div class="tsm">구직자 특강 현황</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_area">
+                <ul>
+                    <li><a href="../board/notice_list.html">공지사항</a></li>
+                    <li><a href="../board/qna.html">자주묻는 질문</a></li>
+                </ul>
+            </div>
+            <!--mobile_nave end-->
+
+            <script type="text/javascript">
+                // menu icon states, opening main nav
+                $('.m_menu').click(function() {
+                    $(this).toggleClass('open');
+                    $('#m-nav,#menu-toggle,#page-content,#menu-overlay').toggleClass('open');
+                    $('#m-nav ul li,.submenu-toggle').removeClass('open');
+                });
+
+                // clicking on overlay closes menu
+                $('#menu-overlay,#close-toggle').mousedown(function() {
+                    $('*').removeClass('open');
+                });
+                // GNB
+                var menu, menuLi, menuLink;
+                menu = $("#m-gnb");
+                menuLi = $("#m-gnb > ul > li");
+                menuLink = $("#m-gnb > ul > li > .depth1 > a.menu");
+                menuLink.on("click", function() {
+                    if ($(this).parents("li").hasClass("on")) {
+                        $(this).parents("li:has(ul)").children("ul").slideUp(250);
+                        $(this).parents("li:has(ul)").removeClass("on");
+                    } else {
+                        menuLi.not($(this).parents("li")).children("ul").slideUp(250);
+                        menuLi.not($(this).parents("li")).removeClass("on");
+                        $(this).parents("li:has(ul)").children("ul").slideDown(250);
+                        $(this).parents("li:has(ul)").addClass("on");
+                    }
+                    return false;
+                });
+
+            </script>
+        </div>
+        <!-- mobile menu -->
+
+        <div class="gnb">
+            <div class="inner fnNotSlickSliderStatic" data-scroll-spacing="3rem">
+
+                <div class='tp tp1 <% If InStr(Request.ServerVariables("url"), "/board/info.asp") > 0 Then %>'>
+                    <a href="../board/info.html"><span>박람회 안내</span></a>
+                </div>
+
+                <div class='tp tp3 <% If InStr(Request.ServerVariables("url"), "/jobs") > 0 Then %>  <% End If %>'>
+                    <a href="../jobs/list.html"><span>채용공고</span></a>
+                </div>
+                <div class='tp tp4 <%If InStr(Request.ServerVariables("url"), "/lecture/") or InStr(Request.ServerVariables("url"), "/consulting") > 0 or InStr(Request.ServerVariables("url"), "/educe") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>컨설팅ㆍ특강</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class='tp'><a href="../consulting/schedule.html">전체 일정표</a></li>
+                                <li class='tp'><a href="../consulting/list.html">구직자 컨설팅</a></li>
+                                <li><a href="../lecture/list.html">구직자 특강</a></li>
+                                <li class='tp'><a href="../educe/guid.html">AI역량검사</a></li>
+                                <li><a href="../consulting/list_biz.html">기업 컨설팅</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='tp tp5 <%If  InStr(Request.ServerVariables("url"), "/salary") or InStr(Request.ServerVariables("url"), "/tools") or InStr(Request.ServerVariables("url"), "/board/list.asp") > 0 Then %> <% End If %>'>
+                    <a href="#"><span>취업자료실</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="../tools/salary_calculator.html">스마트 계산기</a></li>
+                                <li><a href="../board/list2.html">카드뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='tp tp6 <%If InStr(Request.ServerVariables("url"), "/board/notice_list") or InStr(Request.ServerVariables("url"), "/board/jobclass_list") Then %> <% End If %>'>
+                    <a href="#"><span>공지사항</span></a>
+                    <div class="depth_gnb">
+                        <div class="menu">
+                            <ul class="depth2 fnNotSlickSliderStatic">
+                                <li class="tp"><a href="../board/notice_list.html">공지사항</a></li>
+                                <li class="tp"><a href="../board/qna.html">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $('#header .gnb>.inner>.tp>a').click(function() {
+                        var $this = $(this);
+                        var menu = $this.closest('.tp').find('.depth_gnb .menu');
+                        $('#header .gnb .tp').removeClass('active');
+                        if (menu.length) {
+                            $('.gnb').addClass('open');
+                            $this.closest('.tp').addClass('active');
+                        } else {
+                            //$('.gnb').removeClass('open');
+                        }
+                    });
+                });
+
+            </script>
+        </div>
+
+            <script>
+                $(document).ready(function() {
+                    $('#header .gnb>.inner>.tp>a').click(function() {
+                        var $this = $(this);
+                        var menu = $this.closest('.tp').find('.depth_gnb .menu');
+                        $('#header .gnb .tp').removeClass('active');
+                        if (menu.length) {
+                            $('.gnb').addClass('open');
+                            $this.closest('.tp').addClass('active');
+                        } else {
+                            //$('.gnb').removeClass('open');
+                        }
+                    });
+                });
+
+            </script>
+        </div>
+
+
+    </div>
+    <!-- //header -->
+
+<!-- container -->
+<div id="contents" class="sub_page">
+	<div class="contents qnaInfo">
+		<div class="visual_area notice">
+			<h2>공지사항</h2>
+		</div>
+
+		<div class="noticeList_new">
+		
+			<dl>
+				<dt ><span class="question"></span>11월 24일 채용설명회 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202111/2021111120335009410.png" style="height:987px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[면접지원금] 4회차 행사 참가 기업 안내 (업데이트 : 21.11.16.)</dt>
+				<dd><a href="https://moti.career.co.kr/jobs/list.asp?jobs_gubun=2"><img alt="" src="http://image.career.co.kr/ckeditor/202111/2021111618433606112.png" style="height:1222px; width:1000px" /></a>
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>11월, 12월 랜선취업버스 일정 안내 (최종업데이트:21.11.16.)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202111/2021111620054501663.png" style="height:900px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>지난 회차 박람회 참가기업 정보보기</dt>
+				<dd>-<img alt="" src="http://image.career.co.kr/ckeditor/202111/2021111000131909725.png" style="height:841px; width:900px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202111&fileName=2021111000134700425.xlsx&originName=2021 전역예정장병 취업박람회_전반기_2회차 행사_참가 기업_리스트_요약(1).xlsx">2021 전역예정장병 취업박람회_전반기_2회차 행사_참가 기업_리스트_요약(1).xlsx</a>
+				
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202111&fileName=2021111000134709597.xlsx&originName=2021 전역예정장병 취업박람회_3회차 행사_참가 기업_리스트_요약(공고)_210909_v.0.6(2).xlsx">2021 전역예정장병 취업박람회_3회차 행사_참가 기업_리스트_요약(공고)_210909_v.0.6(2).xlsx</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[3회차 행사] 이벤트 당첨자 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202111/2021110409295102631.jpg" style="height:4060px; width:901px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>4차 박람회 면접지원금 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202111/2021110410253609370.jpg" style="height:1697px; width:1200px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202110&fileName=2021103013523004171.pdf&originName=2021 전역예정장병 취업박람회_후반기행사(4회차)_면접지원금 신청 양식.pdf">2021 전역예정장병 취업박람회_후반기행사(4회차)_면접지원금 신청 양식.pdf</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>4회차 행사 취업특강/직무설명회 신청 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202110/2021102510131007901.png" style="height:1138px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>11월 행사 일정 안내 : 11월 24일~25일, 2일간</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202110/2021102109580609209.png" style="height:1138px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>채용상담 마감 안내</dt>
+				<dd><div style="text-align:center"><img alt="" src="http://image.career.co.kr/ckeditor/202109/2021092318062009367.jpg" style="height:673px; width:780px" /></div>
+
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>참가확인증 발급 안내</dt>
+				<dd><div style="text-align:center"><img alt="" src="http://image.career.co.kr/ckeditor/202109/2021091609383203127.jpg" style="height:1067px; width:800px" /></div>
+
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>사전 서류 컨설팅 및 면접 컨설팅 지원 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202109/2021091411164603102.png" style="height:1001px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>구직청원휴가 관련 안내</dt>
+				<dd><div style="text-align:center"><a href="https://moti.career.co.kr/board/notice_view.asp?seq=275&amp;gubun=1&amp;schKeyword=&amp;page=2"><img alt="" src="http://image.career.co.kr/ckeditor/202109/2021091014562807081.jpg" style="height:1134px; width:800px" /></a></div>
+
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>박람회 신규이벤트 참가 안내</dt>
+				<dd><div style="text-align:center"><a href="https://moti.career.co.kr/jobs/list.asp?jobs_gubun=2"><img alt="" src="http://image.career.co.kr/ckeditor/202109/2021090616570901402.jpg" style="height:830px; width:800px" /></a><a href="https://moti.career.co.kr/consulting/consult_list_mem.asp"><img alt="" src="http://image.career.co.kr/ckeditor/202109/2021090616580609363.jpg" style="height:272px; width:800px" /></a><br />
+<a href="https://moti.career.co.kr/lecture/job_list.asp"><img alt="" src="http://image.career.co.kr/ckeditor/202109/2021090616585102527.jpg" style="height:274px; width:800px" /></a><br />
+<a href="https://moti.career.co.kr/lecture/task_list.asp"><img alt="" src="http://image.career.co.kr/ckeditor/202109/2021090616594509350.jpg" style="height:228px; width:800px" /></a></div>
+
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[면접지원금] 3회차 행사 참가기업 리스트(다운로드 가능)</dt>
+				<dd><div style="text-align:center"><a href="https://moti.career.co.kr/board/notice_view.asp?seq=300&amp;gubun=1&amp;schKeyword=&amp;page=1"><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021082511355006325.png" style="height:1153px; width:800px" /></a></div>
+
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202109&fileName=2021090913264603996.xlsx&originName=2021 전역예정장병 취업박람회_3회차 행사_참가 기업_리스트_상세(공고)_210909_v.0.6.xlsx">2021 전역예정장병 취업박람회_3회차 행사_참가 기업_리스트_상세(공고)_210909_v.0.6.xlsx</a>
+				
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202109&fileName=2021090913264603167.xlsx&originName=2021 전역예정장병 취업박람회_3회차 행사_참가 기업_리스트_요약(공고)_210909_v.0.6.xlsx">2021 전역예정장병 취업박람회_3회차 행사_참가 기업_리스트_요약(공고)_210909_v.0.6.xlsx</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>사이트 활용 안내</dt>
+				<dd><div style="text-align:center"><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021082514315508011.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021082514321300360.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021082514325806372.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021082514331103039.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021082514332304760.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021082514333501339.jpg" style="height:1654px; width:1170px" /></div>
+
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>3회차 박람회 면접지원금 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202110/2021102217565703601.jpg" style="height:1273px; width:900px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202108&fileName=2021083011271704886.pdf&originName=2021 전역예정장병 취업박람회_후반기행사_면접지원금 신청 양식_210819(1).pdf">2021 전역예정장병 취업박람회_후반기행사_면접지원금 신청 양식_210819(1).pdf</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>박람회 참가자 개인정보 수정 안내 (PC/모바일)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021081917284608144.png" style="height:1395px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>박람회 참가자 개인정보 수정 1차 안내 (8/18 14시부터 예정)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021081720313404289.png" style="height:831px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>3회차 행사 부대행사 신청 오픈 일정 안내 (8/18 14시부터 신청)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021081720000407438.png" style="height:1461px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>후반기 행사 일정 안내(온라인 2회 운영)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021081719401706192.png" style="height:1258px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>우수 지원 부대 선정 결과 안내</dt>
+				<dd><div style="text-align:center"><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021081109054203029.png" style="height:1251px; width:800px" /></div>
+
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[2회차 행사] 4단계 이벤트 당첨자 인증샷</dt>
+				<dd><div style="text-align:center"><img alt="" src="http://image.career.co.kr/ckeditor/202108/2021080513504402251.png" style="height:1711px; width:800px" /></div>
+
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[2회차 행사] 4단계 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202107/2021072016404609235.png" style="height:1130px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[2회차 행사] 3단계 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202107/2021072016400909891.png" style="height:2138px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[2회차 행사] 2단계 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202107/2021072016394900755.png" style="height:2528px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[2회차 행사] 1단계 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202107/2021072016381303310.png" style="height:810px; width:800px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202107&fileName=2021072016385308282.xlsx&originName=2021 전역예정장병 취업박람회_2차 행사_1단계 이벤트 당첨자 리스트_210719.xlsx">2021 전역예정장병 취업박람회_2차 행사_1단계 이벤트 당첨자 리스트_210719.xlsx</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>참가확인증 발급 안내 </dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202106/2021061421252005928.png" style="height:1002px; width:900px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span><b>국군장병 면접지원금 지급 안내 (면접지원금 신청서 양식 다운로드 가능)</b></dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202106/2021061019581300958.jpg" style="height:1415px; width:1000px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202106&fileName=2021061019584703726.pdf&originName=2021 전역예정장병 취업박람회_면접지원금 신청서 양식(1).pdf">2021 전역예정장병 취업박람회_면접지원금 신청서 양식(1).pdf</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>화상취업컨설팅 추가 오픈 일정 안내 (6월 11일 금요일 예정)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202106/2021061002345501491.png" style="height:911px; width:946px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>화상컨설팅 추가 오픈 안내</dt>
+				<dd><a href="https://moti.career.co.kr/consulting/consult_list_mem.asp"><img alt="" src="http://image.career.co.kr/ckeditor/202106/2021060417273200013.jpg" style="height:1049px; width:800px" /></a>
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span><b>[면접지원금] 2회차 행사 참가기업 리스트(다운로드 가능)</b></dt>
+				<dd><a href="https://moti.career.co.kr/board/notice_view.asp?seq=274&amp;gubun=1&amp;schKeyword=&amp;page=1"><img alt="" src="http://image.career.co.kr/ckeditor/202106/2021060117531802100.jpg" style="height:1153px; width:800px" /></a>
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202106&fileName=2021061020102708310.xlsx&originName=2021 전역예정장병 취업박람회_전반기_2회차 행사_참가 기업_리스트_상세.xlsx">2021 전역예정장병 취업박람회_전반기_2회차 행사_참가 기업_리스트_상세.xlsx</a>
+				
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202106&fileName=2021061020102709344.xlsx&originName=2021 전역예정장병 취업박람회_전반기_2회차 행사_참가 기업_리스트_요약.xlsx">2021 전역예정장병 취업박람회_전반기_2회차 행사_참가 기업_리스트_요약.xlsx</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[1회차 행사] 우수 지원 부대 선정 결과 안내 </dt>
+				<dd><a href="https://moti.career.co.kr/board/notice_view.asp?seq=265&amp;gubun=1&amp;schKeyword=&amp;page=1"><img alt="" src="http://image.career.co.kr/ckeditor/202106/2021060111290205236.jpg" style="height:1265px; width:800px" /></a>
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[1회차 행사] 4단계 이벤트 당첨자 인증샷</dt>
+				<dd><a href="https://moti.career.co.kr/board/notice_view.asp?seq=265&amp;gubun=1&amp;schKeyword=&amp;page=1"><img alt="" src="http://image.career.co.kr/ckeditor/202106/2021060111210709588.jpg" style="height:1806px; width:800px" /></a>
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>사이트 활용 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021052710142204359.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021052710144100457.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021052710145307554.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021052710150407289.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021052710151208058.jpg" style="height:1654px; width:1170px" /><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021052710152101926.jpg" style="height:1654px; width:1170px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>박람회 부대행사 오픈 일정 안내</dt>
+				<dd><div style="text-align:center"><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021052214410208142.png" style="height:644px; width:568px" /></div>
+
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>2회차 박람회 참가신청 방법 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021051815295803101.jpg" style="height:1103px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[1회차 행사] 4단계 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021050718331500506.png" style="height:1298px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[1회차 행사] 3단계 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021050716050608204.png" style="height:1498px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[1회차 행사] 2단계 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021050716092002880.png" style="height:1418px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>[1회차 행사] 1단계 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021050715305705461.png" style="height:1087px; width:800px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202105&fileName=2021050722412503722.png&originName=[2021 전역예정장병 취업박람회] 1단계 이벤트 당첨자 리스트(2).png">[2021 전역예정장병 취업박람회] 1단계 이벤트 당첨자 리스트(2).png</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>KB굿잡 기업채용지원금 지급 안내(참가기업 대상)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202105/2021050714384407229.jpg" style="height:1091px; width:800px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202105&fileName=2021050711360300908.pdf&originName=2021 전반기 전역예정장병 온라인 취업박람회_KB굿잡_채용지원금 지급 안내문.pdf">2021 전반기 전역예정장병 온라인 취업박람회_KB굿잡_채용지원금 지급 안내문.pdf</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>국방전직교육원 "일학습병행"사업 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202103/2021033111445007907.png" style="height:1040px; width:800px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202103&fileName=2021033111450901413.pdf&originName=2021 국방전직교육원 일학습병행 안내 자료.pdf">2021 국방전직교육원 일학습병행 안내 자료.pdf</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>얼리버드 이벤트 당첨 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202103/2021033111320504282.png" style="height:1220px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>구직자 화상면접(화상컨설팅, 현직자 멘토링) 매뉴얼 다운로드 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202103/2021032919032300206.jpg" style="height:668px; width:800px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202103&fileName=2021032918585708062.pdf&originName=커리어_2021 전역예정장병 취업박람회_구직자 매뉴얼_210329.pdf">커리어_2021 전역예정장병 취업박람회_구직자 매뉴얼_210329.pdf</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>카드뉴스 오픈 일정 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202103/2021030216554301667.png" style="height:607px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>1회차 행사 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202103/2021032613183303608.jpg" style="height:1131px; width:800px" /><br />
+<img alt="" src="http://image.career.co.kr/ckeditor/202103/2021032514021503832.jpg" style="height:1132px; width:800px" /><br />
+<img alt="" src="http://image.career.co.kr/ckeditor/202103/2021032514022405068.jpg" style="height:1132px; width:800px" /><br />
+<img alt="" src="http://image.career.co.kr/ckeditor/202103/2021032613191106452.jpg" style="height:1132px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>채용공고 오픈 일정 안내</dt>
+				<dd><a href="https://moti.career.co.kr/jobSeeker/board_list.asp"><img alt="" src="http://image.career.co.kr/ckeditor/202103/2021030216550605410.png" style="height:690px; width:800px" /></a>
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>화상면접 사용안내 (안드로이드 브라우저 설정 안내)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202102/2021021709595101145.png" style="height:2710px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>화상면접 사용안내 (최소사양 및 화상면접 사용 브라우저)</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202102/2021021709581704820.png" style="height:1131px; width:800px" />
+					<a href="http://moti.career.co.kr/board/notice_file_download.asp?filePolder=202103&fileName=2021032919052705424.pdf&originName=커리어_2021 전역예정장병 취업박람회_구직자 매뉴얼_210329(2).pdf">커리어_2021 전역예정장병 취업박람회_구직자 매뉴얼_210329(2).pdf</a>
+				
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>장병(구직자) 참가 안내 "국방전직교육원" 가입 필수!</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202102/2021021709570303265.png" style="height:1689px; width:800px" />
+				</dd>
+			</dl>
+		
+			<dl>
+				<dt ><span class="question"></span>2021 전역예정장병 온라인 취업박람회 일정 안내</dt>
+				<dd><img alt="" src="http://image.career.co.kr/ckeditor/202102/2021021622072503568.png" style="height:1034px; width:800px" />
+				</dd>
+			</dl>
+		
+		</div>
+
+		<script>
+		(function ($) {
+			$(function () {
+				$('.noticeList_new > dl > dt').click(function(){
+					$('.noticeList_new > dl > dt').removeClass('active');
+					$(this).next().slideUp();
+					$(this).parent().siblings().children('dd').slideUp();
+					if(!$(this).next().is(":visible")){
+						$(this).next().slideDown();
+						$(this).addClass('active');
+					}
+				});
+
+				if('160' != '') {
+					$('#auto_click').trigger('click');
+
+					var offset = $('#auto_click').offset();
+					$('html, body').animate({scrollTop:offset.top},400);
+				}
+			});
+		})(jQuery);
+		</script>
+
+	</div>
+</div>
+<!-- //container -->
+
+<!-- 하단 -->
+<div id="footer">
+	<div class="footer_area">
+		<div class="footer_box">
+			<img src="../images/safe_img.png" alt="공공데이터 청년인턴 온라인 채용박람회 공식 홈페이지는 [취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.Copyrightsⓒ 취업포털 커리어. All rights reserved.">
+			<p>
+				2021 광주권 온라인 채용박람회 공식 홈페이지는
+				[취업포털 커리어]가 제작 및 유지보수를 담당하고 있습니다.
+				Copyrights&copy; 취업포털 커리어. All rights reserved.
+			</p>
+		</div><!-- .util-area -->
+	</div><!-- .inner-wrap -->
+</div>
+<!-- //하단 -->
+
+<!-- 모바일용 유입자 추적 스크립트 삽입 [2021-02-05] -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X29JBY5323"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X29JBY5323');
+</script>
+
+<!-- 하단 -->
+
+</body>
+</html>

@@ -1,0 +1,856 @@
+@charset "euc-kr";
+
+/* 2016-07-08 skydown@career.co.kr */
+.tools-wrap textarea.area {margin:0; padding:10px; background:none transparent no-repeat 0 0; border:1px solid #cfcfcf; color:#666;  font-size:14px; line-height:24px; resize:none;}
+.tools-wrap textarea.vert {resize:vertical;}
+.tools-wrap label,
+.tools-wrap label input {vertical-align:middle;}
+.tools-wrap label input {margin:0 5px 0 0;}
+.tools-wrap button.txt {height:30px; padding:0 17px; background-color:#19416e; border:1px solid #0c2847; border-radius:2px; color:#fff;  font-size:13px; letter-spacing:-1px; vertical-align:3px;line-height:1.23em;}
+.tools-wrap a.txt {display:inline-block; zoom:1; height:28px; line-height:28px; padding:0 15px; border:1px solid #b3b3b3; color:#666; font-size:13px; vertical-align:middle; letter-spacing:-1px;}
+.tools-wrap input.txt {height:26px; color:#666;  font-size:13px; line-height:28px;     text-indent: 10px;}
+.tools-wrap input.chk,t:10px; *text-indent:0; vertical-align:middle;}
+.tools-wrap input.rdi {width:14px; height:14px; border:1px solid #b3b3b3; color:#666; font-size:13px; vertical-align:middle;}
+
+.tools-wrap span.filebox {position:relative; display:inline-block; *display:inline; zoom:1; width:200px; height:31px; vertical-align:middle;}
+.tools-wrap span.filebox span {z-index:2; position:absolute; right:-1px; top:0; height:29px; padding:0 25px; background-color:#19416e; border:1px solid #0c2847; color:#fff; cursor:default; font-size:13px; font-weight:600; line-height:29px;}
+.tools-wrap span.filebox input.txt,
+.tools-wrap span.filebox input.file {position:absolute; left:0; top:0;}
+.tools-wrap span.filebox input.txt {z-index:1; width:100%; height:29px; margin:0 -1px; background-color:transparent; border-color:#b3b3b3; text-indent:10px; *text-indent:0;}
+.tools-wrap span.filebox input.file {z-index:3; width:100%; height:100%; margin:0; padding:0; opacity:0; filter:alpha(opacity=0);}
+
+/* 비활성 */
+.tools-wrap .disable {cursor:default; opacity:0.25; filter:alpha(opacity=25);}
+.tools-wrap .disable select {display:none;}
+.tools-wrap .disable input.txt.on {border-color:#bbb !important;}
+
+/*로그인박스*/
+.loginBox {padding:15px 0; background-color:#3a3a3a; border:1px solid #2f2f2f;}
+.loginBox p {text-align:center; font-size:15px; color:#fff;}
+.loginBox p strong {color:#fcff00;}
+.loginBox p a {padding:3px 12px 4px; margin-left:13px; background-color:#fff; border:1px solid #111;  font-size:12px; font-weight:bold; color:#3a3a3a;}
+.loginBox + .search-datail {margin:20px 0 0;}
+
+/* icon */
+.icon {display:inline-block; zoom:1; margin-top:2px; background:none no-repeat 0 0; vertical-align:middle;}
+.icon em, em.icon{font-size:0; .text-indent:-999em;}
+.icon.i-middle {width:53px; height:20px; background:url(http://image.career.co.kr/career_new4/search/icon_middle.gif) no-repeat 0 0}
+.icon.i-kangso {width:53px; height:20px; background:url(http://image.career.co.kr/career_new4/search/icon_kangso.gif) no-repeat 0 0}
+.icon.i-kosdaq {width:41px; height:20px; background:url(http://image.career.co.kr/career_new4/search/icon_kosdaq.gif) no-repeat 0 0}
+.icon.i-kospi {width:41px; height:20px; background:url(http://image.career.co.kr/career_new4/search/icon_kospi.gif) no-repeat 0 0}
+.icon.i-gong {width:53px; height:20px; background:url(http://image.career.co.kr/career_new4/search/icon_gong.gif) no-repeat 0 0}
+.icon.i-bigcomp {width:43px; height:20px; background:url(http://image.career.co.kr/career_new4/search/icon_bigcomp.gif) no-repeat 0 0}
+.icon.i-hdchamp {width:63px; height:20px; background:url(http://image.career.co.kr/career_new4/search/icon_hdchamp.gif) no-repeat 0 0}
+.icon.i-finance {width:43px; height:20px; background:url(http://image.career.co.kr/career_new4/search/icon_finance.gif) no-repeat 0 0}
+.icon.i-selfintro {height:18px; padding:0 6px; border:1px solid #d2c4af; font-size:11px; color:#a88758; text-align:center; line-height:16px;}
+
+/* 본문영역 */
+#contents .con_box .tools-area .tit {padding:0 0 15px;margin:0 0 15px;border-bottom:1px solid #e1e1e1;}
+#contents .con_box .tools-area .tit h3 {font-size:36px;font-weight:bold;color:#333;text-align:center;}
+.tools-area .inner {zoom:1; padding:0; background-color:#fff;}
+.tools-area .inner:after {content:""; display:block; clear:both;}
+.tools-area .tit {padding-bottom:15px; border-bottom:1px solid #464646; line-height:1;}
+.tools-area .tit.noline {border-bottom:0 none;}
+.tools-area .tit h4 {color:#359b78; font-size:1.9rem;}
+.tools-area .tit h4 span {display:inline-block; zoom:1; margin-left:7px; color:#333; font-size:18px; line-height:35px; vertical-align:bottom;}
+.tools-area .tit h4 button {margin-left:9px;}
+.tools-area .desc {margin-top:10px; padding-left:20px; color:#666; font-size:13px; line-height:18px;}
+.tools-area .desc em {display:inline-block; zoom:1; *display:inline; width:14px; margin-left:-14px;}
+.tools-area .desc strong {color:#ff3600; font-weight:normal;}
+.tools-area .desc.d2 strong {color:#0078ff; font-weight:600;}
+
+
+
+
+
+/*
+.tools-wrap .button {margin-top:24px; text-align:center;}
+.tools-wrap .button a {display:inline-block; zoom:1; *display:inline; width:280px; margin-left:7px; background-color:#1367c6; border:1px solid #10539e; border-radius:3px; color:#fff; font-size:16px; font-weight:600; line-height:49px; vertical-align:top;}
+.tools-wrap .button a:first-child {margin-left:0; background-color:#19416e; border-color:#19416e;}
+.tools-wrap .button a.styleSky {display:block; width:100%; margin-left:0; background-color:#36baff; border-color:#00b4ff; border-radius:0; font-size:15px; line-height:60px;}
+.tools-wrap .button a.styleWhite {background:#fff; border-color:#10539e;color:#1367c6;}
+.tools-wrap .button a span {padding-right:22px; background:url(http://image.career.co.kr/career_new4/tools/arr_white.png) no-repeat 100% 50%;}
+.tools-wrap .button a.img {display:block; width:100%; margin:0; background-color:#fff; border:none; border-radius:0; line-height:1;}
+*/
+.tools-wrap .tb {width:100%;border:1px solid #000000;border-width:1px 1px 1px 0;border-right:1px solid #eee;}
+.tools-wrap .tb th {padding:0 20px;height:58px;min-height:58px;background:#e3eeff;font-size:20px;color:#222b38;border-top:1px solid #d4deee;box-sizing: border-box;}
+.tools-wrap .tb td {padding:10px;border-top:1px solid #eee;box-sizing: border-box;}
+.tools-wrap .tools-area .button {margin-top:15px; padding:0;text-align:right;}
+.tools-wrap .tools-area .button a.btn {display:inline-block; zoom:1; width:210px;height:50px;line-height:50px;margin-left:8px; background-color:#fff; border:1px solid #00baff;box-sizing:border-box;border-radius:50px; color:#00baff; font-size:18px; font-weight:600;text-align:center;}
+.tools-wrap .tools-area .button a.btn.blue {margin-left:0; background-color:#00baff; border-color:#00baff; color:#fff;}
+.tools-wrap .tools-area .button a.btn.white:after {content:'';display:inline-block;width:13px;height:15px;margin:-3px 0 0 7px;vertical-align:middle;background:url(../images/tools_reset_bg.png) no-repeat 50%;}
+
+/* 실 급여 계산기 */
+.tools-pay .inner {}
+#contents .con_box .tools-area.tools-pay .tit {padding:0;border-bottom:0 none;}
+.tools-pay .input {position:relative; width:100%;box-sizing:border-box;}
+.tools-pay .result {position:relative;width:100%;box-sizing:border-box;}
+.tools-pay fieldset {min-height:62px;padding:0;}
+.tools-pay dl {zoom:1; margin-top:0; background: #fff; position: relative; display: table; width: 100%; min-height: 59px;}
+.tools-pay dl dt,
+.tools-pay dl dd {box-sizing:border-box; display: table-cell; }
+.tools-pay dl dd {border-bottom:1px solid #eaeaea; background: #fff;}
+.tools-pay dl.d1 {margin-top:0;border-top:1px solid #000;}
+.tools-pay dl.d6 {border-bottom:2px solid #777;}
+.tools-pay dl.d6 dt,
+.tools-pay dl.d6 dd {border:none;}
+.tools-pay dl:after {content:""; display:block; clear:both;}
+.tools-pay dt {width:150px;font-size:16px;color:#222b38; line-height:1;box-sizing:border-box; vertical-align: middle; padding-left: 10px; background-color: #e3eeff; border-bottom: 1px solid #fff;}
+.tools-pay dt .tip {position:relative; display:inline-block; margin-left:1px; vertical-align:-1px;}
+.tools-pay dt .tip:hover {z-index:1;}
+.tools-pay dt .tip .txt {
+}
+.tools-pay dt .tip:hover .txt {overflow:visible;
+	opacity:1; top:19px; width:auto; height:auto;
+	transition-property: opacity, top;
+	transition-duration: 0.23s, 0.23s;
+	transition-timing-function: ease;
+}
+.tools-pay dt .icon {display:block; width:13px; height:13px; overflow:hidden; background:url(http://image.career.co.kr/career_new4/tools/icon_tip.gif) no-repeat 0 0; text-indent:-999em;}
+.tools-pay dt .txt {position:absolute; left:-5px; top:15px; width:0; height:0; overflow:hidden; background-color:#fff; border:1px solid #2c2c2c; white-space:nowrap; opacity:0;}
+.tools-pay dt .txt b {display:block; margin-top:-7px; padding:10px 10px 5px; background:url(http://image.career.co.kr/career_new4/tools/arr_tip.gif) no-repeat 7px 2px; color:#ff3600; font-size:12px; font-weight:normal; line-height:18px;}
+.tools-pay dd {padding:9px 7px;font-size:0;box-sizing: border-box; padding-right: 30px; position: relative; min-height: 59px;}
+.tools-pay dd strong.txt {display:inline-block;margin:0 6px;font-size:16px;vertical-align:middle; position: absolute; right: 0; top: 33px;}
+.tools-pay dd span.txt {margin-left:0px; font-size:13px;vertical-align:middle; margin-top: 10px; display: block;}
+.tools-pay dd input.txt {width:100%;height:38px;vertical-align:middle;}
+.tools-pay dd label.checkbox,
+.tools-pay dd label.radiobox {margin:0 -1px 0 0;padding:0;vertical-align:middle;}
+.tools-pay dd label.radiobox.on {position:relative;background:#3fb1b1;border:1px solid #3fb1b1;z-index:10;}
+.tools-pay dd label.radiobox.on span {color:#fff;}
+.tools-pay dd label.radiobox {width:50px;height:38px;background:#fff;text-align:center;border:1px solid #bdbdbd;}
+.tools-pay dd label.radiobox input {display:none;}
+.tools-pay dd label.radiobox span {line-height:38px; font-size: 14px;}
+.tools-pay .input .d1,
+.tools-pay .input .d2 {line-height:31px;}
+.tools-pay .input .d3 .checkbox {margin: 10px 0 0;}
+.tools-pay .input .d3 .checkbox span {font-size:13px;}
+.tools-pay .result .d7 {text-align:left;}
+.tools-pay .result .d7 dt {line-height:38px;}
+.tools-pay .total {display:block;margin:60px 0 0;padding:20px 0 0;clear:both;border-top:1px solid #b3b3b3;}
+.tools-pay .total p {padding:0 0 0 0;line-height:1; text-align:right;}
+.tools-pay .total strong,
+.tools-pay .total input[type="text"] {display:inline-block;vertical-align:middle;}
+.tools-pay .total strong.s1 {color:#333; font-size:18px; padding: 5px 0;}
+.tools-pay .total strong.s2 {max-width:163px;margin:0 10px 0 10px;color:#359b78;font-family:Tahoma;font-size:30px; letter-spacing:0;}
+.tools-pay .total input.txt {width:163px;margin: -2px 10px 0 10px;text-align:right;color:#359b78;font-family:Tahoma;font-size:30px;background:#fff;letter-spacing:0;font-weight:bold;border:none;}
+.tools-pay .total input.txt::placeholder {color:#359b78;font-family:Tahoma;font-size:32px; letter-spacing:-2px;font-weight:bold;}
+.tools-pay .total div {margin-top:-6px; font-size:22px; text-align:right;}
+
+
+/* 연봉정보 */
+.board-area .tb {width:100%; border-collapse:collapse; table-layout:fixed; }
+.board-area .tb th {padding:18px 0; border-top:1px solid #666; border-bottom:1px solid #c3c3c3; background-color:#f8f9fb; color:#666; font-size:14px; line-height:14px; }
+.board-area .tb th div {border-left:1px solid #d6d6d6;}
+.board-area .tb th:first-child div {border-left:0 none;}
+.board-area .tb td {padding:20px 0; border-bottom:1px solid #c3c3c3; font-size:14px; }
+.board-area .tb td > b { max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-spacing:normal; display:block; }
+.board-area .tb td > div {padding:0 15px; }
+.board-area .tb th {border-bottom:none;}
+.board-area .tb td > div {padding:0 10px;}
+.board-area .tb td {border:solid #c3c3c3; border-width:0 0 1px 0;}
+.board-area .tb tr:first-child td {border-width:1px 0 1px 0;}
+.board-area .tb td.addList {padding:11px 0; background-color:#f7f7f7; border:1px solid #e6e6e6; border-bottom-color:#c3c3c3; font-family:"Malgun Gothic",Dotum; font-size:14px; color:#666;}
+.board-area .tb td.addList strong {color:#333;}
+.board-area .tb td.addList a {font-weight:bold; text-decoration: underline; color:#f00;}
+.board-area .tb td.t1 {font-size:14px; line-height:26px; color:#999; text-align:left;}
+.board-area .tb td.t1 span,
+.board-area .tb td.t3 span {display:block; line-height:26px;}
+.board-area .tb td.t1 strong {font-family:"Malgun Gothic","맑은 고딕",Verdana,AppleGotihc; font-size:16px;}
+.board-area .tb td.t1 .t1_1 strong {color:#609cff;}
+.board-area .tb td.t1 .t1_2 strong {color:#ff7e00;}
+.board-area .tb td.t2 {position:relative;}
+.board-area .tb td.t2 div {zoom:1; float:left;padding:0;}
+.board-area .tb td.t2 div:after {display:block; content:""; clear:both;}
+.board-area .tb td.t2 div .logo {display:table; position:absolute; top:50%; left:0; width:180px; height:65px; margin-top:-32px; border:1px solid #b3b3b3;}
+.board-area .tb td.t2 div .logo a {display:table-cell; width:178px; height:63px;vertical-align:middle;}
+.board-area .tb td.t2 div .logo img {display:table-cell; width:149px; height:40px;margin:0 auto;}
+.board-area .tb td.t2 div .txt-box {padding-left:200px; font-size:14px; line-height:24px; color:#444;}
+.board-area .tb td.t2 div .txt-box span {display:block;}
+.board-area .tb td.t2 div .txt-box span .tit {color:#999;}
+.board-area .tb td.t2 div .txt-box span .icon {margin-top:-2px;}
+.board-area .tb td.t2 div .txt-box span .name {display:inline-block; font-size:16px; color:#444; vertical-align:top;}
+.board-area .tb td.t3 {font-size:13px; color:#999; text-align:right;}
+.board-area .tb td.t3 span {font-size:13px; color:#999; text-align:right;}
+.board-area .tb td.t3 strong {color:#444;}
+.board-area .tb td.t3 em {font-family:"Malgun Gothic","맑은 고딕",Verdana,AppleGotihc; font-size:16px;}
+.board-area .tb td.t3 .t3_1 em {color:#0060ff;}
+.board-area .tb td.t3 .t3_2 em {color:#f00;}
+.board-area .tb td.t4 {font-size:14px; color:#999; text-align:center;}
+
+
+/* 사진크기 조정 */
+.tools-pic .inner {margin-top:14px; padding:13px 50px 20px;}
+.tools-pic .inner:first-child {margin-top:0;}
+.tools-pic .inner .tit {margin:0 -20px;}
+.tools-pic h5 {color:#000; font-size:16px; font-weight:600; line-height:36px;}
+.tools-pic .step1 .files {float:left; width:613px; margin-top:21px;}
+.tools-pic .step1 .view {background-color:#fff; border:1px solid #b3b3b3;}
+.tools-pic .step1 .view p {padding:53px 0; background-color:#f8f8f8; color:#333; font-weight:600; line-height:34px; text-align:center;}
+.tools-pic .step1 .file {margin-top:14px;}
+.tools-pic .step1 span.filebox {width:100%;}
+.tools-pic .step1 .desc {margin-top:0; padding-left:0; color:#ff3600; font-size:13px; line-height:33px;}
+.tools-pic .step1 .photo {float:right; width:153px; margin-top:21px; padding-left:42px; background:url(http://image.career.co.kr/career_new4/tools/arr_pic.gif) no-repeat 0 50%;}
+.tools-pic .step1 .box {padding:4px; background-color:#36baff; border:1px solid #19a2ff;}
+.tools-pic .step1 .img {background-color:#f8f8f8;}
+.tools-pic .step1 .img img {display:block;}
+/*.tools-pic .step2 .select {zoom:1; margin-top:15px; padding:16px 0 16px 70px; overflow:hidden; background-color:#f8f8f8; border:1px solid #b3b3b3;}
+.tools-pic .step2 .select:after {content:""; display:block; clear:both;}
+.tools-pic .step2 .select div {clear:both; margin-right:-12px;}
+.tools-pic .step2 .select label.radiobox {float:left; width:256px; height:30px; margin-left:0; line-height:30px;}
+.tools-pic .step2 .resize {margin-top:15px; line-height:31px; text-align:right;}
+.tools-pic .step2 .resize * {vertical-align:top;}
+.tools-pic .step2 .resize strong {color:#333;}
+.tools-pic .step2 .resize input.txt {width:76px; height:29px; line-height:31px; text-align:center; text-indent:0;}
+.tools-pic .step3 {padding-bottom:30px;} 스탭2 삭제*/
+.tools-pic .step2 {padding-bottom:30px;}
+
+/* 글자수 체크 */
+.tools-check .inner {padding:13px 30px 0;}
+.tools-check .inner .tit {padding-bottom: 6px;border-bottom: 1px solid #464646;line-height: 42px;}
+.tools-check .text {position:relative;background-color:#fff;}
+.tools-check .text textarea.area {width:100%;min-height:260px;overflow-y:auto;padding:10px; border-color:transparent;border: 1px solid #b3b3b3;box-sizing:border-box;}
+.tools-check .text p {overflow: auto;height: 100%;padding:10px;border: 1px solid #b3b3b3;box-sizing:border-box;}
+.tools-check .text p a {color:#ff0000;text-decoration: underline;}
+.tools-check .text #dim { background-color: #000; bottom: 0; left: 0; opacity: 0.5; filter: alpha(opacity = 50); /* IE7 & 8 */ position: fixed; right: 0; top: 0; z-index: 99; display:none;}
+.tools-check .text .popup {width:100%;display:none;padding:0;margin:-145px 0 0 0 !important;box-sizing:border-box;position:absolute;top:50% !important;left:0 !important;z-index:10000;border:1px solid #000000;background:#ffffff;box-sizing: border-box;}
+.tools-check .text .popup .pop_wrap {position:relative;padding:35px 30px 25px;}
+.tools-check .text .popup .pop_wrap table {width:100%;}
+.tools-check .text .popup .pop_wrap table th {font-size:13px;color:#000;padding:5px 0;text-align:left;}
+.tools-check .text .popup .pop_wrap table td {padding:5px 0;text-align:left;}
+.tools-check .text .popup .pop_wrap table td span {line-height:28px;}
+.tools-check .text .popup .pop_wrap table td .red {color:#ff0000;text-decoration: underline;}
+.tools-check .text .popup .pop_wrap table td .blue {color:#3181db;}
+.tools-check .text .popup .pop_wrap table td input {vertical-align:top;}
+.tools-check .text .popup .pop_wrap table td button {height:28px;margin:0 0 0 5px;border:1px solid #b3b3b3;vertical-align:top;background:#fff;color:#000;font-weight: 600;}
+.tools-check .text .popup .pop_wrap table td .area {width:100%;height:100px;overflow:auto;padding:5px 10px;box-sizing:border-box;border: 1px solid #b3b3b3;}
+.tools-check .text .popup .pop_wrap .layer_close {position:absolute;top:10px;right:10px;font-size:35px;}
+.tools-check .byte {margin-top:30px;}
+.tools-check .byte p {color:#333; font-size:16px; font-weight:600; line-height:40px; text-align:center;}
+.tools-check .byte em {display:inline-block; zoom:1; width:0; height:22px; overflow:hidden; margin:0 10px; border-right:1px solid #cdcdcd; color:#cdcdcd; text-indent:-999em; vertical-align:middle;}
+.tools-check .byte strong.s1 {color:#ff0000; font-size:20px;}
+.tools-check .byte strong.s2 {color:#3181db; font-size:20px;}
+.tools-check .button {padding:0 0 20px;}
+.tools-check .button.b2 {margin-top:6px; padding-top:0; border-top:0 none;}
+.tools-check .button.b2 a {display:inline-block; zoom:1; width:280px; margin-left:8px; background-color:#fff; border:1px solid #d8d8d8; border-radius:0; color:#000; font-size:14px; font-weight:600; line-height:37px;}
+.tools-check .button.b2 a:first-child {margin-left:0;}
+.tools-check .button.b2 a.reset {background-color:#ff4e00; border-color:#e84700; color:#fff;}
+.tools-check .desc {padding-left: 45px;}
+.tools-check .inner .desc.d2 {padding-left: 20px;}
+.tools-check h4,
+.tools-check h5 {color: #2c2c2c;font-size: 22px;color:#000;}
+.tools-check .part {display:block;position:relative; z-index:1;}
+.tools-check .part fieldset { width:100%;padding:35px 20px 20px; background-color:#f8f8f8; border:1px solid #b3b3b3;box-sizing:border-box;}
+.tools-check .part .grammar {position:relative;background:#fff;padding:35px 20px 30px 150px;margin:0 0 10px;border:1px solid #b3b3b3;}
+.tools-check .part .grammar dt {float:left;position:absolute;left:20px;bottom:50%;margin-bottom:-10px;font-size:20px;font-weight:bold;}
+.tools-check .part .grammar dd {height:30px;}
+.tools-check .part .grammar dd span {background:#fff; border:none;font-size:30px;color:#36baff;font-weight:bold;text-align:right;}
+.tools-check .part .grammar dd button {float:right;background:#fff;height:30px;font-size:14px;font-weight:600;color:#000;border:1px solid #b3b3b3;}
+.tools-check .part .correction {overflow:hidden;padding:10px 0;margin:0;border-bottom:1px solid #b3b3b3;}
+.tools-check .part .correction dt {float:left;width:35%;padding:0 20px 0 10px;box-sizing:border-box;background:url("http://image.career.co.kr/career_new/tools/arrow.png") no-repeat 100% 50%;background-size:15px;}
+.tools-check .part .correction dt span {line-height: 25px;text-align:left;}
+.tools-check .part .correction dd {float:right;width:65%;padding:0 10px;box-sizing:border-box;font-size:0;}
+.tools-check .part .correction dd input {margin:0 0 0 5px;background:#fff;font-size:12px;color:#000;text-indent:0;text-align:center;line-height:1.2;padding:0 5px;border-radius: 3px;}
+.tools-check .part .correction dd input:first-child {margin:0;}
+
+/* 검색결과 상세보기 */
+.search-datail .inn > li {zoom:1; padding:20px 0; border-bottom:1px solid #c3c3c3; }
+.search-datail .inn > li:after {display:block; content:""; clear:both;}
+.search-datail .inn > li:first-child {border-top:1px solid #c3c3c3;}
+.search-datail .inn > li .searchInfo {position:relative; zoom:1;}
+.search-datail .inn > li .searchInfo:after {display:block; content:""; clear:both;}
+.search-datail .inn > li .searchInfo .left {zoom:1; float:left;}
+.search-datail .inn > li .searchInfo .left:after {display:block; content:""; clear:both;}
+.search-datail .inn > li .searchInfo .left .txt-box {padding-left:220px; font-size:14px; line-height:24px; color:#444;}
+.search-datail .inn > li .searchInfo .left .txt-box span {display:block;}
+.search-datail .inn > li .searchInfo .left .txt-box span .tit {color:#999;}
+.search-datail .inn > li .searchInfo .left .txt-box span .tit.big {font-size:16px; color:#000; vertical-align:middle;}
+.search-datail .inn > li .searchInfo .left .txt-box span .tit.big + .icon {margin-left:6px;}
+.search-datail .inn > li .searchInfo .left .txt-box span .tit strong {color:#0092de;}
+.search-datail .inn > li .searchInfo .left .txt-box span .name {font-size:16px; color:#444;}
+.search-datail .inn > li .searchInfo .left .txt-box span .list li {display:block; overflow:hidden; width:580px; font-size:12px; line-height:20px; text-overflow:ellipsis; white-space:nowrap; word-spacing:normal; color:#666;}
+.search-datail .inn > li .searchInfo .left .txt-box span.t1 {margin-bottom:4px; line-height:1;}
+.search-datail .inn > li .searchInfo .left .logo {position:absolute; top:50%; left:0; width:198px; height:63px; margin-top:-32px; border:1px solid #b3b3b3;}
+.search-datail .inn > li .searchInfo .left .logo a {display:block; position:relative; width:149px; height:40px; padding:13px 0 12px 0; margin:0 auto;}
+.search-datail .inn > li .searchInfo .left .logo img {width:100%; height:100%;}
+.search-datail .inn > li .searchInfo .left .logo a .i-recruiting {display:block; position:absolute; bottom:0; right:0;}
+.search-datail .inn > li .searchInfo .right {float:right;}
+.search-datail .inn > li .searchInfo .right .more {margin-top:17px;}
+.search-datail .inn > li .searchInfo .right a {position:absolute; top:50%; right:0; height:39px; padding:0 20px; margin-top:-19px; background-color:#36baff; border:1px solid #00b4ff; font-size:12px; font-weight:bold; text-align:center; line-height:39px; color:#fff;}
+.search-datail .inn > li .searchInfo .right a span {padding-right:12px; background:url(http://image.career.co.kr/career_new4/kangso/arrow_white.png) no-repeat right 50%;  font-size:12px; font-weight:bold; color:#fff; vertical-align:1px; .vertical-align:3px;}
+.search-datail .inn > li .searchInfo .right .tab-link {zoom:1;}
+.search-datail .inn > li .searchInfo .right .tab-link:after {display:table; content:""; clear:both;}
+.search-datail .inn > li .searchInfo .right .tab-link li {display:table; float:left; margin-left:5px; background-color:#f6f6f6; border:1px solid #e5e5e5;}
+.search-datail .inn > li .searchInfo .right .tab-link li:first-child {margin-left:0;}
+.search-datail .inn > li .searchInfo .right .tab-link li > span,
+.search-datail .inn > li .searchInfo .right .tab-link li a {display:table-cell; min-width:34px; padding:17px 11px 16px;  font-size:13px; font-weight:bold; line-height:15px; color:#c3c3c3; text-align:center; vertical-align:middle;}
+.search-datail .inn > li .searchInfo .right .tab-link li.on {border-color:#00a9ef;}
+.search-datail .inn > li .searchInfo .right .tab-link li.on a {color:#fff; background-color:#36baff; border-color:#00b4ff;}
+.search-datail .searchInfo.nodata p {height:248px; line-height:248px; color:#666; font-size:15px; text-align:center; margin-top:-1px}
+.search-datail .searchInfo.nodata strong {color:#f00;}
+
+/* 총 경력 계산기 */
+.tools-calc .inner {padding:13px 30px 30px;}
+.tools-calc .desc {padding-left:20px;}
+.tools-calc .desc.d3 {position:relative; margin-top:20px; padding-top:10px; border-top:1px solid #c7c7c7;}
+.tools-calc .desc.d3 strong {color:#0078ff; font-weight:600;}
+.tools-calc .desc.d3 a.txt {position:absolute; right:20px; top:10px; width:239px; height:39px; padding:0; background-color:#1367c6; border-color:#10539e; border-radius:2px; line-height:39px; text-align:center;}
+.tools-calc .desc.d3 a.txt strong {color:#fff; font-size:14px; font-weight:600;}
+.tools-calc .group {padding:0;}
+.tools-calc .term {margin-top:7px;}
+.tools-calc .term:first-child {margin-top:0;}
+.tools-calc .term span.s1 {display:inline-block;width:92px;vertical-align:bottom;}
+.tools-calc .term span.s2 {display:inline-block;width:92px;vertical-align:bottom;}
+.tools-calc .term span.txt {display:inline-block;color:#333; font-size:12px;font-weight:600;vertical-align:bottom;}
+.tools-calc .term a.txt {height:34px;line-height:34px;}
+.tools-calc .term a.txt span {display:inline-block; zoom:1; padding-left:14px; background:none no-repeat 0 50%; color:#fff; font-weight:600;}
+.tools-calc .term a.add {display:none;}
+.tools-calc .term a.del {width:11px;height:13px;margin:0 0 12px;border:none;font-size:0;}
+.tools-calc .term a.del span {width:100%;height:100%;padding:0;background:url(../images/tools_icon_del.png)no-repeat 50%;}
+.tools-calc .button {padding-top:20px; border-top:1px solid #c7c7c7;}
+.tools-calc .button a {width:199px; border-radius:0;}
+.tools-calc .total {margin-top:23px; padding:18px 13px 0 0; border-top:1px solid #b8b8b8;text-align:right;}
+.tools-calc .total span {margin-right:4px; color:#333; font-size:16px; font-weight:600; vertical-align:middle;}
+.tools-calc .total strong {color:#0078ff; font-size:16px; font-weight:600; vertical-align:middle;}
+.tools-calc .total input.txt {width:40px; height:30px; margin-right:4px; background-color:#fff; border:none;color:#00baff;font-family:Tahoma;font-size:27px;background:#fff;font-weight:600; line-height:38px; text-align:center; text-indent:0;vertical-align:middle;}
+.tools-calc .total input.txt::placeholder {color:#00baff;font-family:Tahoma;font-size:32px; letter-spacing:-2px;font-weight:bold;}
+.tools-calc .add_btn {display:block;text-align:right;padding:10px 0 0;margin:0 0 60px;}
+.tools-calc .add_btn .btn.blue {display:inline-block;width:99px;height:37px;line-height:37px;text-align:center;background:#00baff;color:#fff;font-size:15px;}
+.tools-calc .add_btn .btn.green {display:inline-block;width:99px;height:37px;line-height:37px;text-align:center;background:#359b78;color:#fff;font-size:15px;}
+.tools-calc .add_btn .btn.blue:before {content:'+';display:inline-block;clear:both;margin:-2px 5px 0 0;vertical-align:middle;}
+.tools-calc .group.fnCustomUiGroupWrapping .term{margin: -9px -7px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term+.term .groupRow0{border-top: 1px solid #eaeaea; margin-top: 9px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"]{position: relative; padding: 9px 7px; font-size: 0;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"]+[class^="groupRow"]{border-top: 1px solid #eaeaea;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"] [class^="groupInner"]{}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"] .txt{position: absolute; right: 0; bottom: 3px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"] span.s1{width: 100%; height: 38px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"] span.s2{width: 100%; height: 38px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"] span.selectbox span{min-width: 0; line-height: 38px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"] [class^="groupInner"]{width: 50%; display: inline-block; vertical-align: bottom; position: relative; box-sizing: border-box;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"] .groupInner0{width: 45%;}
+.tools-calc .group.fnCustomUiGroupWrapping .term [class^="groupRow"] .groupInner1{width: 55%;}
+.tools-calc .group.fnCustomUiGroupWrapping .term .groupRow0 .groupInner0{padding-right: 15px; }
+.tools-calc .group.fnCustomUiGroupWrapping .term .groupRow0 .groupInner1{padding-right: 52px; padding-left: 10px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term .groupRow1 .groupInner0{padding-right: 15px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term .groupRow1 .groupInner1{padding-right: 23px; padding-left: 10px;}
+.tools-calc .group.fnCustomUiGroupWrapping .term+.term .groupRow2{padding-right: 30px;}
+
+/* 우측배너 */
+.tools_banner {position:absolute; top:327px; left:50%; margin-left:495px;}
+.tools_banner li {padding-bottom:2px;}
+
+/* 나눔고딕 */
+@font-face { font-family: 'NanumGothic';
+src: url('../font/NanumGothic-Regular.eot');
+src: url('../font/NanumGothic-Regular.eot') format('embedded-opentype'),
+url('../font/NanumGothic-Regular.woff') format('woff');}
+
+
+/* footer */
+#toolsWrap .footer-wrap{width:100%;padding-bottom:0;border-top:1px solid #b3b3b3;}
+#toolsWrap .footer-wrap .footer-inner{border:none;}
+#toolsWrap .footer-inner .award-area ul,
+#toolsWrap .address-area-inner{width:960px;margin:0 auto;}
+#toolsWrap .footer-inner .award-area .wSizeWrap {width:910px;margin:0 auto;}
+#toolsWrap .footer-banner {display:none;}
+
+
+/* ------------------------------------- 커리어 성공취업 툴 개선 2019 ------------------------------------- */
+#toolsWrap {min-width:1360px;}
+
+/* top 메뉴*/
+#toolsWrap .topgnb-wrap-event {z-index:70; position:relative;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner {zoom:1; width:960px; margin:0 auto; position:relative; height:76px;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .logo-area {position:absolute; left:0; top:13px;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .menu-area {position:absolute; right:166px; top:29px; }
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .menu-area li {float:left; background:url(http://image.career.co.kr/career_new3/gnb3/bg_evGnb_var.png) no-repeat 0 3px; padding:0 9px;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .menu-area li.first {background:none;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .menu-area li a {font-family:"Malgun Gothic"; font-size:15px; line-height:16px; line-height:20px\0; *line-height:20px; font-weight:bold;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .btn-area {position:absolute; right:0; top:26px;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .btn-area a {margin-left:4px;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .btn-area a.logout {margin-left:17px;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .btn-area a.name {vertical-align:9px;}
+#toolsWrap .topgnb-wrap-event .topgnb-event-inner .btn-area a img {vertical-align:top}
+
+/* career_contents */
+#toolsWrap .tools-wrap #career_contents {width:960px;margin:auto;}
+
+/* lnb-wrap */
+#toolsWrap .lnb-wrap {position:absolute; top:80px; left:50%; margin-left:-680px; width:180px; }
+#toolsWrap .lnb-wrap:after {display:table; content:""; clear:both;}
+#toolsWrap .lnb-wrap .inner > ul {border:1px solid #adadad;border-width:1px 1px;}
+#toolsWrap .lnb-wrap .inner > ul > li {background:#fff;padding:0;}
+#toolsWrap .lnb-wrap .inner > ul > li:first-child {border-bottom:1px solid #adadad;}
+#toolsWrap .lnb-wrap .inner > ul > li > a {display:block;padding:17px 15px;line-height:1;font-size:16px;font-weight:bold;color:#000;letter-spacing: -1.5px;}
+#toolsWrap .lnb-wrap .inner > ul > li > ul {border:none;}
+#toolsWrap .lnb-wrap .inner .depth ul li {margin:0 0 15px 25px;}
+#toolsWrap .lnb-wrap .inner .depth ul li a {line-height:1;font-size:14px;color:#6e6e6e;letter-spacing: -1.5px;}
+#toolsWrap .lnb-wrap .inner .depth ul li.on a,
+#toolsWrap .lnb-wrap .inner .depth ul li a:hover,
+#toolsWrap .lnb-wrap .inner .depth ul li a:focus {color:#1564fb;font-weight:bold;}
+#toolsWrap .lnb-wrap .inner > ul > li.on > a,
+#toolsWrap .lnb-wrap .inner > ul > li:hover > a,
+#toolsWrap .lnb-wrap .inner > ul > li:focus > a  {color:#000;}
+
+/* RNB */
+#toolsWrap .tools-wrap {width:100%;margin:auto 0; color:#666;  font-size:14px; line-height:20px;}/*2019-04-29*/
+#toolsWrap .rnbWrap{position:absolute;top:80px;right:50%;margin-right:-610px;}
+#toolsWrap .rnbWrap .inner ul li {margin-bottom:5px;}
+#toolsWrap .rnbWrap .inner ul li a {display:block;}
+#toolsWrap .rnbWrap .inner ul li a img {display:block;}
+#toolsWrap .rnbWrap .layerPop .dim{position:absolute;top:0;left:0;width:100%;height:100%;z-index:999999;background:#fff;opacity:.9;filter:alpha(opacity=90);}
+#toolsWrap .rnbWrap .fixArea{position:absolute;top:228px;width:auto;}
+#toolsWrap .rnbWrap .fixArea > div{margin-top:15px;}
+#toolsWrap .rnbWrap .fixArea > div:first-child{margin-top:0;}
+#toolsWrap .rnbWrap .fixArea .topBtn{display:none;}
+#toolsWrap .rnbWrap .fixArea .topBtn a{display:inline-block;width:50px;height:50px;background:url(http://image.career.co.kr/career_new3/kangso/company/info/btn_sns.png) no-repeat 0 -250px;font-size:0;text-indent:-999em;vertical-align:top;}
+.tools-top {width:; background:#36baff; height:168px;border:1px solid #105db3;border-width:1px 0;} /*2019-04-29*/
+.tools-top .tools-head {position:relative;width:960px; padding-left:20px; color:#fff; height:168px; margin:0 auto;}
+.tools-top .tools-head .career-home {position:absolute; top:13px;left:0;} /*2019-04-29*/
+.tools-top .tools-head .career-home a {display:block; width:70px; height:30px; line-height:30px; font-size:12px; border:1px solid #1b6cc7; text-align:center; color:#fff; padding-left:20px; background:#3ba2ed url(http://image.career.co.kr/career_new4/tools/icon-home.gif) no-repeat 15px 9px;}
+.tools-top .tools-head h2 {font-size:37px; padding-top:65px; letter-spacing:-1px;font-family: 'NanumGothic';}
+.tools-top .tools-head p.career-home {font-size:13px;font-weight:bold; letter-spacing:-1px;} /*2019-04-29*/
+.tools-top .tools-head p {margin-top:7px;font-size:13px;font-weight:bold; letter-spacing:-1px;}
+.tools-header {height:200px; background:url(http://image.career.co.kr/career_new4/tools/img_tools.gif) no-repeat 100% 100%;}
+.tools-header img {vertical-align:top;}
+.tools-header h2 {padding:51px 0 0 12px;}
+.tools-header p {padding:19px 0 0 13px;}
+.tools-tabmenu {}
+.tools-tabmenu ul {zoom:1; height:60px;}
+.tools-tabmenu ul:after {content:""; display:block; clear:both;}
+.tools-tabmenu li {position:relative; float:left; width:17%;}
+.tools-tabmenu li a {position:relative; display:block; margin:0 -1px; height:52px; line-height:52px; background-color:#323232; border:1px solid #1c1c1c; border-bottom-width:0; color:#fff; font-weight:600; text-align:center;}
+.tools-tabmenu li a:after {content: ""; position: absolute; top: 0; left: 50%; width: 0%; height: 100%; opacity: 0;background: #ffffff;}
+.tools-tabmenu li a:hover:after {opacity: 1; left: 0; width:100%;transition-property: left, width, opacity;	transition-duration: 0.3s, 0.3s, 0.15s;transition-timing-function: ease;}
+.tools-tabmenu li a:hover {color:#000000;}
+.tools-tabmenu li span {z-index:1; position:relative; display:inline-block; height:18px; background:none no-repeat 0 0; font-size:16px; line-height:18px;}
+.tools-tabmenu li.l1,
+.tools-tabmenu li.l6 {width:16%;}
+.tools-tabmenu li.l1 a {margin-left:0;}
+.tools-tabmenu li.l6 a {margin-right:0;}
+.tools-tabmenu li.on {z-index:2; height:52px;}
+.tools-tabmenu li.on a {height:53px; background-color:#fff; border-color:#1c1c1c; color:#000;}
+.tools-title {padding:27px 0 15px;}
+.tools-title h3,
+.tools-title h4 {display:inline-block; font-size:30px; line-height:35px; letter-spacing:-3px; color:#000;}
+.tools-title h4 {font-weight:normal;}
+.tools-title span {position:relative; top:3px; margin-left:5px; color:#666; font-size:14px; font-weight:600; line-height:25px;}
+
+/*dataPick*/
+.dataPick{float:left;margin-left:5px;}
+.dataPick:after{content:"";display:block;clear:both;}
+.dataPick input[type=text]{width:86px;height:34px;margin-right:2px;border:1px solid #dcdcdc;font-size:13px;color:#999;line-height:34px;text-indent:10px;}
+.dataPick button{width:26px;height:36px;background:url(http://image.career.co.kr/career_new4/kangso/calendar/calendar_icon.png) no-repeat 0 1px;border:none;font-size:0;text-indent:-9999em;vertical-align:middle;}
+.dataPick .hyphen{padding:0 3px;}
+
+.ui-widget-header{background:none;border:0;}
+.ui-datepicker{z-index:10 !important;padding:.58em;margin-top:-1px;}
+.ui-datepicker .ui-datepicker-title select{
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	background: url(http://image.career.co.kr/career_new4/kangso/calendar/arrow_select_s.png) #fff no-repeat 100% 50%; /* 화살표 모양의 이미지 */
+	border:1px solid #c4c4c4;
+	height:30px;
+	color:#999999;
+	font-size:13px;
+	padding-left:5px;
+}
+.ui-datepicker .ui-datepicker-title select::-ms-expand{display: none;}
+.ui-icon{width:13px;height:14px;}
+.ui-widget-header .ui-icon{background-image:url(http://image.career.co.kr/career_new4/kangso/calendar/dataarricon.png);}
+.ui-icon-circle-triangle-e{background-position:-8px 2px;}
+.ui-icon-circle-triangle-w{background-position:5px 2px;}
+.ui-datepicker .ui-datepicker-prev,.ui-datepicker .ui-datepicker-next{top:6px;}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus{
+	border: 0/*{borderColorHover}*/;
+	background: none/*{bgColorHover}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #212121/*{fcHover}*/;
+}
+.ui-datepicker-month{margin-left:2px !important;}
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year{width:45%;}
+.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br{border-radius:0;}
+.ui-widget-content{border-color:#c4c4c4;}
+.ui-datepicker th{border:1px solid #e5e5e5;padding:.4em .3em;font-weight:normal;background:#f7f7f7;font-size:12px;}
+.ui-datepicker-calendar > thead th.ui-datepicker-week-end:first-child span,
+.ui-datepicker-calendar > tbody td.ui-datepicker-week-end:first-child a{ color:#ff0000 !important;}
+.ui-datepicker-calendar > thead th.ui-datepicker-week-end:last-child span,
+.ui-datepicker-calendar > tbody td.ui-datepicker-week-end:last-child a{ color:#0048ff !important;}
+.ui-datepicker td{ border:1px solid #e5e5e5;padding:0;font-size:12px;}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{
+	border:0/*{borderColorDefault}*/;
+	background:none;
+	font-weight: normal/*{fwDefault}*/;
+	color: #555555/*{fcDefault}*/;
+}
+.ui-datepicker td span,.ui-datepicker td a{ text-align:center;}
+.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{
+	background:#fee984;
+}
+.ui-datepicker .ui-datepicker-header{padding:.3em 0 .5em;}
+.ui-datepicker td span,.ui-datepicker td a{padding:.42em .3em !important;}
+
+/* 커리어 계산기 - 학점계산기 */
+.tools-unit .inner.arrow {padding: 23px 30px 40px;background:url(http://image.career.co.kr/career_new4/tools/arr_right.png) #fff no-repeat 50% 50%;}
+.tools-unit h4,
+.tools-unit h5 {color: #2c2c2c;font-size: 22px;color:#000;}
+.tools-unit .tit {border-bottom:0 none;}
+.tools-unit .tit.line {border-bottom:1px solid #464646;}
+.tools-unit .grades {position:relative; z-index:1;float:left;}
+.tools-unit .grades span.selectbox span {height:32px;line-height:30px;background: url(http://image.career.co.kr/career_new4/tools/sel_arrow4.gif) #fff no-repeat 100% 50%;}
+.tools-unit .result {position:relative; float:right;}
+.tools-unit fieldset { width:480px; min-height:500px; padding:13px 20px 20px; background-color:#f8f8f8; border:1px solid #b3b3b3;}
+.tools-unit dl {zoom:1; margin-top:13px;}
+.tools-unit dl:first-child {margin-top:22px;}
+.tools-unit dl:after {content:""; display:block; clear:both;}
+.tools-unit dt {float:left; width:40px; color:#333; line-height:31px;font-weight:bold;}
+.tools-unit dt .tip {position:relative; display:inline-block; margin-left:1px; vertical-align:-1px;}
+.tools-unit dt .tip:hover {z-index:1;}
+.tools-unit dt .tip .txt {}
+.tools-unit dt .tip:hover .txt {overflow:visible;opacity:1; top:19px; width:auto; height:auto;transition-property: opacity, top;transition-duration: 0.23s, 0.23s;transition-timing-function: ease;}
+.tools-unit dt .icon {display:block; width:13px; height:13px; overflow:hidden; background:url(http://image.career.co.kr/career_new4/tools/icon_tip.gif) no-repeat 0 0; text-indent:-999em;}
+.tools-unit dt .txt {position:absolute; left:-5px; top:15px; width:0; height:0; overflow:hidden; background-color:#fff; border:1px solid #2c2c2c; white-space:nowrap; opacity:0;}
+.tools-unit dt .txt b {display:block; margin-top:-7px; padding:10px 10px 5px; background:url(http://image.career.co.kr/career_new4/tools/arr_tip.gif) no-repeat 7px 2px; color:#ff3600; font-size:12px; font-weight:normal; line-height:18px;}
+.tools-unit dd {float:left; width:243px;}
+.tools-unit dd strong.txt {margin-left:6px;}
+.tools-unit dd span.txt {margin-left:0px; font-size:12px;}
+.tools-unit dd input.txt {width:124px; height:29px;}
+.tools-unit dd label.checkbox,
+.tools-unit dd label.radiobox {vertical-align:middle;}
+.tools-unit dd label.checkbox {margin-left:25px;}
+.tools-unit .tb_area {display:block;padding:22px 0 0;}
+.tools-unit .tb_area .tb_subject {width:100%;border:none;}
+.tools-unit .tb_area .tb_subject tr th,
+.tools-unit .tb_area .tb_subject tr td {border:none;}
+.tools-unit .tb_area .tb_subject tr th:first-child {padding:15px 0 5px;}
+.tools-unit .tb_area .tb_subject tr td:first-child {padding:10px 0 10px 0;}
+.tools-unit .tb_area .tb_subject tr th {padding:15px 0 5px 15px;text-align:center;line-height:1.23;font-size:14px;color:#333;font-weight:bold;letter-spacing: -1.5px;box-sizing:border-box;}
+.tools-unit .tb_area .tb_subject tr td {padding:10px 0 10px 15px;text-align:center;box-sizing:border-box;}
+.tools-unit .tb_area .tb_subject tr td input.txt,
+.tools-unit .tb_area .tb_subject tr td .selectbox {width:100%;height:34px;line-height:34px;box-sizing:border-box;text-align:center;text-indent:0;}
+.tools-unit .tb_area .tb_subject tr td label.checkbox,
+.tools-unit .tb_area .tb_subject tr td label.checkbox input {margin:0;}
+.tools-unit .tb_area .tb_btn {display:block;padding:10px 0 0;text-align:right;font-size:0;}
+.tools-unit .tb_area .tb_btn button {width:103px;height:34px;display:inline-block;margin-left:10px;padding:0;border:none;vertical-align:middle;}
+.tools-unit .tb_area .tb_btn .tb_add {font-size:0;background:url(http://image.career.co.kr/career_new4/tools/tb_add_btn.jpg) no-repeat;}
+.tools-unit .result .sum {position:relative;background:#fff;padding:35px 20px 30px;margin:20px 0 10px;border:1px solid #b3b3b3;}
+.tools-unit .result .sum dt {width:50px;float:left;position:absolute;left:20px;bottom:24px;}
+.tools-unit .result .sum dd {float:right;height:30px;text-align:right;font-size:0;}
+.tools-unit .result .sum dd input.txt {width:90%; background:#fff; border:none;;font-size:30px;color:#36baff;font-weight:bold;text-align:right;letter-spacing:0;}
+.tools-unit .result .sum dd strong.txt {margin:0 0 0 3px;vertical-align:text-bottom;font-size:14px;}
+.tools-unit .result .score {padding:10px 0;margin:0;border-bottom:1px solid #b3b3b3;}
+.tools-unit .result .score dt,
+.tools-unit .result .score dd {width:auto;padding:0 20px;}
+.tools-unit .result .score dt {float:left;}
+.tools-unit .result .score dd {width:50%;float:right;text-align:right;font-size:0;}
+.tools-unit .result .score dd .txt {border:none;text-indent:0;text-align:right;background:#f8f8f8;color:#000;font-size:16px;font-weight:bold; letter-spacing:0;}
+.tools-unit .result .score dd strong.txt {margin:0 0 0 3px;font-size:14px;font-weight:normal;}
+.tools-unit .result fieldset dl:last-child {border-bottom:none;}
+
+.tools-unit .input .d1,
+.tools-unit .input .d2 {line-height:33px;}
+.tools-unit .input .d3 strong.txt {margin-right:6px;}
+.tools-unit .input .d3 .checkbox {margin-left:0;}
+.tools-unit .input .d3 .checkbox span {font-size:12px;}
+.tools-unit .input .d6 input.txt {width:199px; border-color:#19416e;}
+.tools-unit .result .d7 {text-align:left;}
+.tools-unit .result .d7 dt {line-height:34px;}
+.tools-unit .result .d7 input.txt {height:36px; border-color:#19416e; line-height:36px;}
+.tools-unit .total {clear:both;}
+.tools-unit .total p {padding-top:9px; line-height:49px; text-align:right;}
+.tools-unit .total strong.s1 {color:#333; font-size:20px;}
+.tools-unit .total strong.s2 {color:#0078ff; font-family:Verdana; font-size:38px; letter-spacing:-2px;}
+.tools-unit .total div {margin-top:-6px; font-size:12px; text-align:right;}
+
+/*  커리어 계산기 - 어학 변환 */
+.tools-unit .inner {}
+.tools-unit .desc {margin:10px 20px 0;}
+.tools-unit .input {position:relative; width:100%; box-sizing:border-box;}
+.tools-unit .input input.txt {width:100%;height:36px;vertical-align: middle;}
+.tools-unit .input span.selectbox {width:100%; height: 38px;}
+.tools-unit .input span.selectbox span{min-width: 100%; line-height: 38px;}
+.tools-unit .input a.txt {width:199px; height:48px; margin-left:6px; padding:0; background-color:#0c2847; border:1px solid #0c2847; border-radius:2px; color:#fff; font-size:16px; line-height:46px; text-align:center;}
+.tools-unit .input span.txt {display:inline-block;font-size:12px;color:#000;font-weight:bold;vertical-align:bottom; margin-left: 3px;}
+.tools-unit .input em.slash {display:inline-block;font-size:12px;color:#000;font-weight:bold;vertical-align:bottom; margin-left: 3px;}
+.tools-unit .input p {padding:0;margin-top: 5px;}
+.tools-unit .input p span {color: #0078ff;}
+#contents .con_box .tools-area.tools-unit .tit {padding:0;border:none;}
+.tools-unit .convert {position:relative; width:100%;box-sizing:border-box;}
+.tools-unit .convert > div > strong {display:inline-block; zoom:1; width:97px; margin-left:4px; color:#333; font-size:16px; font-weight:600; line-height:29px; vertical-align:top;}
+.tools-unit .convert input.txt {width:100%; height:29px;line-height:27px; text-align:right; text-indent:0; vertical-align:top; padding-right: 10px; box-sizing: border-box;}
+.tools-unit .convert span.txt {display:inline-block;font-size:16px;font-size:16px;color:#000;font-weight:bold;vertical-align:bottom; position: absolute; right: 0; top: 24px;}
+.tools-unit .convert.c2 > div > span {display:inline-block; zoom:1; width:107px; margin-left:73px; color:#333; font-size:15px; line-height:29px; vertical-align:top;}
+.tools-unit .convert.c2 > div > span:first-child {margin-left:0;}
+.tools-unit .convert.c2 input.txt {width:100%;}
+.tools-unit .convert .tools_tbl tbody tr td{padding-right: 30px; position: relative;}
+.tools-unit .tools-unit_row [class^="col"]{position: relative; padding-right: 30px;}
+.tools-unit .tools-unit_row [class^="col"] .txts{position: absolute; right: 0; bottom: 3px; width: 30px; text-align: center;}
+
+/*  커리어 계산기 - 졸업/전역연도 계산기 */
+.tools-gnd {padding:0;}
+.tools-gnd .inner {background:url(http://image.career.co.kr/career_new4/tools/arr_pay.gif) #fff no-repeat 50% 237px;}
+.tools-gnd .inner.arrow {padding:30px 45px 40px;background:url(http://image.career.co.kr/career_new4/tools/arr_right.png) #fff no-repeat 50% 50%;}
+.tools-gnd h4,
+.tools-gnd h5 {color: #2c2c2c;font-size: 22px;color:#000;}
+.tools-gnd .tit {border-bottom:0 none;}
+.tools-gnd .tit.line {border-bottom:1px solid #464646;}
+.tools-gnd p {font-size:13px;color:#666;font-weight:bold;padding:0 0 20px;}
+.tools-gnd input.txt {text-align:center; text-indent:0;}
+.tools-gnd .input {position:relative; z-index:1; float:left;}
+.tools-gnd .result {position:relative; float:right;}
+.tools-gnd fieldset { width:480px; min-height:500px; padding:30px 20px; background-color:#f8f8f8; border:1px solid #b3b3b3;}
+.tools-gnd .button {margin-top:20px; padding-top:20px;text-align:center;}
+.tools-gnd .button a {display:inline-block; zoom:1; width:127px; margin-left:6px; background-color:#fff; border:1px solid #b3b3b3; border-radius:3px; color:#333; font-size:15px; font-weight:600; line-height:36px;}
+.tools-gnd .button a:first-child {margin-left:0; background-color:#19416e; border-color:#0c2847; color:#fff;}
+.tools-gnd .sel_area {display:block;}
+.tools-gnd .sel_area dl {padding:0 0 30px;;}
+.tools-gnd .sel_area dt {display:block;line-height:1.23;font-size:14px;color:#333;font-weight:bold;padding:0 0 10px;}
+.tools-gnd .sel_area dd {width:100%;}
+.tools-gnd ul:after {content:""; display:block; clear:both;}
+.tools-gnd ul.sel_ul li {float:left;padding:8px 0 10px;text-align:center;font-size:14px;border:1px solid #b3b3b3;cursor: pointer;}
+.tools-gnd ul.sel_ul li span {display:block;line-height:1;}
+.tools-gnd ul.sel_ul li.current {color:#fff;background:#8b8b8b;}
+.tools-gnd .birt .sel_box {display:inline-block;padding:5px 0;}
+.tools-gnd .birt .sel_box li {width:70px;margin-left:-1px;}
+.tools-gnd .birt .sel_box li:first-child {margin:0;}
+.tools-gnd .birt .int {display:inline-block;vertical-align:top;margin:0 0 0 15px;font-size:14px;color:#333;font-weight:bold;}
+.tools-gnd .birt input {width:78px;height:32px;line-height:28px;margin:0 5px 0 0;}
+.tools-gnd .univ {border-bottom:1px solid #b3b3b3;margin:0 0 30px;}
+.tools-gnd .univ .sel_box {display:block;overflow:hidden;}
+.tools-gnd .univ .sel_box label {width:33.3%;float:left;margin:5px 0;box-sizing:border-box;}
+.tools-gnd .tb_area .tb_subject {padding:0;border:0;border-spacing:0px;border-collapse:collapse;}
+.tools-gnd .tb_area .tb_subject th {font-size:14px;color:#333;font-weight:bold;text-align:left;padding:0 0 15px;}
+.tools-gnd .tb_area .tb_subject td {font-size:14px;color:#666;}
+.tools-gnd .tb_area .tb_subject .selectbox span {height:36px;line-height:36px;background: url(http://image.career.co.kr/career_new4/tools/sel_arrow4.gif) #fff no-repeat 100% 50%;box-sizing: border-box;}
+.tools-gnd .tb_area .tb_subject td input {height:36px;line-height: 36px;margin-right:8px;text-indent: 0;}
+.tools-gnd .gradu dl {position:relative;padding:0 0 20px;font-size:14px;color:#333;}
+.tools-gnd .gradu dt {position:absolute;top:15px;left:17px;font-weight:bold;}
+.tools-gnd .gradu dl dd {padding:10px 0 10px 165px;}
+.tools-gnd .gradu dl dd:last-child {border-top:1px solid #b3b3b3;}
+.tools-gnd .gradu dl dd button {line-height: 1;width:23px;height:23px;margin:0 5px;border:1px solid #b3b3b3;vertical-align:middle;}
+.tools-gnd .gradu dl dd .btn_plus {font-size:0;background:url(http://image.career.co.kr/career_new4/tools/btn_plus.jpg) no-repeat;}
+.tools-gnd .gradu dl dd .btn_minus {font-size:0;background:url(http://image.career.co.kr/career_new4/tools/btn_minus.jpg) no-repeat;}
+.tools-gnd .gradu dl dd button:focus {border-color:#ffc600 !important;	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 5px #dddddd;	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 5px #dddddd;	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 5px #dddddd;outline:0 none;}
+.tools-gnd .gradu dl:last-child dd {padding:10px 0 10px 201px;}
+.tools-gnd .gradu dl dd input {width:30px;height:23px;line-height:23px;text-indent:0;border:none;font-size:14px;color:#333;background:#f8f8f8;letter-spacing:-1px;vertical-align:middle;}
+
+/*  커리어 계산기 - 퇴직금 계산기, 실업급여계산기 */
+.tools-retire .inner.arrow {padding: 23px 30px 40px;background:url(http://image.career.co.kr/career_new4/tools/arr_right.png) #fff no-repeat 50% 50%;}
+.tools-retire h4,
+.tools-retire h5 {color: #2c2c2c;font-size: 22px;color:#000;}
+.tools-retire .tit {border-bottom:0 none;}
+.tools-retire .tit.line {border-bottom:1px solid #464646;}
+.tools-retire .part {position:relative; z-index:1;float:right;}
+.tools-retire .part:first-child {float:left;}
+.tools-retire .part span.selectbox span {height:32px;line-height:30px;background: url(http://image.career.co.kr/career_new4/tools/sel_arrow4.gif) #fff no-repeat 100% 50%;}
+.tools-retire .part .date_dl {width:100%;position:relative;padding:0 0 90px;border-bottom:1px solid #b3b3b3;}
+.tools-retire .part .date_dl:after {content:""; display:block; clear:both;}
+.tools-retire .part .date_dl dt.birth,
+.tools-retire .part .date_dl dt.birth + dd {width:100%;display:block;left:0;margin-bottom:15px;}
+.tools-retire .part .date_dl dt {float:left;width:50%;line-height:1;font-size:14px;color:#333;font-weight:bold;}
+.tools-retire .part .date_dl dt span {font-size:13px;color:#666;margin-left:3px;}
+.tools-retire .part .date_dl dd {float:left;width:50%;}
+.tools-retire .part .date_dl dt.join + dd {position:absolute;bottom:42px;left:0;}
+.tools-retire .part .date_dl dt.retire + dd {position:absolute;bottom:42px;right:0;}
+.tools-retire .part .date_dl dd input {width:200px;height:30px;background: url(http://image.career.co.kr/career_new4/tools/date_icon.jpg) #fff no-repeat 93% 50%;text-indent:20px;cursor: pointer;}
+.tools-retire .salary_dl {zoom:1; margin-top:40px;}
+.tools-retire .salary_dl:first-child {margin-top:22px;}
+.tools-retire .salary_dl:after {content:""; display:block; clear:both;}
+.tools-retire .salary_dl dt {float:left; width:50%; color:#333; line-height:31px;padding:0 0 25px;}
+.tools-retire .salary_dl dt .tip {position:relative; display:inline-block; margin-left:1px; vertical-align:-1px;}
+.tools-retire .salary_dl dt .tip:hover {z-index:1;}
+.tools-retire .salary_dl dt .tip:hover .txt {overflow:visible;	opacity:1; top:19px; width:auto; height:auto;transition-property: opacity, top;transition-duration: 0.23s, 0.23s;	transition-timing-function: ease;}
+.tools-retire .salary_dl dt .icon {display:block; width:13px; height:13px; overflow:hidden; background:url(http://image.career.co.kr/career_new4/tools/icon_tip.jpg) no-repeat 0 0; text-indent:-999em;}
+.tools-retire .salary_dl dt .txt {position:absolute; left:-5px; top:15px; width:0; height:0; overflow:hidden; background-color:#fff; border:1px solid #2c2c2c; white-space:nowrap; opacity:0;}
+.tools-retire .salary_dl dt .txt b {display:block; margin-top:-7px; padding:10px 10px 5px; background:url(http://image.career.co.kr/career_new4/tools/arr_tip.gif) no-repeat 7px 2px; color:#ff3600; font-size:12px; font-weight:normal; line-height:18px;}
+.tools-retire .salary_dl dd {float:left; width:50%;position:relative;padding:0 0 25px;}
+.tools-retire .salary_dl dd strong.txt {margin-left:6px;}
+.tools-retire .salary_dl dd span {position:absolute;right:13px;top:8px;font-size:14px;color:#666;}
+.tools-retire .salary_dl dd input.txt {width:100%; height:32px;line-height:32px;padding:0 30px 0 0;font-size:16px;color:#000;font-weight:bold;box-sizing:border-box;text-align:right;}
+.tools-retire .salary_dl dd label.checkbox,
+.tools-retire .salary_dl dd label.radiobox {vertical-align:0;}
+.tools-retire fieldset { width:480px; min-height:500px; padding:35px 20px 20px; background-color:#f8f8f8; border:1px solid #b3b3b3;}
+.tools-retire fieldset dl:last-child {border-bottom:none;}
+.tools-retire .button {text-align:center;margin:15px;padding:0;}
+.tools-retire .button a {display:inline-block; zoom:1; width:127px; margin-left:6px; background-color:#fff; border:1px solid #b3b3b3; border-radius:3px; color:#333; font-size:15px; font-weight:600; line-height:36px;}
+.tools-retire .button a:first-child {margin-left:0; background-color:#19416e; border-color:#0c2847; color:#fff;}
+.tools-retire .estimate {position:relative;line-height:1.23; padding:28px 0 10px;}
+.tools-retire .estimate:after {content:""; display:block; clear:both;}
+.tools-retire .estimate dt {float:left;position:absolute;left:0;top:0;font-weight: bold;font-size:14px;color:#333;}
+.tools-retire .estimate dd {width:100%;padding:30px 20px 30px 0;text-align:right;font-size:0;background:#fff;border:1px solid #b3b3b3;box-sizing:border-box;}
+.tools-retire .estimate dd input.txt {width:95%;height:30px;line-height:1;background:#fff; border:none;;font-size:30px;color:#36baff;font-weight:bold;text-align:right;letter-spacing:0;}
+.tools-retire .estimate dd strong.txt {margin:0 0 0 3px;vertical-align:text-bottom;font-size:14px;}
+.tools-retire .etc {overflow: hidden;padding:10px 0;margin:0;border-bottom:1px solid #b3b3b3;}
+.tools-retire .etc dt,
+.tools-retire .etc dd {width:auto;padding:0 20px;box-sizing:border-box;}
+.tools-retire .etc dt {float:left;}
+.tools-retire .etc dd {width:50%;float:right;text-align:right;font-size:0;}
+.tools-retire .etc dd .txt {border:none;text-indent:0;text-align:right;background:#f8f8f8;color:#000;font-size:16px;font-weight:bold;}
+.tools-retire .etc dd strong.txt {margin:0 0 0 3px;font-size:14px;font-weight:normal;}
+.tools-retire .etc {padding:10px 0;margin:0;border-bottom:1px solid #b3b3b3;}
+.tools-retire .etc dt,
+.tools-retire .etc dd {width:auto;padding:0 20px 0 0;}
+.tools-retire .etc dt {float:left;line-height: 31px;font-weight: bold;}
+.tools-retire .etc dd {height:30px;float:right;text-align:right;font-size:0;}
+.tools-retire .etc dd .txt {width:165px;border:none;text-indent:0;text-align:right;background:#f8f8f8;letter-spacing:0;}
+
+/*  커리어 계산기 - 연차/휴가 계산기 */
+.tool-vacation .va_count {display:block;padding:50px 0;font-size:0;text-align:center;}
+.tool-vacation .va_count span {display:inline-block;line-height:50px;font-size:16px;color:#000;vertical-align: middle;}
+.tool-vacation .va_count span.day {margin:0 18px 0 0;}
+.tool-vacation .va_count span.year,
+.tool-vacation .va_count span.month {margin:0 38px 0 10px;}
+.tool-vacation .va_count span.selectbox span {height:48px;line-height:48px;padding: 0px 70px 0 0px;text-align:center;font-size:16px;color:#000;}
+.tool-vacation .va_count a {display:inline-block;width:200px;height:50px;line-height:50px;background:#0c2847;font-size:16px;color:#fff;font-weight:bold;text-align:center;vertical-align: middle;border-radius: 3px;}
+.tool-vacation .date_dl {width:100%;position:relative;padding:0;text-align:center;}
+.tool-vacation .date_dl:after {content:""; display:block; clear:both;}
+.tool-vacation .date_dl dt {display: inline-block;line-height: 50px;margin:0 18px 0 0;font-size: 16px;color: #000;vertical-align: middle;}
+.tool-vacation .date_dl dt span {font-size:13px;color:#666;margin-left:3px;}
+.tool-vacation .date_dl dd {display:inline-block;}
+.tool-vacation .date_dl dd input {width:400px;height:50px;line-height: 50px; font-size: 16px;color: #000;vertical-align: middle;
+	background: url(http://image.career.co.kr/career_new4/tools/date_icon.jpg) #fff no-repeat 94% 50%;
+	text-indent:20px;cursor: pointer;
+	text-align: center;
+	padding: 0 65px 0 0;
+	box-sizing: border-box;}
+.tool-vacation .date_dl dd a {margin-left:25px;}
+.tool-vacation .va_result {display:block;padding:15px 20px;background:#f8f8f8;border:1px solid #b3b3b3;}
+.tool-vacation .va_result:after {content:""; display:block; clear:both;}
+.tool-vacation .va_result section {width:50%;float:left;padding:0 0 0 45px;box-sizing:border-box;}
+.tool-vacation .va_result section:first-child {padding:0 45px 0 0;}
+.tool-vacation .va_result section dl {border-top:1px solid #b3b3b3;}
+.tool-vacation .va_result section dl:first-child {border-top:none;}
+.tool-vacation .va_result section dl:after {content:""; display:block; clear:both;}
+.tool-vacation .va_result section dt,
+.tool-vacation .va_result section dd {width:50%;float:left;line-height:55px;padding:0 20px;box-sizing:border-box;font-weight:bold;font-size:14px;color:#333;}
+.tool-vacation .va_result section dd {text-align:right;font-weight:normal;color:#666;}
+.tool-vacation .va_result section dd span {display:inline-block;font-weight:bold;color:#000;font-size:16px;margin:0 3px;}
+.tool-vacation .va_result section dl.total dt,
+.tool-vacation .va_result section dl.total dd {width:100%;float:none;}
+.tool-vacation .va_result section dl.total dt {padding:0;}
+.tool-vacation .va_result section dl.total dd {height:90px;line-height:90px;font-size:13px;font-weight:bold;background:#fff;border:1px solid #b3b3b3;}
+.tool-vacation .va_result section dl.total dd span {display:inline-block;font-size:30px;color:#36baff;font-weight:bold;margin:0 3px 0 0;}
+body.vacation .ui-datepicker {width:383px !important;}
+body.vacation .ui-datepicker td a {padding:10px 0 !important;}
+body.vacation .ui-datepicker select.ui-datepicker-month {width:23%;}
+body.vacation .ui-datepicker select.ui-datepicker-year {width:25%;}
+
+/*  커리어 계산기 - 간편완성 자기소개서 */
+.tools-introduction .tit {border-bottom:none;}
+.tools-introduction .tit h5 {font-size:22px;color:#000;line-height:44px;}
+.tools-introduction .easyCompleteWrap {position:relative;}
+.tools-introduction .easyCompleteWrap .set {width:100%;}
+.tools-introduction .easyCompleteWrap .set:after {display:block; content:""; clear:both;}
+.tools-introduction .easyCompleteWrap .set > div {position:relative;}
+.tools-introduction .easyCompleteWrap .set .leftArea {display:inline-block;width:50%;box-sizing: border-box;padding:0 10px 0 0;}
+.tools-introduction .easyCompleteWrap .set .rightArea {float:right; width:50%;box-sizing: border-box;padding:0 0 0 10px;}
+.tools-introduction .easyCompleteWrap .set .cont {height:450px;border:1px solid #dcdcdc;position: relative;}
+.tools-introduction .easyCompleteWrap .set .tabmenu {display:block;padding:0 0 20px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul {border:1px solid #e5e5e5;border-width:1px 1px 1px 0;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul:after {content:""; display:block; clear:both;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li {width:120px;height:138px;float:left;border-left:1px solid #e5e5e5;text-align:center;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon1.png) no-repeat 50% 29px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon2.png) no-repeat 50% 31px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon3.png) no-repeat 50% 31px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon4.png) no-repeat 50% 31px;background-size:47px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon5.png) no-repeat 50% 31px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li + li a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon6.png) no-repeat 50% 30px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li + li + li a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon7.png) no-repeat 50% 30px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li a {display:block;padding:90px 0 30px;font-size:14px;color:#333;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li a:hover,
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li.on a {color:#00baff;font-weight:bold;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child a:hover,
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li.on:first-child a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon1_on.png) no-repeat 50% 29px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li a:hover,
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li.on a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon2_on.png) no-repeat 50% 31px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li a:hover,
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li.on a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon3_on.png) no-repeat 50% 31px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li a:hover,
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li.on a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon4_on.png) no-repeat 50% 31px;background-size:47px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li a:hover,
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li.on a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon5_on.png) no-repeat 50% 31px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li + li a:hover,
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li + li.on a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon6_on.png) no-repeat 50% 30px;}
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li + li + li a:hover,
+.tools-introduction .easyCompleteWrap .set .tabmenu ul  li:first-child + li + li + li + li + li + li.on a {background:url(http://image.career.co.kr/career_new4/reference/easy_Introduce_icon7_on.png) no-repeat 50% 30px;}
+.tools-introduction .easyCompleteWrap .set .easySelfList {}
+.tools-introduction .easyCompleteWrap .set .easySelfList li:first-child {border-top:none;margin:0;}
+.tools-introduction .easyCompleteWrap .set .easySelfList li {position:relative; margin:25px 0 0;}
+.tools-introduction .easyCompleteWrap .set .easySelfList li a {display:block;}
+.tools-introduction .easyCompleteWrap .set .easySelfList li a strong {display:block; font-size:15px; color:#000;line-height:20px;}
+.tools-introduction .easyCompleteWrap .set .easySelfList li a p {font-size:13px; color:#777; line-height:18px; line-height:19px \0/IE8+9;}
+.tools-introduction .easyCompleteWrap .set .easySelfList li button {position:absolute; top:1px; left:95px;height:15px;padding:0 15px 0 0;font-size:12px;font-weight:bold;color:#00baff;background:url(http://image.career.co.kr/career_new4/reference/copy_arrow.png) no-repeat 100% 80%;border:none;text-decoration: underline;}
+.tools-introduction .easyCompleteWrap .set .easySelfList:first-child + ul + ul li button,
+.tools-introduction .easyCompleteWrap .set .easySelfList:first-child + ul + ul + ul li button {left:114px;}
+.tools-introduction .easyCompleteWrap .set .easySelfList:first-child + ul + ul + ul + ul li button,
+.tools-introduction .easyCompleteWrap .set .easySelfList:first-child + ul + ul + ul + ul + ul + ul li button {left:120px;}
+.tools-introduction .easyCompleteWrap .set .leftArea .cont ul {display:none;}
+.tools-introduction .easyCompleteWrap .set .leftArea .cont ul:first-child {display:block;}
+.tools-introduction .easyCompleteWrap .set .leftArea .easySelfList {height:450px; padding:15px 20px; overflow-y:auto;box-sizing: border-box;}
+.tools-introduction .easyCompleteWrap .set .leftArea .easySelfList li a strong {display:inline-block;padding:0 0 5px;}
+.tools-introduction .easyCompleteWrap .set .leftArea .easySelfList li a p {height:44px; height:45px \0/IE8+9;color:#333;line-height:1.8; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical; word-wrap:break-word;}
+.tools-introduction .easyCompleteWrap .set .rightArea {height: 450px;}
+.tools-introduction .easyCompleteWrap .set .rightArea .noData {display:table; width:100%;position:absolute;top:190px;left:0; padding:0;border:none;}
+.tools-introduction .easyCompleteWrap .set .rightArea .noData p {display:table-cell; line-height:1;padding:0;font-size:16px;font-weight:normal;color:#666;text-align:center;vertical-align:middle;}
+.tools-introduction .easyCompleteWrap .set .rightArea .easySelfList {display:block !important;overflow-y:auto; width:100%;height:400px;overflow-y:scroll; padding:15px 20px; font-size:13px;line-height:24px;letter-spacing:-1px; border:none; resize:none;box-sizing: border-box;}
+.tools-introduction .easyCompleteWrap .set .rightArea .btn_box {width:100%;position:absolute; left:0; bottom:5px;padding:0;font-size:0;box-sizing: border-box;text-align: center;}
+.tools-introduction .easyCompleteWrap .set .rightArea .btn_box .btn {height:40px; padding:0;margin-left:5px;color:#fff;font-size:14px;font-weight:bold; line-height:38px;}
+.tools-introduction .easyCompleteWrap .set .rightArea .btn_box .btn:first-child {margin-left:0;}
+.tools-introduction .easyCompleteWrap .set .rightArea .btn_box .btn.del {width:180px;background:#00c0ff;border:1px solid #00c0ff;}
+.tools-introduction .easyCompleteWrap .set .rightArea .btn_box .btn.guide {width:220px;background:#323232;border:1px solid #323232;}
+
+/* 글자수 세기 */
+#contents .con_box .tools-area.tools-calc .tit {padding:0;border:none;}
+.tools-calc .input {position:relative; width:100%;box-sizing:border-box;}
+.tools-calc .input .tb td .text textarea {width:100%;height:290px; border: 1px solid #d8d8d8; box-sizing: border-box; padding: 5px;}
+.tools-calc .input .button.noline {border:none;}
+.tools-calc .input .byte {display:block;padding:0 0 0;text-align:right;}
+.tools-calc .input .byte span {display:block; margin-top: 5px;}
+.tools-calc .input .byte span.blank_include{margin-top: 15px;}
+.tools-calc .input .byte p {display:inline-block;line-height:1;font-size:16px;font-weight:bold;color:#222b38;}
+.tools-calc .input .byte em {margin:0 5px;vertical-align:middle;}
+.tools-calc .input .byte strong {display:inline-block;margin:-6px 0 0;font-size:27px;font-family:Tahoma;color:#359b78;vertical-align:middle; font-weight: bold;}
+
+/* 2021년 추가 - 성공취업툴 */
+.tools-wrap .tool_area {padding:0 75px 30px;}
+.tools-wrap .tool_area .tool_ul {width:100%;}
+.tools-wrap .tool_area .tool_ul:after {content:'';display:block;clear:both;}
+.tools-wrap .tool_area .tool_ul li {float:left;margin-left:33px;}
+.tools-wrap .tool_area .tool_ul li a {display:block;width:195px;height:194px;font-size:0;background:url(../images/tools_icon.png) no-repeat;}
+.tools-wrap .tool_area .tool_ul li:first-child {margin-left:0;}
+.tools-wrap .tool_area .tool_ul li:first-child a {background-position:0 0;}
+.tools-wrap .tool_area .tool_ul li:nth-child(2) a {background-position:-230px  0;}
+.tools-wrap .tool_area .tool_ul li:nth-child(3) a {background-position:-460px 0;}
+.tools-wrap .tool_area .tool_ul li:nth-child(4) a {background-position:-690px 0;}
+.tools-wrap .tool_area .tool_ul li:nth-child(5) a {background-position:-922px 0;}
+.tools-wrap .tool_area .tool_ul li.on:first-child a {background-position:0 -206px;}
+.tools-wrap .tool_area .tool_ul li.on:nth-child(2) a {background-position:-230px -206px;}
+.tools-wrap .tool_area .tool_ul li.on:nth-child(3) a {background-position:-460px -206px;}
+.tools-wrap .tool_area .tool_ul li.on:nth-child(4) a {background-position:-690px -206px;}
+.tools-wrap .tool_area .tool_ul li.on:nth-child(5) a {background-position:-922px -206px;}
+
+/* //CSS */
+.tools_tbl{table-layout: fixed; width: 100%; border: 1px solid #000; border-left: none; border-right: none;}
+.tools_tbl tbody tr th{vertical-align: middle; background-color: #e3eeff; font-size: 1.4rem; text-align: left; padding-left: 10px; border-bottom: 1px solid #fff; font-weight: bold;}
+.tools_tbl tbody tr td{padding: 9px 7px; border-bottom: 1px solid #eaeaea;}
+.tools_tbl.initTDHeight tbody tr td .writingArea{min-height: 37px;}
+.tools_tbl .cmm_mulRdi{}
+.tools_tbl .cmm_mulRdi .noti{font-size: 1.294rem; line-height: 1.3; margin-bottom: 20px;}
+.tools_tbl .cmm_mulRdi .cmm_mulRdi_chkrdos{font-size: 0; }
+.tools_tbl .cmm_mulRdi .cmm_mulRdi_chkrdos *{box-sizing: border-box;}
+.tools_tbl .cmm_mulRdi .cmm_mulRdi_chkrdos .radiobox{padding-left: .5rem; width: 33.33%; height: auto; margin-left: 0 !important;}
+.tools_tbl .cmm_mulRdi .cmm_mulRdi_chkrdos .radiobox span{font-size: 1.3rem; line-height: 1.5;}
+.cmm_agreeBox{font-size: 1.294rem; line-height: 1.6;}
+
+@media only screen and (max-width: 640px){
+	.tools_tbl .cmm_mulRdi .cmm_mulRdi_chkrdos .radiobox{width: 50%;}
+}
+@media only screen and (max-width: 340px){
+	.tools_tbl .cmm_mulRdi .cmm_mulRdi_chkrdos .radiobox{width: 100%;}
+}

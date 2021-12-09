@@ -1,0 +1,203 @@
+<%
+option Explicit
+%>
+<!--#include virtual = "/common/common.asp"-->
+<!--#include virtual = "/include/header/header.asp"-->
+<!--#include virtual = "/wwwconf/function/db/DBConnection.asp"-->
+<%
+dim cur_point : cur_point = Request.Form("cur_point")
+dim exam_type : exam_type = Request.Form("exam_type")
+%>
+<script type="text/javascript" src="/wwwconf/include/tools/js/english_array_new.js"></script>
+<script type="text/javascript" src="/wwwconf/include/tools/js/english_converter.js"></script>
+<script type="text/javascript">
+
+	$(document.body).ready(function() {
+		fn_load();
+
+		var hCur_point = $("#hdnCur_point");
+		var h_type = $("#hdn_type");
+		var pCur_point = $("#cur_point");
+		var p_type = $("#exam_type");
+
+		if (hCur_point.val() != "") {
+		    pCur_point.val(hCur_point.val());
+		}
+		if (h_type.val() != "") {
+		    p_type.val(h_type.val());
+		}
+		if (hCur_point.val() != "" && h_type.val() != "") {
+		    fn_english_convert();
+		}
+
+		fn_type_change($("#exam_type").val());
+	});
+
+</script>
+</head>
+<body>
+
+<!-- 상단 -->
+<!--#include virtual = "/include/gnb/topMenu.asp"-->
+
+
+
+<div id="contents" class="sub_page">
+	<div class="visual_area tools">
+		<h2>이력서 작성 스마트 계산기</h2>
+	</div>
+	<div class="contents">
+		<div class="con_box">
+			<div class="tab_box" style="padding-top:2rem;">
+				<a href="http://moel.go.kr/miniWageMain.do">
+					<p>
+						<img src="/images/m_wave.png" alt="최저임금 보러가기" style="width:100%;">
+
+				  </p>
+			</a>
+			</div><!-- .tab_box -->
+			<!--#include file = "./left_menu.asp"-->
+			<div class="tools-area tools-unit MT60">
+				<div class="innerWrap">
+					<div class="input">
+						<div class="tit">
+							<h4>어학 점수</h4>
+						</div><!-- .tit -->
+						<filedset>
+							<table class="tb tools_tbl">
+								<caption>학점 계산 테이블</caption>
+								<colgroup>
+									<col style="width:150px;" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>취득 점수</th>
+										<td>
+
+											<div class="row tools-unit_row">
+												<div class="col6">
+													<input class="txt value" id="cur_point" name="cur_point" type="text" default="어학점수를 입력해 주세요." />
+													<div class="txts">
+														<span class="txt">점</span>
+														<em class="slash">/</em>
+													</div>
+												</div>
+												<div class="col6" style="padding-right: 0;">
+													<span class="selectbox">
+														<span>TOEIC</span>
+														<select id="exam_type" onchange="fn_type_change(this.value);">
+															<option value="TOEIC" selected="selected">TOEIC</option>
+															<option value="TOEIC_S">TOEIC Speaking</option>
+															<option value="TEPS">TEPS</option>
+															<option value="NEWTEPS">NEW TEPS</option>
+															<option value="TEPS_S">TEPS Speaking</option>
+															<option value="IBT">TOEFL(IBT)</option>
+														</select>
+													</span>
+												</div>
+											</div>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+
+
+
+							<p id="remark_toeic" style="display:none;"><em>※</em>변환가능한 <span>TOEIC</span>의 총점은 <span>990</span>점 ~ <span>320</span>점이며, <span>5</span>점 단위로 입력이 가능합니다.</p>
+							<p id="remark_toeic_s" style="display:none;"><em>※</em>변환가능한 <span>TOEIC Speaking</span>의 총점은 <span>200</span>점 ~ <span>50</span>점이며, <span>10</span>점 단위로 입력이 가능합니다.</p>
+							<p id="remark_teps" style="display:none;"><em>※</em>변환가능한 <span>TEPS</span>의 총점은 <span>990</span>점 ~ <span>280</span>점이며, <span>1</span>점 단위로 입력이 가능합니다.</p>
+							<p id="remark_teps_s" style="display:none;"><em>※</em>변환가능한 <span>TEPS Speaking</span>의 총점은 <span>99</span>점 ~ <span>8</span>점이며, <span>1</span>점 단위로 입력이 가능합니다.</p>
+							<p id="remark_ibt" style="display:none;"><em>※</em>변환가능한 <span>TOEFL(IBT)</span>의 총점은 <span>120</span>점 ~ <span>17</span>점이며, <span>1</span>점 단위로 입력이 가능합니다.</p>
+							<p id="remark_newteps" style="display:none;"><em>※</em>변환가능한 <span>NEW TEPS</span>의 총점은 <span>600</span>점 ~ <span>150</span>점이며, <span>1</span>점 단위로 입력이 가능합니다.</p>
+							<div class="btnWrap col2">
+								<div class="tp"><a class="btns blue bold" href="javascript:void(0);" onclick="fn_english_convert();"><strong>어학점수 변환하기</strong></a></div>
+							</div>
+						</filedset>
+					</div><!-- .input -->
+
+					<div class="convert c2 MT80">
+						<div class="tit">
+							<h4>변환 점수</h4>
+						</div><!-- .tit -->
+						<div>
+							<table class="tb tools_tbl">
+								<caption>학점 계산 테이블</caption>
+								<colgroup>
+									<col style="width:200px;" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>TOEIC<small>(990점)</small></th>
+										<td>
+											<input class="txt" id="result_point_toeic" name="result_point_toeic" arridx="0" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+
+									<tr>
+										<th>TOEIC Speaking<small>(200점)</small></th>
+										<td>
+											<input class="txt" id="result_point_toeic_s" name="result_point_toeic_s" arridx="1" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+
+									<tr>
+										<th>TEPS<small>(990점)</small></th>
+										<td>
+											<input class="txt" id="result_point_ielts" name="result_point_ielts" arridx="2" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+									<tr>
+										<th>TEPS Speaking<small>(99점)</small></th>
+										<td>
+											<input class="txt" id="result_point_ielts_s" name="result_point_ielts_s" arridx="3" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+
+									<tr>
+										<th>NEW TEPS 점수<small>(600점)</small></th>
+										<td>
+											<input class="txt" id="result_point_ielts" name="result_point_ielts" arridx="4" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+									<tr>
+										<th>TOFEL(IBT) 점수<small>(120점)</small></th>
+										<td>
+											<input class="txt" id="result_point_ibt" name="result_point_ibt" arridx="5" type="text" />
+											<span class="txt">점</span>
+										</td>
+									</tr>
+
+									<tr>
+										<th>OPIc<small>(AL)</small></th>
+										<td>
+											<input class="txt" id="result_point_cbt" name="result_point_cbt" arridx="6" type="text" />
+											<span class="txt">Lv</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div><!-- .convert -->
+				</div><!-- .inner -->
+			</div><!-- .tools-unit -->
+		</div>
+	</div><!-- .content -->
+</div><!-- #contents -->
+
+<input type="hidden" id="hdnCur_point" name="hdnCur_point" value="<%=cur_point %>" />
+<input type="hidden" id="hdn_type" name="hdn_type" value="<%'=hdn_type %>" />
+
+<!-- 하단 -->
+<!--#include virtual = "/include/footer.asp"-->
+
+</body>
+</html>
